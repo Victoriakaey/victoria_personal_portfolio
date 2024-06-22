@@ -36,7 +36,7 @@ export default function Intro() {
               alt="Victoria's portrait"
               width="192"
               height="192"
-              quality="100"
+              quality="95"
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] boarder-white shadow-xl"
             />
