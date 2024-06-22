@@ -11,6 +11,7 @@ import ThemeContextProvider from "@/context/theme-context";
 // can change this position later
 const inter = Inter({ subsets: ["latin"] });
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Victoria | Personal Portfolio",
@@ -39,6 +40,7 @@ export default function RootLayout({
             {children}
             <Footer />
             <Analytics />
+            <SpeedInsights />
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
