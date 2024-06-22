@@ -45,6 +45,7 @@ export default function Contact() {
             toast.error(error);
             return;
           }
+
           toast.success(
             "Email sent! Thank you for reaching out to me. I will get back to you as soon as possible!"
           );
