@@ -111,16 +111,6 @@ export const projectsData = [
     projectUrl: "https://victoria-cat-memory-game.vercel.app/",
   },
   {
-    title: "Tech Resume Tailor",
-    time: "June 2024",
-    description:
-      "A GPT that helps users craft tailored technical resumes aligned with job descriptions, using advanced resume-writing techniques and strategies.",
-    sideNotes: "I created this project to help with writing my resume since I don't know many industry professionals for feedback.  This GPT helps me write better tech resumes and customize them for different job applications.",
-    tags: ["Prompt Engineering"],
-    imageUrl: Img3,
-    projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
-  },
-  {
     title: "Pathways",
     time: "Apr 2024 - Present",
     description:
@@ -129,6 +119,16 @@ export const projectsData = [
     tags: ["SolidJS", "TypeScript", "Vite", "Express", "OpenAI APIs", "Langchain", "Pinecone", "Firebase Firestore", "TailwindCSS", "RxJS"],
     imageUrl: Img2,
     projectUrl: "",
+  },
+  {
+    title: "Tech Resume Tailor",
+    time: "June 2024",
+    description:
+      "A GPT that helps users craft tailored technical resumes aligned with job descriptions, using advanced resume-writing techniques and strategies.",
+    sideNotes: "I created this project to help with writing my resume since I don't know many industry professionals for feedback.  This GPT helps me write better tech resumes and customize them for different job applications.",
+    tags: ["Prompt Engineering"],
+    imageUrl: Img3,
+    projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
   },
   // {
   //   title: "Yi",
