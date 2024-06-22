@@ -92,7 +92,7 @@ export const experiencesData = [
     title: "Graduated from Community College",
     location: "De Anza College - Cupertino, CA",
     description:
-      "Completed required coursework for a Computer Science degree before transferring to UC Santa Cruz",
+      "Completed required coursework for a Computer Science degree before transferring to UC Santa Cruz.",
     icon: React.createElement(LuGraduationCap),
     tags: ["C++", "Python", "Assembly Language", "Physics", "Chemistry", "Pre-Calculus", "Calculus", "Discrete Mathematics"],
     date: "Apr 2016 - June 2020",
@@ -102,31 +102,49 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Cat Memory Game",
+    time: "Sep 2023",
     description:
-      "A card flipping game with each card as three of my cat's portrait on it.",
-    tags: ["React", "Node.js", "Material-UI", "emotion", "gsap"],
+      "A card flipping game with each card as three of my cats' portrait on it.",
+    sideNotes: "This is the first website I developed. I created this project to learn React and web deployment. And as a proud cat mom, I couldn't resist showcasing my beloved cats and their adorable faces! :))",
+    tags: [ "React", "TypeScript", "Material-UI", "emotion", "gsap"],
     imageUrl: Img1,
-    projectUrl: "https://github.com/Victoriakaey/Cat-Memory-Game"
+    projectUrl: "https://victoria-cat-memory-game.vercel.app/",
+  },
+  {
+    title: "Tech Resume Tailor",
+    time: "June 2024",
+    description:
+      "A GPT that helps users craft tailored technical resumes aligned with job descriptions, using advanced resume-writing techniques and strategies.",
+    sideNotes: "I created this project to help with writing my resume since I don't know many industry professionals for feedback.  This GPT helps me write better tech resumes and customize them for different job applications.",
+    tags: ["Prompt Engineering"],
+    imageUrl: Img3,
+    projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
+  },
+  {
+    title: "Pathways",
+    time: "Apr 2024 - Present",
+    description:
+      "An AI-driven web app facilitating self-directed learning.",
+    sideNotes: "This lab project aims to create a personalized learning pathway for motivated learners, helping them practice and enhance their self-directed learning skills.",
+    tags: ["SolidJS", "TypeScript", "Vite", "Express", "OpenAI APIs", "Langchain", "Pinecone", "Firebase Firestore", "TailwindCSS", "RxJS"],
+    imageUrl: Img2,
+    projectUrl: "",
   },
   // {
-  //   title: "rmtDev",
+  //   title: "Yi",
+  //   time: "Apr 2024 - Present",
   //   description:
-  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  //   imageUrl: Img2,
-  //   projectUrl: "https://www.google.com/"
-  // },
-  // {
-  //   title: "Word Analytics",
-  //   description:
-  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+  //     "A SaaS web app offering robust financial and business management.",
+  //   sideNotes: "Developed this app for my mom (and yes, whoever is curious about the details and contact me and ask.).",
+  
+  //   tags: ["React", "TypeScript", "Next.js", "Django and Django REST Framework", "PostgreSQL", "TailwindCSS", "Redux"],
   //   imageUrl: Img3,
-  //   projectUrl: "https://www.google.com/"
+  //   projectUrl: "https://www.google.com/",
   // },
 ] as const;
 
 export const skillsData = [
+  // Programming Languages
   "Python",
   "Java",
   "C/C++",
@@ -134,15 +152,45 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
+  
+  // Frameworks and Libraries
   "React",
   "Next.js",
+  "Solid.js",
   "Node.js",
-  "SolidJS",
-  "Git",
+  "Django",
+  "Django REST Framework",
+  "Redux",
+  "RxJS",
+  
+  // Styling
   "Material UI",
-  "Tailwind",
+  "Tailwind CSS",
+  "Sass",
+  "PostCSS",
+  "Ant Design",
+  "Shadcn/UI",
+  "Radix UI",
+  
+  // Database
   "MongoDB",
   "PostgreSQL",
+  "Pinecone",
+  
+  // Tools and Platforms
+  "Git",
+  "Vite",
+  "ESLint",
+  "Axios",
+  "JWT",
+  
+  // Animations
   "Framer Motion",
-  "OpenAI API",
+  
+  // APIs
+  "OpenAI APIs",
+  "Langchain",
+  
+  // Icons
+  "React Icons"
 ] as const;

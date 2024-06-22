@@ -36,16 +36,16 @@ export default function Intro() {
               alt="Victoria's portrait"
               width="192"
               height="192"
-              quality="95"
+              quality="100"
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] boarder-white shadow-xl"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute -top-3 right-1 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1, rotate: 30 }}
             transition={{
               type: "spring",
               stiffness: 125,
@@ -53,20 +53,25 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            😸
+            👑
           </motion.span>
         </div>
       </div>
 
+      {/* text-2xl sm:text-4xl */}
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 font-medium !leading-[1.5]"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <p>
-          <span className="font-bold">Jiaqi (Victoria) Duan</span>
+        <p className="mb-1 sm:mb-4">
+          <span className="font-semibold text-3xl sm:text-5xl">
+            Jiaqi (Victoria) Duan
+          </span>
         </p>
-        <span className="italic">Programmer, Research Lead, Artist</span>
+        <span className="italic font-light text-md sm:text-2xl">
+          Engineer, Research Lead, Artist
+        </span>
         {/* Hello, I'm xxx. I'm a xxx developer with x years of experience. I enjoy building xxx. My focus is xxx */}
       </motion.h1>
 
