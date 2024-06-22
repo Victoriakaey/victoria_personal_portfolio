@@ -44,21 +44,21 @@ export const experiencesData = [
     date: "Sep 2024 - Present",
   },
   {
-    title: "AI Pathways Research Lead",
+    title: "AI Pathways Research and Dev Lead",
     location: "Tech4Good Lab - Santa Cruz, CA",
     description:
-      "Conducted several preliminary studies to gather user feedback and insights. Developed and designed the Pathways application.",
+      "Conducted several preliminary studies to gather user feedback and insights. Mentored and led a team of 10+ developers on AI integration in web development.",
     icon: React.createElement(CgWorkAlt),
-    tags: ["Prompt Engineering","LLMLingua/LongLLMLingua","Pinecone","OpenAI ChatCompletion API", "OpenAI Assistant API", "SolidJS"],
+    tags: ["Prompt Engineering","LLMLingua/LongLLMLingua", "Pinecone", "OpenAI ChatCompletion API", "OpenAI Assistant API", "User Research", "Leadership"],
     date: "June 2023 - Present",
   },
   {
     title: "Coding Instructor at Code For Fun",
     location: "Code For Fun - Sunnyvale, CA",
     description:
-      "Taught coding lessons to diverse group of kids, ranging from elementary school children to adolescents.",
+      "Instructed over 5,000 students in programming, both in small and large group settings. Developed personalized learning plans to meet diverse student needs.",
     icon: React.createElement(CgWorkAlt),
-    tags: ["Public Speaking","Game Development", "Web Development", "Block Programming", "Python"],
+    tags: ["Public Speaking", "Game Development", "Web Development", "Mobile App Development", "Block Programming", "Python"],
     date: "Feb 2023 - Dec 2023",
   },
   {
@@ -74,7 +74,7 @@ export const experiencesData = [
     title: "Animal Care Volunteer",
     location: "Humane Society at Silicon Valley - Sunnyvale, CA",
     description:
-      "Volunteer in animal care roles providing compassionate hands-on care to dogs, cats, and rabbits, enriching their lives and preparing them for adoption into loving homes.",
+      "Worked as an animal care volunteer providing compassionate hands-on care to dogs, cats, and rabbits, enriching their lives and preparing them for adoption into loving homes.",
     icon: React.createElement(LuGraduationCap),
     tags: ["Compassion and Empathy", "Responsibility and Reliability", "Time Management"],
     date: "June 2018 - June 2019",
@@ -118,7 +118,7 @@ export const projectsData = [
     sideNotes: "This lab project aims to create a personalized learning pathway for motivated learners, helping them practice and enhance their self-directed learning skills.",
     tags: ["SolidJS", "TypeScript", "Vite", "Express", "OpenAI APIs", "Langchain", "Pinecone", "Firebase Firestore", "TailwindCSS", "RxJS"],
     imageUrl: Img2,
-    projectUrl: "",
+    projectUrl: null,
   },
   {
     title: "Tech Resume Tailor",
@@ -134,12 +134,21 @@ export const projectsData = [
   //   title: "Yi",
   //   time: "Apr 2024 - Present",
   //   description:
-  //     "A SaaS web app offering robust financial and business management.",
-  //   sideNotes: "Developed this app for my mom (and yes, whoever is curious about the details and contact me and ask.).",
-  
+  //     "A SaaS web app offering robust financial and essential business management.",
+  //   sideNotes: "I developed this app for my mom, don't want to disclose much here, but if you're really curious, you may email and ask me through the contact form below.",
   //   tags: ["React", "TypeScript", "Next.js", "Django and Django REST Framework", "PostgreSQL", "TailwindCSS", "Redux"],
-  //   imageUrl: Img3,
-  //   projectUrl: "https://www.google.com/",
+  //   imageUrl: null,
+  //   projectUrl: null,
+  // },
+  // {
+  //   title: "PetWell",
+  //   time: "May 2024 - Present",
+  //   description:
+  //     "A pet care mobile app for calorie tracking and health monitoring.",
+  //   sideNotes: "Yes, another cat project. Because my baby Normie is gaining too many weight...and I don't want to have to calculate every time when I want to give her new treats or when I need to change her diet to see if it's okay to feed her or not.",
+  //   tags: ["React Native", "Expo", "Django", "PostgreSQL", "Firebase", "i18next"],
+  //   imageUrl: null,
+  //   projectUrl: null,
   // },
 ] as const;
 
