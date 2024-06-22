@@ -10,6 +10,7 @@ import ThemeContextProvider from "@/context/theme-context";
 // https://react-hot-toast.com/
 // can change this position later
 const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Victoria | Personal Portfolio",
@@ -37,6 +38,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
+            <Analytics />
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
