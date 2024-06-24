@@ -94,7 +94,7 @@ export const experiencesData = [
     description:
       "Completed required coursework for a Computer Science degree before transferring to UC Santa Cruz.",
     icon: React.createElement(LuGraduationCap),
-    tags: ["C++", "Python", "Assembly Language", "Physics", "Chemistry", "Pre-Calculus", "Calculus", "Discrete Mathematics"],
+    tags: ["C++", "Java", "Python", "Assembly Language", "Physics", "Chemistry", "Pre-Calculus", "Calculus", "Discrete Mathematics"],
     date: "Apr 2016 - June 2020",
   },
 ] as const;
