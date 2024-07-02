@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import Img1 from "@/public/img1.png";
 import Img2 from "@/public/img2.png";
 import Img3 from "@/public/img3.png";
+import Img4 from "@/public/img4.png";
 
 export const links = [
   {
@@ -125,9 +126,19 @@ export const projectsData = [
     time: "June 2024",
     description:
       "A GPT that helps users craft tailored technical resumes aligned with job descriptions, using advanced resume-writing techniques and strategies.",
-    sideNotes: "I created this project to help with writing my resume since I don't know many industry professionals for feedback.  This GPT helps me write better tech resumes and customize them for different job applications.",
+    sideNotes: "I created this GPT to help with writing my resume since I don't know many industry professionals for feedback.  This GPT helps me write better tech resumes and customize them for different job applications.",
     tags: ["Prompt Engineering"],
     imageUrl: Img3,
+    projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
+  },
+  {
+    title: "Pathways",
+    time: "July 2024",
+    description:
+      "A GPT that guides users through personalized learning journeys with a supportive, step-by-step approach, ensuring clarity and alignment with their goals.",
+    sideNotes: "This GPT is created for the AI Pathways Team for speeding up the research process, specifically in the early stage of conducting the research study.",
+    tags: ["Prompt Engineering"],
+    imageUrl: Img4,
     projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
   },
   // {
