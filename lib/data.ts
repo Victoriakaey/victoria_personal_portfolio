@@ -139,7 +139,7 @@ export const projectsData = [
     sideNotes: "This GPT is created for the AI Pathways Team for speeding up the research process, specifically in the early stage of conducting the research study.",
     tags: ["Prompt Engineering"],
     imageUrl: Img4,
-    projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
+    projectUrl: "https://chatgpt.com/g/g-isRhwzkEL-pathways",
   },
   // {
   //   title: "Yi",
