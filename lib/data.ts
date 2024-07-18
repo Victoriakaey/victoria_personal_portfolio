@@ -6,6 +6,7 @@ import Img1 from "@/public/img1.png";
 import Img2 from "@/public/img2.png";
 import Img3 from "@/public/img3.png";
 import Img4 from "@/public/img4.png";
+import Img5 from "@/public/img5.png";
 
 export const links = [
   {
@@ -132,7 +133,17 @@ export const projectsData = [
     projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
   },
   {
-    title: "Pathways",
+    title: "Ripplet Info Website",
+    time: "July 2024",
+    description:
+      "A information website for Ripplet.",
+    sideNotes: "This GPT is created for the AI Pathways Team for speeding up the research process, specifically in the early stage of conducting the research study.",
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
+    imageUrl: Img5,
+    projectUrl: "https://ripplet-info-website.vercel.app/",
+  },
+  {
+    title: "Pathways GPT",
     time: "July 2024",
     description:
       "A GPT that guides users through personalized learning journeys with a supportive, step-by-step approach, ensuring clarity and alignment with their goals.",
