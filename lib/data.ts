@@ -136,8 +136,8 @@ export const projectsData = [
     title: "Ripplet Info Website",
     time: "July 2024",
     description:
-      "A information website for Ripplet.",
-    sideNotes: "This GPT is created for the AI Pathways Team for speeding up the research process, specifically in the early stage of conducting the research study.",
+      "A information website for Ripplet, a community-initiated wellness platform for Chinese speakers across the globe.",
+    sideNotes: "I created this website as a favor to my friend, who's passionate about Psychology, and want to give back to the society and the Chinese community. I resinate with Ripplet's goal and culture.",
     tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
     imageUrl: Img5,
     projectUrl: "https://ripplet-info-website.vercel.app/",
