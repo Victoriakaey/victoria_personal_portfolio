@@ -61,16 +61,18 @@ export default function Project({
                   : ""
               } flex flex-col h-full`}
             >
-              <h3 className="-mt-3 text-2xl font-semibold">{title}</h3>
-              <p className="italic text-sm text-gray-700 dark:text-white/70 mt-1">
+              <h3 className="mt-2 lg:mt-0 lg:group-even:ml-2 text-2xl font-semibold">
+                {title}
+              </h3>
+              <p className="italic lg:group-even:ml-2 text-sm text-gray-700 dark:text-white/70 mt-1">
                 {time}
               </p>
-              <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+              <p className="lg:-mr-8 lg:group-even:ml-2 mt-4 text-sm leading-relaxed text-gray-700 dark:text-white/70">
                 {description}
               </p>
               <ul
-                className={`flex flex-wrap mt-4 gap-2 sm:mt-auto justify-start ${
-                  imageUrl ? "group-even:justify-end" : ""
+                className={`-mr-5 flex flex-wrap mt-4 gap-2 sm:mt-auto justify-start ${
+                  imageUrl ? "lg:group-even:justify-end" : ""
                 }`}
               >
                 {tags.map((tag, index) => (
@@ -83,14 +85,6 @@ export default function Project({
                 ))}
               </ul>
             </div>
-            {/* {imageUrl && (
-              <Image
-                src={imageUrl}
-                alt="Project I worked on"
-                quality={95}
-                className="absolute hidden sm:block top-8 -right-40 w-[30rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
-              />
-            )} */}
             {imageUrl &&
               imageUrl.map((url, index) => (
                 <Image
@@ -99,7 +93,7 @@ export default function Project({
                   // alt="Project I worked on"
                   alt={`Project image ${currentImageIndex + 1}`}
                   quality={95}
-                  className="absolute hidden sm:block top-8 -right-40 w-[30rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+                  className="absolute hidden sm:block top-8 -right-40 w-[29.4rem] rounded-t-lg shadow-lg transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
                 />
               ))}
           </section>
@@ -117,11 +111,11 @@ export default function Project({
                 : ""
             } flex flex-col h-full`}
           >
-            <h3 className="-mt-3 text-2xl font-semibold">{title}</h3>
+            <h3 className="mt-2 lg:-mt-3 text-2xl font-semibold">{title}</h3>
             <p className="italic text-sm text-gray-700 dark:text-white/70 mt-1">
               {time}
             </p>
-            <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+            <p className="mt-4 text-sm leading-relaxed text-gray-700 dark:text-white/70">
               {description}
             </p>
             <ul
@@ -139,14 +133,6 @@ export default function Project({
               ))}
             </ul>
           </div>
-          {/* {imageUrl && (
-            <Image
-              src={imageUrl}
-              alt="Project I worked on"
-              quality={95}
-              className="absolute hidden sm:block top-8 -right-40 w-[30rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
-            />
-          )} */}
           {imageUrl &&
             imageUrl.map((url, index) => (
               <Image
@@ -156,12 +142,12 @@ export default function Project({
                 alt={`Project image ${currentImageIndex + 1}`}
                 quality={95}
                 height={2000}
-                className="absolute hidden sm:block top-8 -right-40 w-[29.9rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+                className="absolute hidden sm:block top-8 -right-40 w-[29.9rem] rounded-t-lg shadow-lg transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
               />
             ))}
         </section>
       )}
-      <div
+      {/* <div
         className={`absolute flex items-center justify-center text-sm bg-gray-100 text-gray-950 dark:bg-gray-950/[0.97] dark:text-white/70 rounded-xl opacity-0 group-hover:opacity-95 transition-opacity duration-300 z-10 ${
           imageUrl
             ? "top-[6px] left-[5px] group-even:left-[20.6rem] w-1/2 px-4 py-2"
@@ -169,7 +155,7 @@ export default function Project({
         }`}
       >
         {sideNotes}
-      </div>
+      </div> */}
     </motion.div>
   );
 }

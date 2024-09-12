@@ -54,80 +54,156 @@ export const experiencesData = [
     title: "Graduate Student",
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
-    description:
-      "Computer Science and Engineering major, specializing in Artificial Intelligence.",
+    description: [
+      "Pursuing a Master's degree in Computer Science and Engineering, specializing in Artificial Intelligence.",
+    ],
+    isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
     tags: [],
     date: "Sep 2024 - Dec 2026 (Expected Graduation)",
   },
   {
-    title: "AI Pathways Research and Dev Lead",
+    title: "Research & Dev Lead - AI Pathways Team",
     location: "Tech4Good Lab - Santa Cruz, CA",
     locationUrl: "https://tech4good.soe.ucsc.edu/",
-    description:
-      "Conducted several preliminary studies to gather user feedback and insights. Mentored and led a team of 10+ developers on AI integration in web development.",
+    description: [
+      "Led a team of 10+ developers in integrating AI into web development.", 
+      "Conducted preliminary studies to gather user feedback and insights, driving improvements in the Pathways applications.", 
+    ],
+    isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
-    tags: ["Prompt Engineering","LLMLingua/LongLLMLingua", "Pinecone", "OpenAI ChatCompletion API", "OpenAI Assistant API", "User Research", "Leadership"],
+    tags: [
+      "Prompt Engineering",
+      "LLMLingua/LongLLMLingua", 
+      "Pinecone", 
+      "OpenAI ChatCompletion API", 
+      "OpenAI Assistant API",
+      "OpenAI Embeddings API", 
+      "User Research", 
+      "Leadership",
+      "Mentorship"
+    ],
     date: "June 2023 - Present",
   },
   {
-    title: "Coding Instructor at Code For Fun",
+    title: "Coding Instructor",
     location: "Code For Fun - Sunnyvale, CA",
     locationUrl: "https://codeforfun.com/",
-    description:
-      "Instructed over 5,000 students in programming, both in small and large group settings. Developed personalized learning plans to meet diverse student needs.",
+    description:[
+      "Instructed over 5,000 students in programming across small and large group settings.",
+      "Developed personalized learning plans to cater to diverse student needs.",
+    ],
+    isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
-    tags: ["Teaching","Public Speaking", "Game Development", "Web Development", "Mobile App Development", "Block Programming", "Python"],
+    tags: [
+      "Teaching",
+      "Public Speaking", 
+      "Game Development", 
+      "Web Development", 
+      "Mobile App Development", 
+      "Block Programming", 
+      "Python"
+    ],
     date: "Feb 2023 - Dec 2023",
   },
   {
-    title: "Graduated from University",
+    title: "Undergraduate Student",
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
-    description:
-      "Earned Bachelor of Science in Computer Science and Engineering and Bachelor of Art in Psychology.",
+    description:[
+      "Earned Bachelor of Science in Computer Science and Engineering, and Bachelor of Art in Psychology.",
+    ],
+    isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
-    tags: ["Artificial Intelligence", "Machine Learning", "Natural Language Processing", "Data Structure and Algorithm", "Computer Architecture", "Principle of Computer System Design", "Computer Graphics", "Statistics", "Developmental Psychology", "Learning and Memory"],
+    tags: [
+      "Artificial Intelligence", 
+      "Machine Learning", 
+      "Natural Language Processing", 
+      "Data Structure and Algorithm", 
+      "Computer Architecture", 
+      "Computer System Design", 
+      "Computer Graphics", 
+      "Statistics", 
+      "Developmental Psychology", 
+      "Learning and Memory"
+    ],
     date: "July 2020 - Dec 2022",
   },
   {
-    title: "Grader and Individual Tutor for a Python course",
+    title: "Grader & Tutor for Python",
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
-    description:
-      "Provided individualized tutoring and graded assignments for undergraduate students across 8 consecutive quarters.",
+    description: [
+      "Tutored and graded assignments for students over 8 consecutive quarters.",
+      "Rehired consistently for outstanding performance and commitment to improving students' understanding of Python and their problem-solving skills.",
+    ],
+    isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
-    tags: ["Tutoring", "Python", "Communication"],
+    tags: [
+      "Tutoring", 
+      "Python", 
+      "Communication",
+      "Problem Solving",
+    ],
     date: "Apr 2021 - Dec 2022",
   },
   {
     title: "Animal Care Volunteer",
     location: "Humane Society at Silicon Valley - Sunnyvale, CA",
     locationUrl: "https://www.hssv.org/",
-    description:
-      "Worked as an animal care volunteer providing compassionate hands-on care to dogs, cats, and rabbits, enriching their lives and preparing them for adoption into loving homes.",
+    description: [
+      "Provided compassionate, hands-on care to dogs, cats, and rabbits, enriching their lives and preparing them for adoption into loving homes.",
+      "Focused on ensuring the well-being and comfort of the animals.",
+    ],
+    isBulletPoints: true,
     icon: React.createElement(LuHelpingHand),
-    tags: ["Compassion and Empathy", "Responsibility and Reliability", "Time Management"],
+    tags: [
+      "Compassion and Empathy", 
+      "Responsibility", 
+      "Reliability", 
+      "Time Management"
+    ],
     date: "June 2018 - June 2019",
   },
   {
-    title: "Co-founder and president of Pop Music Club",
+    title: "Co-founder & president - Pop Music Club",
     location: "De Anza College - Cupertino, CA",
     locationUrl: "https://www.deanza.edu/",
-    description:
-      "Co-founded and led a music club with over 200 members, serving as president for two years. Successfully managed 5+ bands and organized numerous events, including annual concerts and club days, fostering a vibrant and engaging community.",
+    description: [
+      "Co-founded and led a music club with over 200 members, serving as president for two years.",
+      "Managed bands and organized events, including annual concerts and club days.",
+    ],
+    isBulletPoints: true,
     icon: React.createElement(LuUser2),
-    tags: ["Leadership", "Teamwork", "Communication", "Problem Solving", "Planning and organizing events"],
+    tags: [
+      "Leadership", 
+      "Teamwork", 
+      "Communication", 
+      "Problem Solving", 
+      "Planning and organizing events"
+    ],
     date: "May 2017 - June 2020",
   },
   {
-    title: "Graduated from Community College",
+    title: "Community College Student",
     location: "De Anza College - Cupertino, CA",
     locationUrl: "https://www.deanza.edu/",
-    description:
-      "Completed required coursework for a Computer Science degree before transferring to UC Santa Cruz.",
+    description: [
+      "Completed required coursework for a Computer Science degree before transferring to UC Santa Cruz. ",
+    ],
+    isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
-    tags: ["C++", "Java", "Python", "Assembly Language", "Physics", "Chemistry", "Pre-Calculus", "Calculus", "Discrete Mathematics"],
+    tags: [
+      "C++", 
+      "Java", 
+      "Python", 
+      "Assembly Language", 
+      "Physics", 
+      "Chemistry", 
+      "Pre-Calculus", 
+      "Calculus", 
+      "Discrete Mathematics"
+    ],
     date: "Apr 2016 - June 2020",
   },
 ] as const;
@@ -136,20 +212,29 @@ export const projectsData = [
   {
     title: "Pathways",
     time: "Apr 2024 - Present",
-    description:
-      "An AI-driven web app facilitating self-directed learning.",
-    sideNotes: "This lab project aims to create a personalized learning pathway for motivated learners, helping them practice and enhance their self-directed learning skills.",
-    tags: ["SolidJS", "TypeScript", "Vite", "Express", "OpenAI APIs", "Langchain", "Pinecone", "Firebase Firestore", "TailwindCSS", "RxJS"],
+    description: "An AI-driven web application designed to facilitate self-directed learning.",
+    sideNotes: "This lab project aims to create personalized learning pathways for motivated learners, helping them practice and enhance their self-directed learning skills.",
+    tags: [
+      "SolidJS", 
+      "TypeScript", 
+      "Vite", 
+      "Express", 
+      "OpenAI APIs", 
+      "Langchain", 
+      "Pinecone", 
+      "Firebase Firestore"
+    ],
     imageUrl: [Img2, Img10, Img11],
     projectUrl: null,
   },
   {
     title: "Pathways GPT",
     time: "July 2024",
-    description:
-      "A GPT that guides users through personalized learning journeys with a supportive, step-by-step approach, ensuring clarity and alignment with their goals.",
-    sideNotes: "This GPT is created for the AI Pathways Team for speeding up the research process, specifically in the early stage of conducting the research study.",
-    tags: ["Prompt Engineering"],
+    description: "A GPT designed to guide users through personalized learning journeys with a supportive, step-by-step approach, ensuring clarity and alignment with their goals.",
+    sideNotes: "Created for the AI Pathways Team to expedite the research process, particularly during the early stages of conducting studies.",
+    tags: [
+      "Prompt Engineering"
+    ],
     imageUrl: [Img4],
     projectUrl: "https://chatgpt.com/g/g-isRhwzkEL-pathways",
   },
@@ -157,9 +242,17 @@ export const projectsData = [
     title: "Yi",
     time: "Apr 2024 - Present",
     description:
-      "A SaaS web app offering robust financial and essential business management.",
-    sideNotes: "I developed this app for my mom to reduce her workload.",
-    tags: ["React", "TypeScript", "Next.js", "Django and Django REST Framework", "PostgreSQL", "TailwindCSS", "Redux"],
+      "A SaaS web application providing comprehensive financial and business management solutions.",
+    sideNotes: "Developed to help my mom reduce her workload.",
+    tags: [
+      "React", 
+      "TypeScript", 
+      "Next.js", 
+      "Django", 
+      "Django REST Framework", 
+      "PostgreSQL", 
+      "Redux"
+    ],
     imageUrl: [Img6, Img7, Img8, Img9],
     projectUrl: null,
   },
@@ -167,9 +260,11 @@ export const projectsData = [
     title: "Tech Resume Tailor",
     time: "June 2024",
     description:
-      "A GPT that helps users craft tailored technical resumes aligned with job descriptions, using advanced resume-writing techniques and strategies.",
-    sideNotes: "I created this GPT to help with writing my resume since I don't know many industry professionals for feedback.  This GPT helps me write better tech resumes and customize them for different job applications.",
-    tags: ["Prompt Engineering"],
+      "A GPT designed to help users craft tailored technical resumes aligned with job descriptions, using advanced resume writing techniques and strategies.",
+    sideNotes: "Created to assist with writing my resume, as I lack feedback from industry professionals. This GPT helps me write better tech resumes and customize them for different job applications.",
+    tags: [
+      "Prompt Engineering"
+    ],
     imageUrl: [Img3],
     projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
   },
@@ -177,19 +272,30 @@ export const projectsData = [
     title: "Ripplet Info Website",
     time: "July 2024",
     description:
-      "A information website for Ripplet, a community-initiated wellness platform for Chinese speakers across the globe.",
-    sideNotes: "I created this website as a favor to my friend, who's passionate about Psychology, and want to give back to the society and the Chinese community. I resinate with Ripplet's goal and culture.",
-    tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
+      "An informational website for Ripplet, a community-initiated wellness platform for Chinese speakers across the globe.",
+    sideNotes: "Created as a favor to a friend passionate about psychology, aiming to give back to society and the Chinese community. I resonate with Ripplet's goals and culture.",
+    tags: [
+      "React", 
+      "TypeScript", 
+      "Next.js", 
+      "TailwindCSS", 
+      "React Icons"
+    ],
     imageUrl: [Img12, Img13, Img14],
     projectUrl: "https://ripplet-info-website.vercel.app/",
   },
   {
     title: "Cat Memory Game",
     time: "Sep 2023",
-    description:
-      "A card flipping game with each card as three of my cats' portrait on it.",
-    sideNotes: "This is the first website I developed. I created this project to learn React and web deployment. And as a proud cat mom, I couldn't resist showcasing my beloved cats and their adorable faces! :))",
-    tags: [ "React", "TypeScript", "Material-UI", "emotion", "gsap"],
+    description: "A card-flipping game featuring portraits of my three cats, Kitty, Bangbang and Normie.",
+    sideNotes: "This is the first website I developed. I created this project to learn React and web deployment. As a proud cat mom, I couldn't resist showcasing my beloved cats and their adorable faces! :))",
+    tags: [ 
+      "React", 
+      "TypeScript", 
+      "Material-UI", 
+      "emotion", 
+      "gsap"
+    ],
     imageUrl: [Img1, Img15, Img16],
     projectUrl: "https://victoria-cat-memory-game.vercel.app/",
   },
@@ -218,7 +324,7 @@ export const skillsData = [
   // Frameworks and Libraries
   "React",
   "Next.js",
-  "Solid.js",
+  "SolidJS",
   "Node.js",
   "Django",
   "Django REST Framework",

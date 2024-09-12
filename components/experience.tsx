@@ -35,6 +35,7 @@ export default function Experience() {
                 border: "1px solid rgba(0,0,0,0.0.5)",
                 textAlign: "left",
                 padding: "1.4rem 2rem",
+                // maxWidth: "100rem",
               }}
               contentArrowStyle={{
                 borderRight:
@@ -60,9 +61,22 @@ export default function Experience() {
               >
                 {item.location}
               </Link>
-              <p className="!mt-2 !font-normal text-gray-700 dark:text-white/75">
-                {item.description}
-              </p>
+              {item.isBulletPoints ? (
+                <ul className="list-disc list-inside !mt-2 sm:mt-auto">
+                  {item.description.map((description, index) => (
+                    <li
+                      className="!mt-2 !font-normal text-sm lg:text-base text-gray-700 dark:text-white/75"
+                      key={index}
+                    >
+                      {description}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="!mt-2 !font-normal text-gray-700 dark:text-white/75">
+                  {item.description}
+                </p>
+              )}
               <ul className="flex flex-wrap !mt-4 gap-2 sm:mt-auto">
                 {item.tags.map((tag, index) => (
                   <li
