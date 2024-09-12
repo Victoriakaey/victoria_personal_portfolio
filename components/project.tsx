@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { projectsData } from "@/lib/data";
@@ -24,6 +24,18 @@ export default function Project({
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    if (isHovered && imageUrl.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrl.length);
+      }, 2500); // Change image every second
+      return () => clearInterval(interval);
+    }
+  }, [isHovered, imageUrl.length]);
+
   return (
     <motion.div
       ref={ref}
@@ -32,6 +44,8 @@ export default function Project({
         opacity: opacityProgress,
       }}
       className="group mb-3 sm:mb-8 last:mb-0 relative max-w-[42rem]"
+      onMouseEnter={() => setIsHovered(true)} // Start looping on hover
+      onMouseLeave={() => setIsHovered(false)} // Stop looping on hover leave
     >
       {projectUrl ? (
         <a href={projectUrl} target="_blank">
@@ -69,14 +83,25 @@ export default function Project({
                 ))}
               </ul>
             </div>
-            {imageUrl && (
+            {/* {imageUrl && (
               <Image
                 src={imageUrl}
                 alt="Project I worked on"
                 quality={95}
-                className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+                className="absolute hidden sm:block top-8 -right-40 w-[30rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
               />
-            )}
+            )} */}
+            {imageUrl &&
+              imageUrl.map((url, index) => (
+                <Image
+                  key={index}
+                  src={imageUrl[currentImageIndex]}
+                  // alt="Project I worked on"
+                  alt={`Project image ${currentImageIndex + 1}`}
+                  quality={95}
+                  className="absolute hidden sm:block top-8 -right-40 w-[30rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+                />
+              ))}
           </section>
         </a>
       ) : (
@@ -114,20 +139,32 @@ export default function Project({
               ))}
             </ul>
           </div>
-          {imageUrl && (
+          {/* {imageUrl && (
             <Image
               src={imageUrl}
               alt="Project I worked on"
               quality={95}
-              className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+              className="absolute hidden sm:block top-8 -right-40 w-[30rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
             />
-          )}
+          )} */}
+          {imageUrl &&
+            imageUrl.map((url, index) => (
+              <Image
+                key={index}
+                src={imageUrl[currentImageIndex]}
+                // alt="Project I worked on"
+                alt={`Project image ${currentImageIndex + 1}`}
+                quality={95}
+                height={2000}
+                className="absolute hidden sm:block top-8 -right-40 w-[29.9rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+              />
+            ))}
         </section>
       )}
       <div
         className={`absolute flex items-center justify-center text-sm bg-gray-100 text-gray-950 dark:bg-gray-950/[0.97] dark:text-white/70 rounded-xl opacity-0 group-hover:opacity-95 transition-opacity duration-300 z-10 ${
           imageUrl
-            ? "top-[6px] right-[5px] group-even:left-[0.3rem] w-1/2 px-4 py-2"
+            ? "top-[6px] left-[5px] group-even:left-[20.6rem] w-1/2 px-4 py-2"
             : "top-4 right-3 max-h-[4.5rem] max-w-[29.7rem] px-4 py-2"
         }`}
       >

@@ -6,7 +6,18 @@ import Img1 from "@/public/img1.png";
 import Img2 from "@/public/img2.png";
 import Img3 from "@/public/img3.png";
 import Img4 from "@/public/img4.png";
-import Img5 from "@/public/img5.png";
+// import Img5 from "@/public/img5.png";
+import Img6 from "@/public/img6.png";
+import Img7 from "@/public/img7.png";
+import Img8 from "@/public/img8.png";
+import Img9 from "@/public/img9.png";
+import Img10 from "@/public/img10.png";
+import Img11 from "@/public/img11.png";
+import Img12 from "@/public/img12.png";
+import Img13 from "@/public/img13.png";
+import Img14 from "@/public/img14.png";
+import Img15 from "@/public/img15.png";
+import Img16 from "@/public/img16.png";
 
 export const links = [
   {
@@ -103,23 +114,33 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Cat Memory Game",
-    time: "Sep 2023",
-    description:
-      "A card flipping game with each card as three of my cats' portrait on it.",
-    sideNotes: "This is the first website I developed. I created this project to learn React and web deployment. And as a proud cat mom, I couldn't resist showcasing my beloved cats and their adorable faces! :))",
-    tags: [ "React", "TypeScript", "Material-UI", "emotion", "gsap"],
-    imageUrl: Img1,
-    projectUrl: "https://victoria-cat-memory-game.vercel.app/",
-  },
-  {
     title: "Pathways",
     time: "Apr 2024 - Present",
     description:
       "An AI-driven web app facilitating self-directed learning.",
     sideNotes: "This lab project aims to create a personalized learning pathway for motivated learners, helping them practice and enhance their self-directed learning skills.",
     tags: ["SolidJS", "TypeScript", "Vite", "Express", "OpenAI APIs", "Langchain", "Pinecone", "Firebase Firestore", "TailwindCSS", "RxJS"],
-    imageUrl: Img2,
+    imageUrl: [Img2, Img10, Img11],
+    projectUrl: null,
+  },
+  {
+    title: "Pathways GPT",
+    time: "July 2024",
+    description:
+      "A GPT that guides users through personalized learning journeys with a supportive, step-by-step approach, ensuring clarity and alignment with their goals.",
+    sideNotes: "This GPT is created for the AI Pathways Team for speeding up the research process, specifically in the early stage of conducting the research study.",
+    tags: ["Prompt Engineering"],
+    imageUrl: [Img4],
+    projectUrl: "https://chatgpt.com/g/g-isRhwzkEL-pathways",
+  },
+  {
+    title: "Yi",
+    time: "Apr 2024 - Present",
+    description:
+      "A SaaS web app offering robust financial and essential business management.",
+    sideNotes: "I developed this app for my mom to lower her workload and to help her grow her business. This is still a work in progress.",
+    tags: ["React", "TypeScript", "Next.js", "Django and Django REST Framework", "PostgreSQL", "TailwindCSS", "Redux"],
+    imageUrl: [Img6, Img7, Img8, Img9],
     projectUrl: null,
   },
   {
@@ -129,39 +150,29 @@ export const projectsData = [
       "A GPT that helps users craft tailored technical resumes aligned with job descriptions, using advanced resume-writing techniques and strategies.",
     sideNotes: "I created this GPT to help with writing my resume since I don't know many industry professionals for feedback.  This GPT helps me write better tech resumes and customize them for different job applications.",
     tags: ["Prompt Engineering"],
-    imageUrl: Img3,
+    imageUrl: [Img3],
     projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
   },
-  // {
-  //   title: "Ripplet Info Website",
-  //   time: "July 2024",
-  //   description:
-  //     "A information website for Ripplet, a community-initiated wellness platform for Chinese speakers across the globe.",
-  //   sideNotes: "I created this website as a favor to my friend, who's passionate about Psychology, and want to give back to the society and the Chinese community. I resinate with Ripplet's goal and culture.",
-  //   tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
-  //   imageUrl: Img5,
-  //   projectUrl: "https://ripplet-info-website.vercel.app/",
-  // },
   {
-    title: "Pathways GPT",
+    title: "Ripplet Info Website",
     time: "July 2024",
     description:
-      "A GPT that guides users through personalized learning journeys with a supportive, step-by-step approach, ensuring clarity and alignment with their goals.",
-    sideNotes: "This GPT is created for the AI Pathways Team for speeding up the research process, specifically in the early stage of conducting the research study.",
-    tags: ["Prompt Engineering"],
-    imageUrl: Img4,
-    projectUrl: "https://chatgpt.com/g/g-isRhwzkEL-pathways",
+      "A information website for Ripplet, a community-initiated wellness platform for Chinese speakers across the globe.",
+    sideNotes: "I created this website as a favor to my friend, who's passionate about Psychology, and want to give back to the society and the Chinese community. I resinate with Ripplet's goal and culture.",
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
+    imageUrl: [Img12, Img13, Img14],
+    projectUrl: "https://ripplet-info-website.vercel.app/",
   },
-  // {
-  //   title: "Yi",
-  //   time: "Apr 2024 - Present",
-  //   description:
-  //     "A SaaS web app offering robust financial and essential business management.",
-  //   sideNotes: "I developed this app for my mom, don't want to disclose much here, but if you're really curious, you may email and ask me through the contact form below.",
-  //   tags: ["React", "TypeScript", "Next.js", "Django and Django REST Framework", "PostgreSQL", "TailwindCSS", "Redux"],
-  //   imageUrl: null,
-  //   projectUrl: null,
-  // },
+  {
+    title: "Cat Memory Game",
+    time: "Sep 2023",
+    description:
+      "A card flipping game with each card as three of my cats' portrait on it.",
+    sideNotes: "This is the first website I developed. I created this project to learn React and web deployment. And as a proud cat mom, I couldn't resist showcasing my beloved cats and their adorable faces! :))",
+    tags: [ "React", "TypeScript", "Material-UI", "emotion", "gsap"],
+    imageUrl: [Img1, Img15, Img16],
+    projectUrl: "https://victoria-cat-memory-game.vercel.app/",
+  },
   // {
   //   title: "PetWell",
   //   time: "May 2024 - Present",
