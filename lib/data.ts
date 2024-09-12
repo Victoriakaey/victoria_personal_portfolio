@@ -2,22 +2,22 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import Img1 from "../public/img1.png";
-import Img2 from "../public/img2.png";
-import Img3 from "../public/img3.png";
-import Img4 from "../public/img4.png";
+import Img1 from "@/public/img1.png";
+import Img2 from "@/public/img2.png";
+import Img3 from "@/public/img3.png";
+import Img4 from "@/public/img4.png";
 // import Img5 from "@/public/img5.png";
-import Img6 from "../public/img6.png";
-import Img7 from "../public/img7.png";
-import Img8 from "../public/img8.png";
-import Img9 from "../public/img9.png";
-import Img10 from "../public/img10.png";
-import Img11 from "../public/img11.png";
-import Img12 from "../public/img12.png";
-import Img13 from "../public/img13.png";
-import Img14 from "../public/img14.png";
-import Img15 from "../public/img15.png";
-import Img16 from "../public/img16.png";
+import Img6 from "@/public/img6.png";
+import Img7 from "@/public/img7.png";
+import Img8 from "@/public/img8.png";
+import Img9 from "@/public/img9.png";
+import Img10 from "@/public/img10.png";
+import Img11 from "@/public/img11.png";
+import Img12 from "@/public/img12.png";
+import Img13 from "@/public/img13.png";
+import Img14 from "@/public/img14.png";
+import Img15 from "@/public/img15.png";
+import Img16 from "@/public/img16.png";
 
 export const links = [
   {
