@@ -51,11 +51,11 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Computer Science and Engineering Graduate Student",
+    title: "Graduate Student",
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
     description:
-      "Focusing on Machine Learning and Artificial Intelligence. Expected to graduate by Sep 2025.",
+      "Computer Science and Engineering major, specializing in Artificial Intelligence.",
     icon: React.createElement(LuGraduationCap),
     tags: [],
     date: "Sep 2024 - Dec 2026 (Expected Graduation)",
@@ -77,7 +77,7 @@ export const experiencesData = [
     description:
       "Instructed over 5,000 students in programming, both in small and large group settings. Developed personalized learning plans to meet diverse student needs.",
     icon: React.createElement(CgWorkAlt),
-    tags: ["Public Speaking", "Game Development", "Web Development", "Mobile App Development", "Block Programming", "Python"],
+    tags: ["Teaching","Public Speaking", "Game Development", "Web Development", "Mobile App Development", "Block Programming", "Python"],
     date: "Feb 2023 - Dec 2023",
   },
   {
@@ -89,6 +89,16 @@ export const experiencesData = [
     icon: React.createElement(LuGraduationCap),
     tags: ["Artificial Intelligence", "Machine Learning", "Natural Language Processing", "Data Structure and Algorithm", "Computer Architecture", "Principle of Computer System Design", "Computer Graphics", "Statistics", "Developmental Psychology", "Learning and Memory"],
     date: "July 2020 - Dec 2022",
+  },
+  {
+    title: "Grader and Individual Tutor for a Python course",
+    location: "UC Santa Cruz - Santa Cruz, CA",
+    locationUrl: "https://www.ucsc.edu/",
+    description:
+      "Provided individualized tutoring and graded assignments for undergraduate students across 8 consecutive quarters.",
+    icon: React.createElement(CgWorkAlt),
+    tags: ["Tutoring", "Python", "Communication"],
+    date: "Apr 2021 - Dec 2022",
   },
   {
     title: "Animal Care Volunteer",
@@ -105,7 +115,7 @@ export const experiencesData = [
     location: "De Anza College - Cupertino, CA",
     locationUrl: "https://www.deanza.edu/",
     description:
-      "Founded a music club with 200+ members and has been the club president for two years. Managed 5+ bands in the club and organized club events such as annual concerts, club days, etc.",
+      "Co-founded and led a music club with over 200 members, serving as president for two years. Successfully managed 5+ bands and organized numerous events, including annual concerts and club days, fostering a vibrant and engaging community.",
     icon: React.createElement(LuUser2),
     tags: ["Leadership", "Teamwork", "Communication", "Problem Solving", "Planning and organizing events"],
     date: "May 2017 - June 2020",
