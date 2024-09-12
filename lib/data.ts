@@ -138,7 +138,7 @@ export const projectsData = [
     time: "Apr 2024 - Present",
     description:
       "A SaaS web app offering robust financial and essential business management.",
-    sideNotes: "I developed this app for my mom to lower her workload and to help her grow her business. This is still a work in progress.",
+    sideNotes: "I developed this app for my mom to reduce her workload.",
     tags: ["React", "TypeScript", "Next.js", "Django and Django REST Framework", "PostgreSQL", "TailwindCSS", "Redux"],
     imageUrl: [Img6, Img7, Img8, Img9],
     projectUrl: null,
