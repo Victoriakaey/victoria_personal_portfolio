@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import Link from "next/link";
 
 // There's still an issue here with the visibility of the timeline blocks
 // need to figure out a way to solve this shit
@@ -52,7 +53,13 @@ export default function Experience() {
               visible
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0 italic">{item.location}</p>
+              <Link
+                href={item.locationUrl}
+                target="__blank"
+                className="font-normal !mt-0 italic dark:hover:text-white hover:text-black/70"
+              >
+                {item.location}
+              </Link>
               <p className="!mt-2 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>

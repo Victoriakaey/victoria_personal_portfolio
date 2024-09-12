@@ -19,30 +19,31 @@ export default function About() {
     >
       <SectionHeading> About me </SectionHeading>
       <p className="mb-3">
-        After graduating from UC Santa Cruz with a double major in{" "}
-        <span className="font-bold italic">
-          Computer Science and Psychology
+        I&apos;m a graduate student in Computer Science and Engineering at UC
+        Santa Cruz, specializing in
+        <span className="font-bold"> Artificial Intelligence</span>. I am
+        currently seeking a
+        <span className="font-bold"> Full Stack Engineer</span> or
+        <span className="font-bold"> Machine Learning Engineer</span> internship
+        for
+        <span className="italic"> Summer 2025</span>.
+      </p>
+      <p className="mb-3">
+        Although my primary focus is on Artificial Intelligence, I have a strong
+        interest in Full Stack development. I have
+        <span className="font-bold"> worked on various projects</span> to
+        broaden my skill sets, and I want to
+        <span className="italic">
+          {" "}
+          explore both fields further to identify where my strengths truly lie
         </span>
-        , I began working as a coding instructor at Code For Fun and took on the
-        role of <span className="font-bold italic">research and dev lead</span>{" "}
-        for the <span className="">AI Pathways Team</span> at the{" "}
-        <a
-          className="focus:scale-[1.15] hover:text-blue-900 dark:hover:text-blue-300 cursor-pointer underline italic"
-          href="https://tech4good.soe.ucsc.edu/#/"
-          target="_blank"
-        >
-          Tech4Good
-        </a>{" "}
-        lab at UC Santa Cruz.
+        .
       </p>
       <p>
-        I have three beloved cats named{" "}
-        <span className="italic">Kitty, Bangbang, and Normie</span>, whose
-        adorable purrs and warmth provide comfort during stressful times. In my
-        free time, I enjoy writing songs, singing, reading, drawing, baking,
-        cooking, playing video games, and exploring new hobbies. I love{" "}
-        <span className="font-bold italic">learning new things</span>, as they
-        build my inner resilience and enrich my life.
+        In my free time, I enjoy coding, writing, singing, reading, drawing,
+        baking, cooking, playing video games, and exploring new hobbies.
+        I&apos;m always open to learning new things and expanding my skills,
+        both personally and professionally.
       </p>
     </motion.section>
   );

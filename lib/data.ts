@@ -1,7 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { HiOutlineUserGroup } from "react-icons/hi2";
 import { LuGraduationCap } from "react-icons/lu";
+import { LuHelpingHand } from "react-icons/lu";
+import { LuLightbulb } from "react-icons/lu";
+import { LuUser2 } from "react-icons/lu";
 import Img1 from "@/public/img1.png";
 import Img2 from "@/public/img2.png";
 import Img3 from "@/public/img3.png";
@@ -48,17 +51,19 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "CSE Master Program",
+    title: "Computer Science and Engineering Graduate Student",
     location: "UC Santa Cruz - Santa Cruz, CA",
+    locationUrl: "https://www.ucsc.edu/",
     description:
       "Focusing on Machine Learning and Artificial Intelligence. Expected to graduate by Sep 2025.",
     icon: React.createElement(LuGraduationCap),
     tags: [],
-    date: "Sep 2024 - Present",
+    date: "Sep 2024 - Dec 2026 (Expected Graduation)",
   },
   {
     title: "AI Pathways Research and Dev Lead",
     location: "Tech4Good Lab - Santa Cruz, CA",
+    locationUrl: "https://tech4good.soe.ucsc.edu/",
     description:
       "Conducted several preliminary studies to gather user feedback and insights. Mentored and led a team of 10+ developers on AI integration in web development.",
     icon: React.createElement(CgWorkAlt),
@@ -68,6 +73,7 @@ export const experiencesData = [
   {
     title: "Coding Instructor at Code For Fun",
     location: "Code For Fun - Sunnyvale, CA",
+    locationUrl: "https://codeforfun.com/",
     description:
       "Instructed over 5,000 students in programming, both in small and large group settings. Developed personalized learning plans to meet diverse student needs.",
     icon: React.createElement(CgWorkAlt),
@@ -77,6 +83,7 @@ export const experiencesData = [
   {
     title: "Graduated from University",
     location: "UC Santa Cruz - Santa Cruz, CA",
+    locationUrl: "https://www.ucsc.edu/",
     description:
       "Earned Bachelor of Science in Computer Science and Engineering and Bachelor of Art in Psychology.",
     icon: React.createElement(LuGraduationCap),
@@ -86,24 +93,27 @@ export const experiencesData = [
   {
     title: "Animal Care Volunteer",
     location: "Humane Society at Silicon Valley - Sunnyvale, CA",
+    locationUrl: "https://www.hssv.org/",
     description:
       "Worked as an animal care volunteer providing compassionate hands-on care to dogs, cats, and rabbits, enriching their lives and preparing them for adoption into loving homes.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(LuHelpingHand),
     tags: ["Compassion and Empathy", "Responsibility and Reliability", "Time Management"],
     date: "June 2018 - June 2019",
   },
   {
     title: "Co-founder and president of Pop Music Club",
     location: "De Anza College - Cupertino, CA",
+    locationUrl: "https://www.deanza.edu/",
     description:
       "Founded a music club with 200+ members and has been the club president for two years. Managed 5+ bands in the club and organized club events such as annual concerts, club days, etc.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(LuUser2),
     tags: ["Leadership", "Teamwork", "Communication", "Problem Solving", "Planning and organizing events"],
     date: "May 2017 - June 2020",
   },
   {
     title: "Graduated from Community College",
     location: "De Anza College - Cupertino, CA",
+    locationUrl: "https://www.deanza.edu/",
     description:
       "Completed required coursework for a Computer Science degree before transferring to UC Santa Cruz.",
     icon: React.createElement(LuGraduationCap),
