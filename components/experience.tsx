@@ -61,23 +61,22 @@ export default function Experience() {
               >
                 {item.location}
               </Link>
-              {item.isBulletPoints ? (
-                <ul className="list-disc list-inside !mt-2 sm:mt-auto">
-                  {item.description.map((description, index) => (
-                    <li
-                      className="!mt-2 !font-normal text-sm lg:text-base text-gray-700 dark:text-white/75"
-                      key={index}
-                    >
-                      {description}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="!mt-2 !font-normal text-gray-700 dark:text-white/75">
-                  {item.description}
-                </p>
-              )}
-              <ul className="flex flex-wrap !mt-4 gap-2 sm:mt-auto">
+
+              <ul
+                className={`list-inside !mt-2 sm:mt-auto ${
+                  item.isBulletPoints ? "list-disc" : ""
+                }`}
+              >
+                {item.description.map((description, index) => (
+                  <li
+                    className="!mt-2 !font-normal text-sm lg:text-base text-gray-700 dark:text-white/75"
+                    key={index}
+                  >
+                    {description}
+                  </li>
+                ))}
+              </ul>
+              <ul className="flex flex-wrap !mt-6 mb-4 lg:mb-4 gap-2 sm:mt-auto">
                 {item.tags.map((tag, index) => (
                   <li
                     className="bg-black/10 text-gray-550 !px-3 !py-1 text-[0.7rem] tracking-wider dark:text-white rounded-md dark:text-white/70 dark:bg-black/40"
