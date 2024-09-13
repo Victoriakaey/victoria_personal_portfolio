@@ -10,11 +10,10 @@ export const en_contactContent = (
 
 export const cn_contactContent = (
   <>
-    请直接通过以下邮箱联系我:{" "}
+    请通过提交此表单或直接通过以下邮箱联系我:{" "}
     <a className="underline italic" href="mailto:victoriakaey@gmail.com">
       victoriakaey@gmail.com
     </a>{" "}
-    或通过此表单联系我
   </>
 );
 

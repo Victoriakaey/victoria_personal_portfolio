@@ -10,7 +10,7 @@ export const cn_introContent = (
       </span>
     </p>
     <span className="italic font-light text-md sm:text-2xl">
-      工程师，研究负责人，艺术家
+      软件工程师，研究团队负责人，艺术家
     </span>
   </>
 );
