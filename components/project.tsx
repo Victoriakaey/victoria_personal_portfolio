@@ -3,9 +3,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { projectsData } from "@/lib/data";
+import { en_projectsData, cn_projectsData } from "@/lib/data";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof cn_projectsData | typeof en_projectsData)[number];
 
 export default function Project({
   title,

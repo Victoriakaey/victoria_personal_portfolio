@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -10,10 +10,23 @@ import { FaGithubSquare } from "react-icons/fa";
 import { RiNeteaseCloudMusicFill } from "react-icons/ri";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { LanguageContext } from "@/context/language-context";
+import {
+  cn_introContent,
+  cn_introItems,
+  en_introContent,
+  en_introItems,
+  introIcons,
+  introLinks,
+} from "@/lib/intro-content";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { language } = useContext(LanguageContext);
+
+  const introContent = language === "en" ? en_introContent : cn_introContent;
+  const items = language === "en" ? en_introItems : cn_introItems;
 
   return (
     <section
@@ -64,15 +77,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <p className="mb-1 sm:mb-4">
-          <span className="font-semibold text-3xl sm:text-5xl">
-            Jiaqi (Victoria) Duan
-          </span>
-        </p>
-        <span className="italic font-light text-md sm:text-2xl">
-          Engineer, Research Lead, Artist
-        </span>
-        {/* Hello, I'm xxx. I'm a xxx developer with x years of experience. I enjoy building xxx. My focus is xxx */}
+        {introContent}
       </motion.h1>
 
       <motion.div
@@ -91,7 +96,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          {items.contact}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -100,32 +105,32 @@ export default function Intro() {
           href="/JD_Resume.pdf"
           download
         >
-          Download Resume{" "}
+          {items.download}
           <HiDownload className="opacity-60 group-hover:translate-y-1" />
         </a>
 
         <a
           className="bg-white/80 border-none shadow-xl p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/jiaqi-duan-834b29200"
+          href={introLinks.linkedin}
           target="_blank"
         >
-          <BsLinkedin />
+          {introIcons.linkedin}
         </a>
 
         <a
           className="bg-white/80 border-none shadow-xl p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Victoriakaey"
+          href={introLinks.github}
           target="_blank"
         >
-          <FaGithubSquare />
+          {introIcons.github}
         </a>
 
         <a
           className="bg-white/80 border-none shadow-xl p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://music.163.com/#/artist?id=46274436"
+          href={introLinks.netease}
           target="_blank"
         >
-          <RiNeteaseCloudMusicFill />
+          {introIcons.netease}
         </a>
       </motion.div>
     </section>

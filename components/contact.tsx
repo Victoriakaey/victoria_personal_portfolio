@@ -1,14 +1,25 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/action/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { LanguageContext } from "@/context/language-context";
+import {
+  cn_contactContent,
+  cn_contentItems,
+  en_contactContent,
+  en_contentItems,
+} from "@/lib/contact-content";
 
 export default function Contact() {
+  const { language } = useContext(LanguageContext);
+  const contactContent =
+    language === "en" ? en_contactContent : cn_contactContent;
+  const contactItems = language === "en" ? en_contentItems : cn_contentItems;
   const { ref } = useSectionInView("Contact");
 
   return (
@@ -29,14 +40,8 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 -mt-5 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline italic" href="mailto:victoriakaey@gmail.com">
-          victoriakaey@gmail.com
-        </a>{" "}
-        or through this forum
-      </p>
+      <SectionHeading>{contactItems.title}</SectionHeading>
+      <p className="text-gray-700 -mt-5 dark:text-white/80">{contactContent}</p>
       <form
         className="mt-4 flex flex-col dark:text-black"
         action={async (formData) => {
@@ -57,16 +62,16 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="Please insert your email here"
+          placeholder={contactItems.contactFormPlaceholder}
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-85 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           required
           maxLength={5000}
-          placeholder="Message"
+          placeholder={contactItems.contactFormMessagePlaceholder}
         />
-        <SubmitBtn />
+        <SubmitBtn content={contactItems.contactFormSubmitBtn} />
       </form>
     </motion.section>
   );

@@ -1,11 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import SectionHeading from "./section-heading";
-import { skillsData } from "@/lib/data";
+import { cn_skillsTitle, en_skillsTitle, skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import SkillSectionButton from "./skill-section-button";
+import { LanguageContext } from "@/context/language-context";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -22,14 +23,16 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
+  const { language } = useContext(LanguageContext);
   const { ref } = useSectionInView("Skills");
+  const skillsTitle = language === "en" ? en_skillsTitle : cn_skillsTitle;
   return (
     <section
       id="skills"
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>{skillsTitle}</SectionHeading>
       {/* <SkillSectionButton /> */}
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (

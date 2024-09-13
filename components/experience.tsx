@@ -1,16 +1,22 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
+import {
+  cn_experiencesData,
+  cn_experiencesTitle,
+  en_experiencesData,
+  en_experiencesTitle,
+} from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 import Link from "next/link";
+import { LanguageContext } from "@/context/language-context";
 
 // There's still an issue here with the visibility of the timeline blocks
 // need to figure out a way to solve this shit
@@ -19,11 +25,17 @@ import Link from "next/link";
 // https://stephanemonnot.com/
 
 export default function Experience() {
+  const { language } = useContext(LanguageContext);
+  const experiencesData =
+    language === "en" ? en_experiencesData : cn_experiencesData;
+  const experiencesTitle =
+    language === "en" ? en_experiencesTitle : cn_experiencesTitle;
+
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading> My experience</SectionHeading>
+      <SectionHeading>{experiencesTitle}</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>

@@ -22,7 +22,36 @@ import Img14 from "@/public/img14.png";
 import Img15 from "@/public/img15.png";
 import Img16 from "@/public/img16.png";
 
-export const links = [
+
+export const cn_links = [
+  {
+    name: "首页",
+    hash: "#home",
+  },
+  {
+    name: "关于我",
+    hash: "#about",
+  },
+  {
+    name: "项目",
+    hash: "#projects",
+  },
+  {
+    name: "技能",
+    hash: "#skills",
+  },
+  { 
+    name: "经验",
+    hash: "#experience",
+  },
+  {
+    name: "联系我",
+    hash: "#contact",
+  }
+]
+
+
+export const en_links = [
   {
     name: "Home",
     hash: "#home",
@@ -49,7 +78,169 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const cn_experiencesTitle = "我的经验"
+export const en_experiencesTitle = "My Experience"
+
+export const cn_experiencesData = [
+  {
+    title: "研究生",
+    location: "UC Santa Cruz - Santa Cruz, CA",
+    locationUrl: "https://www.ucsc.edu/",
+    description: [
+      "正在攻读计算机科学和工程的硕士学位，专注于人工智能。",
+    ],
+    isBulletPoints: false,
+    icon: React.createElement(LuGraduationCap),
+    tags: [],
+    date: "2024年9月 - 2025年12月 (预计毕业)",
+  },
+  {
+    title: "研究与开发负责人 - AI Pathways小组",
+    location: "Tech4Good Lab - Santa Cruz, CA",
+    locationUrl: "https://tech4good.soe.ucsc.edu/",
+    description: [
+      "领导一个由10多名开发人员组成的团队，将AI集成到网络开发中。", 
+      "进行初步研究，收集用户反馈和见解，推动Pathways应用程序的改进。", 
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(CgWorkAlt),
+    tags: [
+      "提示词工程",
+      "LLMLingua/LongLLMLingua", 
+      "Pinecone", 
+      "OpenAI ChatCompletion API", 
+      "OpenAI Assistant API",
+      "OpenAI Embeddings API", 
+      "用户研究", 
+      "领导力",
+      "辅导/指导能力"
+    ],
+    date: "2023年6月 - 现在",
+  },
+  {
+    title: "编程教师",
+    location: "Code For Fun - Sunnyvale, CA",
+    locationUrl: "https://codeforfun.com/",
+    description:[
+      "指导了5000多名学生在小型和大型团体中学习编程。",
+      "为不同学生需求量身定制个性化学习计划。",
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(CgWorkAlt),
+    tags: [
+      "教学",
+      "公开演讲", 
+      "游戏开发", 
+      "Web开发", 
+      "移动应用开发", 
+      "积木编程", 
+      "Python"
+    ],
+    date: "2023年2月 - 2023年12月",
+  },
+  {
+    title: "本科生",
+    location: "UC Santa Cruz - Santa Cruz, CA",
+    locationUrl: "https://www.ucsc.edu/",
+    description:[
+      "获得了计算机科学和心理学双学士学位。",
+    ],
+    isBulletPoints: false,
+    icon: React.createElement(LuGraduationCap),
+    tags: [
+      "人工智能", 
+      "机器学习", 
+      "自然语言处理", 
+      "数据结构和算法", 
+      "计算机架构", 
+      "计算机系统设计", 
+      "计算机图形学", 
+      "统计学", 
+      "发展心理学", 
+      "学习与记忆"
+    ],
+    date: "2020年7月 - 2022年12月",
+  },
+  {
+    title: "Python助教",
+    location: "UC Santa Cruz - Santa Cruz, CA",
+    locationUrl: "https://www.ucsc.edu/",
+    description: [
+      "在8个连续季度中为学生助教和评分。",
+      "因出色的表现和提高学生对Python的理解和解决问题的能力而连续被聘用。",
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(CgWorkAlt),
+    tags: [
+      "助教", 
+      "Python", 
+      "沟通能力",
+      "解决问题的能力",
+    ],
+    date: "2021年4月 - 2022年12月",
+  },
+  {
+    title: "动物领养中心志愿者",
+    location: "Humane Society at Silicon Valley - Sunnyvale, CA",
+    locationUrl: "https://www.hssv.org/",
+    description: [
+      "提供同情和实际的护理给狗、猫和兔子，丰富他们的生活，并准备他们进入充满爱的家庭。",
+      "专注于确保动物的福祉和舒适。",
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(LuHelpingHand),
+    tags: [
+      "同情心和同理心", 
+      "责任心", 
+      "可靠性", 
+      "时间管理能力"
+    ],
+    date: "2018年6月 - 2019年6月",
+  },
+  {
+    title: "社团创始人兼主席 - Pop Music Club",
+    location: "De Anza College - Cupertino, CA",
+    locationUrl: "https://www.deanza.edu/",
+    description: [
+      "与他人共同创立并领导了一个拥有200多名成员的音乐社团，担任主席两年。",
+      "管理乐队并组织活动，包括年度音乐会和俱乐部日。",
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(LuUser2),
+    tags: [
+      "领导力", 
+      "团队合作", 
+      "沟通能力", 
+      "解决问题", 
+      "规划和组织活动"
+    ],
+    date: "2017年5月 - 2020年6月",
+  },
+  {
+    title: "社区大学学生",
+    location: "De Anza College - Cupertino, CA",
+    locationUrl: "https://www.deanza.edu/",
+    description: [
+      "在转学之前完成了计算机科学学位所需的课程。",
+    ],
+    isBulletPoints: false,
+    icon: React.createElement(LuGraduationCap),
+    tags: [
+      "C++", 
+      "Java", 
+      "Python", 
+      "汇编语言", 
+      "物理", 
+      "化学", 
+      "预微积分", 
+      "微积分", 
+      "离散数学"
+    ],
+    date: "2016年4月 - 2020年6月",
+  },
+] as const;
+
+export const en_experiencesData = [
   {
     title: "Graduate Student",
     location: "UC Santa Cruz - Santa Cruz, CA",
@@ -60,7 +251,7 @@ export const experiencesData = [
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
     tags: [],
-    date: "Sep 2024 - Dec 2026 (Expected Graduation)",
+    date: "Sep 2024 - Dec 2025 (Expected Graduation)",
   },
   {
     title: "Research & Dev Lead - AI Pathways Team",
@@ -208,7 +399,103 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const cn_projectsTitle = "我的项目"
+export const en_projectsTitle = "My Projects"
+
+export const cn_projectsData = [
+  {
+    title: "Pathways",
+    time: "2024年4月 - 现在",
+    description: "一个AI驱动的网络应用程序，旨在促进自学。",
+    sideNotes: "这个实验室项目旨在为有动力的自学者创建个性化的学习路径，帮助他们练习和提高自学技能。",
+    tags: [
+      "SolidJS", 
+      "TypeScript", 
+      "Vite", 
+      "Express", 
+      "OpenAI APIs", 
+      "Langchain", 
+      "Pinecone", 
+      "Firestore"
+    ],
+    imageUrl: [Img2, Img10, Img11],
+    projectUrl: null,
+  },
+  {
+    title: "Pathways GPT",
+    time: "2024年7月",
+    description: "一个OpenAI GPT，旨在通过支持性的、逐步的方法引导用户完成个性化的学习旅程，确保清晰和与他们的目标保持一致。",
+    sideNotes: "为AI Pathways团队创建，以加速研究过程，特别是在研究初期阶段。",
+    tags: [
+      "提示词工程"
+    ],
+    imageUrl: [Img4],
+    projectUrl: "https://chatgpt.com/g/g-isRhwzkEL-pathways",
+  },
+  {
+    title: "易",
+    time: "2024年4月 - 现在",
+    description:
+      "一个SaaS网络应用程序，提供全面的财务和业务管理解决方案。",
+    sideNotes: "开发帮助我的妈妈减少工作量。",
+    tags: [
+      "React", 
+      "TypeScript", 
+      "Next.js", 
+      "Django", 
+      "Django REST Framework", 
+      "PostgreSQL", 
+      "Redux"
+    ],
+    imageUrl: [Img7, Img6, Img9, Img8],
+    projectUrl: null,
+  },
+  {
+    title: "技术简历定制GPT",
+    time: "2024年6月",
+    description:
+      "一个OpenAI GPT，旨在帮助用户使用先进的简历写作技巧和策略，根据职位描述撰写量身定制的技术简历。",
+    sideNotes: "创建帮助我写简历，因为我缺乏行业专业人士的反馈。这个GPT帮助我写更好的技术简历，并根据不同的工作申请进行定制。",
+    tags: [
+      "提示词工程"
+    ],
+    imageUrl: [Img3],
+    projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
+  },
+  {
+    title: "Ripplet网站",
+    time: "2024年7月",
+    description:
+      "一个信息网站，为Ripplet，一个面向全球华人的社区发起的身心健康平台。",
+    sideNotes: "创建为朋友的热情所做，旨在回馈社会和华人社区。我认同Ripplet的目标和文化。",
+    tags: [
+      "React", 
+      "TypeScript", 
+      "Next.js", 
+      "TailwindCSS", 
+      "React Icons"
+    ],
+    imageUrl: [Img12, Img13, Img14],
+    projectUrl: "https://ripplet-info-website.vercel.app/",
+  },
+  {
+    title: "记忆卡牌游戏",
+    time: "2023年9月",
+    description: "一个卡牌翻转游戏，以我的三只猫，Kitty, Bangbang和Normie的肖像为特色。",
+    sideNotes: "这是我开发的第一个网站。我创建了这个项目来学习React和网页部署。作为一个骄傲的猫妈妈，我无法抗拒展示我心爱的猫和它们可爱的脸！:))",
+    tags: [ 
+      "React", 
+      "TypeScript", 
+      "Material-UI", 
+      "emotion", 
+      "gsap"
+    ],
+    imageUrl: [Img1, Img15, Img16],
+    projectUrl: "https://victoria-cat-memory-game.vercel.app/",
+  },
+];
+
+export const en_projectsData = [
   {
     title: "Pathways",
     time: "Apr 2024 - Present",
@@ -222,7 +509,7 @@ export const projectsData = [
       "OpenAI APIs", 
       "Langchain", 
       "Pinecone", 
-      "Firebase Firestore"
+      "Firestore"
     ],
     imageUrl: [Img2, Img10, Img11],
     projectUrl: null,
@@ -253,7 +540,7 @@ export const projectsData = [
       "PostgreSQL", 
       "Redux"
     ],
-    imageUrl: [Img6, Img7, Img8, Img9],
+    imageUrl: [Img7, Img6, Img9, Img8],
     projectUrl: null,
   },
   {
@@ -310,6 +597,9 @@ export const projectsData = [
   //   projectUrl: null,
   // },
 ] as const;
+
+export const cn_skillsTitle = "我的技能"
+export const en_skillsTitle = "My Skills"
 
 export const skillsData = [
   // Programming Languages

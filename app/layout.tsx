@@ -12,6 +12,10 @@ import ThemeContextProvider from "@/context/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import TranslateButton from "@/components/translate-btn";
+import { LanguageProvider } from "@/context/language-context";
+import ActionButton from "@/components/action-btn";
+import { ActionProvider } from "@/context/action-context";
 
 export const metadata: Metadata = {
   title: "Victoria | Personal Portfolio",
@@ -35,15 +39,21 @@ export default function RootLayout({
         <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
 
         <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-            <Analytics />
-            <SpeedInsights />
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
+          <LanguageProvider>
+            <ActionProvider>
+              <ActiveSectionContextProvider>
+                <Header />
+                {children}
+                <Footer />
+                <Analytics />
+                <SpeedInsights />
+                <Toaster position="top-right" />
+                <ThemeSwitch />
+                <TranslateButton />
+                <ActionButton />
+              </ActiveSectionContextProvider>
+            </ActionProvider>
+          </LanguageProvider>
         </ThemeContextProvider>
       </body>
     </html>

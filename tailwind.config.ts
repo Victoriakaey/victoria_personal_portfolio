@@ -15,6 +15,9 @@ const config: Config = {
       },
     },
   },
+  safelist: [
+    "font-bold",
+  ],
   plugins: [],
   darkMode: "class",
 }

@@ -1,14 +1,18 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
+import { cn_links, en_links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { LanguageContext } from "@/context/language-context";
 
 export default function Header() {
+  const { language } = useContext(LanguageContext);
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
+  const links = language === "en" ? en_links : cn_links;
+
   return (
     <header className="z-[999] relative">
       <motion.div
