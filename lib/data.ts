@@ -406,7 +406,7 @@ export const cn_projectsData = [
   {
     title: "Pathways",
     time: "2024年4月 - 现在",
-    description: "一个AI驱动的网络应用程序，旨在促进自学。",
+    description: "一个AI驱动的网络应用程序，旨在帮助用户自学任何一个领域的知识。",
     sideNotes: "这个实验室项目旨在为有动力的自学者创建个性化的学习路径，帮助他们练习和提高自学技能。",
     tags: [
       "SolidJS", 
@@ -463,7 +463,7 @@ export const cn_projectsData = [
     projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
   },
   {
-    title: "Ripplet网站",
+    title: "Ripplet信息网站",
     time: "2024年7月",
     description:
       "一个信息网站，为Ripplet，一个面向全球华人的社区发起的身心健康平台。",
@@ -479,9 +479,9 @@ export const cn_projectsData = [
     projectUrl: "https://ripplet-info-website.vercel.app/",
   },
   {
-    title: "记忆卡牌游戏",
+    title: "猫咪记忆卡牌游戏",
     time: "2023年9月",
-    description: "一个卡牌翻转游戏，以我的三只猫，Kitty, Bangbang和Normie的肖像为特色。",
+    description: "一个以我的三只猫，Kitty, Bangbang和Normie的肖像为牌面的卡牌翻转游戏。",
     sideNotes: "这是我开发的第一个网站。我创建了这个项目来学习React和网页部署。作为一个骄傲的猫妈妈，我无法抗拒展示我心爱的猫和它们可爱的脸！:))",
     tags: [ 
       "React", 
@@ -598,7 +598,7 @@ export const en_projectsData = [
   // },
 ] as const;
 
-export const cn_skillsTitle = "我的技能"
+export const cn_skillsTitle = "我的专业技能"
 export const en_skillsTitle = "My Skills"
 
 export const skillsData = [

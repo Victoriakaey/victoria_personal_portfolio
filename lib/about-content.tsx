@@ -8,12 +8,13 @@ export const cn_aboutContent = (
       我是加州大学圣克鲁兹分校计算机科学与工程专业的研究生，专攻
       <span className="font-bold">人工智能</span>。我目前正在寻找
       <span className="font-bold">全栈工程师</span>或
-      <span className="font-bold">机器学习工程师</span>的实习机会，
-      <span className="italic">2025年夏季</span>。
+      <span className="font-bold">机器学习工程师</span>
+      <span className="italic"> 2025年夏季 </span>的实习机会。
     </p>
     <p className="mb-3">
       尽管我的主要研究方向是人工智能，但我对全栈开发也有浓厚的兴趣。我
-      <span className="font-bold">参与了各种项目</span>以拓宽我的技能， 我希望
+      <span className="font-bold">自主开发了</span>很多项目以磨练我的技能，
+      我希望在未来
       <span className="italic">
         进一步探索这两个领域，以确定我的真正优势所在
       </span>
