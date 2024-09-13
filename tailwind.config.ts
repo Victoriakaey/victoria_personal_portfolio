@@ -17,6 +17,9 @@ const config: Config = {
   },
   safelist: [
     "font-bold",
+    "mb-1 sm:mb-4",
+    "font-semibold text-3xl sm:text-5xl",
+    "italic font-light text-md sm:text-2xl"
   ],
   plugins: [],
   darkMode: "class",
