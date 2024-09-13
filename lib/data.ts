@@ -172,7 +172,7 @@ export const cn_experiencesData = [
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
     tags: [
-      "助教", 
+      "教学", 
       "Python", 
       "沟通能力",
       "解决问题的能力",
@@ -211,7 +211,7 @@ export const cn_experiencesData = [
       "领导力", 
       "团队合作", 
       "沟通能力", 
-      "解决问题", 
+      "解决问题能力", 
       "规划和组织活动"
     ],
     date: "2017年5月 - 2020年6月",
