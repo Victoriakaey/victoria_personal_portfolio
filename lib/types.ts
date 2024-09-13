@@ -1,6 +1,6 @@
-import { links } from "./data";
+import { cn_links, en_links } from "./data";
 
-export type SectionName = (typeof links)[number]["name"];
+export type SectionName = (typeof cn_links | typeof en_links)[number]["name"];
 
 export type projectsDataType = {
     title: string
