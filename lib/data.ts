@@ -87,7 +87,7 @@ export const cn_experiencesData = [
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
     description: [
-      "正在攻读计算机科学和工程的硕士学位，专注于人工智能。",
+      "正在攻读计算机科学和工程的硕士学位，我的研究方向是人工智能。",
     ],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
