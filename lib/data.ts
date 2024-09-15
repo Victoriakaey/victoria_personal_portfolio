@@ -652,3 +652,78 @@ export const skillsData = [
   // Icons
   "React Icons"
 ] as const;
+
+export const en_programmingLanguages = "Programming Languages";
+export const cn_programmingLanguages = "编译语言";
+
+export const programmingLanguages = [
+  // Programming Languages
+  "Python",
+  "Java",
+  "C/C++",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+];
+
+export const en_frameworksAndLibraries = "Frameworks & Libraries"
+export const cn_frameworksAndLibraries = "框架和库"
+
+export const frameworksAndLibraries = [
+  // Frameworks and Libraries
+  "React",
+  "Next.js",
+  "SolidJS",
+  "Node.js",
+  "Django",
+  "Django REST Framework",
+  "Redux",
+  "RxJS",
+
+  // APIs
+  "OpenAI APIs",
+  "Langchain",
+];
+
+export const en_styling = "Styling";
+export const cn_styling = "UI/UX"; // how to translate this?? 
+
+export const styling = [
+  // Styling
+  "Material UI",
+  "Tailwind CSS",
+  "Sass",
+  "PostCSS",
+  "Ant Design",
+  "Shadcn/UI",
+  "Radix UI",
+
+  // Icons
+  "React Icons",
+
+  // Animations
+  "Framer Motion",
+];
+
+export const en_database = "Databases";
+export const cn_database = "数据库";
+
+export const database = [
+    // Database
+    "MongoDB",
+    "PostgreSQL",
+    "Pinecone",
+];
+
+export const en_ToolsAndPlatforms = "Tools & Platforms";
+export const cn_ToolsAndPlatforms = "工具"; // still, don't know the chinese for this...
+
+export const toolsAndPlatforms = [
+    // Tools and Platforms
+    "Git",
+    "Vite",
+    "ESLint",
+    "Axios",
+    "JWT",
+];
