@@ -601,96 +601,46 @@ export const en_projectsData = [
 export const cn_skillsTitle = "我的专业技能"
 export const en_skillsTitle = "My Skills"
 
-export const skillsData = [
-  // Programming Languages
-  "Python",
-  "Java",
-  "C/C++",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  
-  // Frameworks and Libraries
-  "React",
-  "Next.js",
-  "SolidJS",
-  "Node.js",
-  "Django",
-  "Django REST Framework",
-  "Redux",
-  "RxJS",
-  
-  // Styling
-  "Material UI",
-  "Tailwind CSS",
-  "Sass",
-  "PostCSS",
-  "Ant Design",
-  "Shadcn/UI",
-  "Radix UI",
-  
-  // Database
-  "MongoDB",
-  "PostgreSQL",
-  "Pinecone",
-  
-  // Tools and Platforms
-  "Git",
-  "Vite",
-  "ESLint",
-  "Axios",
-  "JWT",
-  
-  // Animations
-  "Framer Motion",
-  
-  // APIs
-  "OpenAI APIs",
-  "Langchain",
-  
-  // Icons
-  "React Icons"
-] as const;
-
-export const en_programmingLanguages = "Programming Languages";
-export const cn_programmingLanguages = "编译语言";
+export const en_programmingLanguages = "Programming & Markup Languages";
+export const cn_programmingLanguages = "编程语言 & 标记语言";
 
 export const programmingLanguages = [
   // Programming Languages
   "Python",
   "Java",
-  "C/C++",
-  "HTML",
-  "CSS",
+  "C",
+  "C++",
   "JavaScript",
   "TypeScript",
+  "HTML",
+  "CSS",
+  "SQL",
 ];
 
 export const en_frameworksAndLibraries = "Frameworks & Libraries"
 export const cn_frameworksAndLibraries = "框架和库"
 
 export const frameworksAndLibraries = [
-  // Frameworks and Libraries
   "React",
   "Next.js",
   "SolidJS",
+  "Express.js",
   "Node.js",
   "Django",
   "Django REST Framework",
-  "Redux",
+  "Redux Toolkit",
+  "RTK Query",
   "RxJS",
-
-  // APIs
+  "Axios", 
+  "JWT",  
   "OpenAI APIs",
   "Langchain",
 ];
 
 export const en_styling = "Styling";
-export const cn_styling = "UI/UX"; // how to translate this?? 
+export const cn_styling = "样式"; 
 
 export const styling = [
-  // Styling
   "Material UI",
   "Tailwind CSS",
   "Sass",
@@ -698,11 +648,7 @@ export const styling = [
   "Ant Design",
   "Shadcn/UI",
   "Radix UI",
-
-  // Icons
   "React Icons",
-
-  // Animations
   "Framer Motion",
 ];
 
@@ -710,20 +656,19 @@ export const en_database = "Databases";
 export const cn_database = "数据库";
 
 export const database = [
-    // Database
-    "MongoDB",
-    "PostgreSQL",
-    "Pinecone",
+  // Database
+  "MongoDB",
+  "PostgreSQL",
+  "Pinecone",
+  "Firestore",
 ];
 
 export const en_ToolsAndPlatforms = "Tools & Platforms";
-export const cn_ToolsAndPlatforms = "工具"; // still, don't know the chinese for this...
+export const cn_ToolsAndPlatforms = "工具和平台"; 
 
 export const toolsAndPlatforms = [
-    // Tools and Platforms
-    "Git",
-    "Vite",
-    "ESLint",
-    "Axios",
-    "JWT",
+  "Git",
+  "Vite",
+  "ESLint",
+  "Firebase",
 ];

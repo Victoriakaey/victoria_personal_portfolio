@@ -17,69 +17,81 @@ import {
   styling,
   toolsAndPlatforms,
 } from "@/lib/data";
-import React, { useContext } from "react";
+import React, { useState } from "react";
+import SkillButton from "./skill-button";
 
 interface skillSectionButtonProps {
-  // title: string;
   setSkillsData: (skillsData: string[]) => void;
 }
 
 export default function SkillSectionButton(props: skillSectionButtonProps) {
-  const { language } = useContext(LanguageContext);
+  const [focusedField, setFocusedField] = useState<string>("");
+
   const handleProgrammingLanguagesClick = () => {
+    setFocusedField("programmingLanguages");
     props.setSkillsData(programmingLanguages);
   };
 
   const handleFrameworksClick = () => {
+    setFocusedField("frameworksAndLibraries");
     props.setSkillsData(frameworksAndLibraries);
   };
 
   const handleStylingClick = () => {
+    setFocusedField("styling");
     props.setSkillsData(styling);
   };
 
   const handleDatabaseClick = () => {
+    setFocusedField("database");
     props.setSkillsData(database);
   };
 
   const handleToolsClick = () => {
+    setFocusedField("toolsAndPlatforms");
     props.setSkillsData(toolsAndPlatforms);
   };
 
   return (
     <div className="mb-6 -mt-4 flex gap-2 justify-center items-center text-gray-50">
-      <button
-        className="rounded-full text-sm bg-black/[0.7] py-0.5 px-3 hover:bg-black/[0.8] transition shadow-lg dark:bg-gray-800 dark:hover:bg-gray-700"
-        onClick={handleProgrammingLanguagesClick}
-      >
-        {language === "en" ? en_programmingLanguages : cn_programmingLanguages}
-      </button>
-      <button
-        className="rounded-full text-sm bg-black/[0.7] py-0.5 px-3 hover:bg-black/[0.8] transition shadow-lg dark:bg-gray-800 dark:hover:bg-gray-700"
-        onClick={handleFrameworksClick}
-      >
-        {language === "en"
-          ? en_frameworksAndLibraries
-          : cn_frameworksAndLibraries}
-      </button>
-      <button
-        className="rounded-full text-sm bg-black/[0.7] py-0.5 px-3 hover:bg-black/[0.8] transition shadow-lg dark:bg-gray-800 dark:hover:bg-gray-700"
-        onClick={handleStylingClick}
-      >
-        {language === "en" ? en_styling : cn_styling}
-      </button>
-      <button
-        className="rounded-full text-sm bg-black/[0.7] py-0.5 px-3 hover:bg-black/[0.8] transition shadow-lg dark:bg-gray-800 dark:hover:bg-gray-700"
-        onClick={handleDatabaseClick}
-      >
-        {language === "en" ? en_database : cn_database}
-      </button>
-      <button
-        className="rounded-full text-sm bg-black/[0.7] py-0.5 px-3 hover:bg-black/[0.8] transition shadow-lg dark:bg-gray-800 dark:hover:bg-gray-700"
-        onClick={handleToolsClick}
-      >
-        {language === "en" ? en_ToolsAndPlatforms : cn_ToolsAndPlatforms}
-      </button>
+      <SkillButton
+        field="programmingLanguages"
+        focusedField={focusedField}
+        handleClick={handleProgrammingLanguagesClick}
+        en_title={en_programmingLanguages}
+        cn_title={cn_programmingLanguages}
+      />
+      <SkillButton
+        field="frameworksAndLibraries"
+        focusedField={focusedField}
+        handleClick={handleFrameworksClick}
+        en_title={en_frameworksAndLibraries}
+        cn_title={cn_frameworksAndLibraries}
+      />
+
+      <SkillButton
+        field="styling"
+        focusedField={focusedField}
+        handleClick={handleStylingClick}
+        en_title={en_styling}
+        cn_title={cn_styling}
+      />
+
+      <SkillButton
+        field="database"
+        focusedField={focusedField}
+        handleClick={handleDatabaseClick}
+        en_title={en_database}
+        cn_title={cn_database}
+      />
+
+      <SkillButton
+        field="toolsAndPlatforms"
+        focusedField={focusedField}
+        handleClick={handleToolsClick}
+        en_title={en_ToolsAndPlatforms}
+        cn_title={cn_ToolsAndPlatforms}
+      />
     </div>
   );
 }
