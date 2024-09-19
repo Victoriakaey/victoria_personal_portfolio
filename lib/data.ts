@@ -650,6 +650,8 @@ export const styling = [
   "Radix UI",
   "React Icons",
   "Framer Motion",
+  "Emotion",
+  "gsap",
 ];
 
 export const en_database = "Databases";

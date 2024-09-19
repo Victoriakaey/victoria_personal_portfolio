@@ -25,7 +25,9 @@ interface skillSectionButtonProps {
 }
 
 export default function SkillSectionButton(props: skillSectionButtonProps) {
-  const [focusedField, setFocusedField] = useState<string>("");
+  const [focusedField, setFocusedField] = useState<string>(
+    "programmingLanguages"
+  );
 
   const handleProgrammingLanguagesClick = () => {
     setFocusedField("programmingLanguages");
