@@ -24,7 +24,9 @@ export default function SkillButton(props: skillButtonProps) {
         hover:bg-black/70 hover:text-white border border-black/[0.1] dark:border-none dark:hover:bg-white/30`}
       onClick={props.handleClick}
     >
-      {language === "en" ? props.en_title : props.cn_title}
+      <p className="hidden lg:block">
+        {language === "en" ? props.en_title : props.cn_title}
+      </p>
     </button>
   );
 }
