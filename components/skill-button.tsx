@@ -1,7 +1,7 @@
 "use client";
 
 import { LanguageContext } from "@/context/language-context";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 
 interface skillButtonProps {
   field: string;

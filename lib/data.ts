@@ -295,7 +295,7 @@ export const en_experiencesData = [
       "Block Programming", 
       "Python"
     ],
-    date: "Feb 2023 - Dec 2023",
+    date: "Feb 2023 - Feb 2024",
   },
   {
     title: "Undergraduate Student",
