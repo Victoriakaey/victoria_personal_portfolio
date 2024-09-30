@@ -16,6 +16,7 @@ import {
   cn_introItems,
   en_introContent,
   en_introItems,
+  introBtns,
   introIcons,
   introLinks,
 } from "@/lib/intro-content";
@@ -90,7 +91,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 border-none shadow-2xl text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 border-none shadow-lg text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -101,7 +102,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white/80 border-none shadow-2xl px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white/80 border-none shadow-lg px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/JD_Resume.pdf"
           download
         >
@@ -109,29 +110,18 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1" />
         </a>
 
-        <a
-          className="bg-white/80 border-none shadow-xl p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href={introLinks.linkedin}
-          target="_blank"
-        >
-          {introIcons.linkedin}
-        </a>
-
-        <a
-          className="bg-white/80 border-none shadow-xl p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href={introLinks.github}
-          target="_blank"
-        >
-          {introIcons.github}
-        </a>
-
-        <a
-          className="bg-white/80 border-none shadow-xl p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href={introLinks.netease}
-          target="_blank"
-        >
-          {introIcons.netease}
-        </a>
+        {
+          introBtns.map((btn, index) => (
+            <a
+              key={index}
+              className="bg-white/80 border-none shadow-lg p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              href={btn.href}
+              target="_blank"
+            >
+              {btn.icon}
+            </a>
+          ))
+        }
       </motion.div>
     </section>
   );

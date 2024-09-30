@@ -4,7 +4,15 @@ const nextConfig = {
   //   serverActions: true,
   // },
   images: {
-    domains: ["victoria-duan.vercel.app"], // Add your domain here
+    // domains: ["victoria-duan.vercel.app"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 };
 

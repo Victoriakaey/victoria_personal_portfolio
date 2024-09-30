@@ -1,9 +1,9 @@
 export const en_contactContent = (
   <>
-    Please contact me directly at{" "}
-    <a className="underline italic" href="mailto:victoriakaey@gmail.com">
-      victoriakaey@gmail.com
-    </a>{" "}
+    Please contact me directly at{"  "}
+    <a className="underline italic underline-offset-4 hover:text-blue-500" href="mailto:jd.victoria.work@gmail.com">
+      jd.victoria.work@gmail.com
+    </a>{"  "}
     or through this forum
   </>
 );
@@ -11,8 +11,8 @@ export const en_contactContent = (
 export const cn_contactContent = (
   <>
     请通过提交此表单或直接通过以下邮箱联系我:{" "}
-    <a className="underline italic" href="mailto:victoriakaey@gmail.com">
-      victoriakaey@gmail.com
+    <a className="underline italic underline-offset-4 hover:text-blue-500" href="mailto:jd.victoria.work@gmail.com">
+      jd.victoria.work@gmail.com
     </a>{" "}
   </>
 );

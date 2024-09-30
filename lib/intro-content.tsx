@@ -1,5 +1,7 @@
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaCalendar, FaCalendarCheck, FaGithub, FaGithubSquare } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+import { SiNeteasecloudmusic } from "react-icons/si";
 import { RiNeteaseCloudMusicFill } from "react-icons/ri";
 
 export const cn_introContent = (
@@ -55,3 +57,22 @@ export const introIcons = {
   github: <FaGithubSquare />,
   netease: <RiNeteaseCloudMusicFill />,
 };
+
+export const introBtns = [
+  {
+    href: "https://calendly.com/jduan10/30min",
+    icon: <FaCalendarCheck className="text-xl"/>,
+  },
+ {
+    href: "https://www.linkedin.com/in/jiaqi-duan-834b29200",
+    icon: <BsLinkedin className="text-xl"/>,
+  },
+  {
+    href: "https://github.com/Victoriakaey",
+    icon: <FaSquareGithub className="text-xl"/>,
+  },
+  {
+    href: "https://music.163.com/#/artist?id=46274436",
+    icon: <SiNeteasecloudmusic className="text-xl"/>,
+  },
+];
