@@ -60,7 +60,7 @@ export const introIcons = {
 
 export const introBtns = [
   {
-    href: "https://calendly.com/jduan10/30min",
+    href: "https://calendly.com/jduan10/meeting-with-victoria-duan",
     icon: <FaCalendarCheck className="text-xl"/>,
   },
  {
