@@ -87,11 +87,13 @@ export const cn_experiencesData = [
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
     description: [
-      "正在攻读计算机科学和工程的硕士学位，我的研究方向是人工智能。",
+      "正在攻读计算机科学和工程的硕士学位。", // ，我的研究方向是人工智能。
     ],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
-    tags: [],
+    tags: [
+      "形式化方法",
+    ],
     date: "2024年9月 - 2025年12月 (预计毕业)",
   },
   {
@@ -246,11 +248,13 @@ export const en_experiencesData = [
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
     description: [
-      "Pursuing a Master's degree in Computer Science and Engineering, specializing in Artificial Intelligence.",
+      "Pursuing a Master's degree in Computer Science and Engineering.", // , specializing in Artificial Intelligence
     ],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
-    tags: [],
+    tags: [
+      "Formal Methods",
+    ],
     date: "Sep 2024 - Dec 2025 (Expected Graduation)",
   },
   {
