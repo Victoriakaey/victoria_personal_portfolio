@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { en_projectsData, cn_projectsData } from "@/lib/data";
+import { LanguageContext } from "@/context/language-context";
 
 type ProjectProps = (typeof cn_projectsData | typeof en_projectsData)[number];
 
@@ -17,6 +18,12 @@ export default function Project({
   projectUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const { language } = useContext(LanguageContext);
+  const hoverDescription =
+    language === "en"
+      ? "Hover here to view more images"
+      : "将鼠标悬停在这里查看更多图片";
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
@@ -111,6 +118,9 @@ export default function Project({
                 : ""
             } flex flex-col h-full`}
           >
+            <div className="hidden sm:block sm:-mt-5 sm:-ml-1 sm:mb-2 lg:-mt-4 lg:mb-7 text-sm text-center bg-black/[0.01] border-2 border-gray-500 border-dashed dark:bg-black/[0.7] rounded-xl px-3 py-0.5 shadow-lg text-gray-600 dark:text-white/70">
+              {hoverDescription}
+            </div>
             <h3 className="mt-2 lg:-mt-3 text-2xl font-semibold">{title}</h3>
             <p className="italic text-sm text-gray-700 dark:text-white/70 mt-1">
               {time}
