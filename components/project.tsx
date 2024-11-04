@@ -118,9 +118,9 @@ export default function Project({
                 : ""
             } flex flex-col h-full`}
           >
-            <div className="hidden sm:block sm:-mt-5 sm:-ml-1 sm:mb-2 lg:-mt-4 lg:mb-7 text-sm text-center bg-black/[0.01] border-2 border-gray-500 border-dashed dark:bg-black/[0.7] rounded-xl px-3 py-0.5 shadow-lg text-gray-600 dark:text-white/70">
+            {/* <div className="hidden sm:block sm:-mt-5 sm:-ml-1 sm:mb-2 lg:-mt-4 lg:mb-7 text-sm text-center bg-black/[0.01] border-2 border-gray-500 border-dashed dark:bg-black/[0.7] rounded-xl px-3 py-0.5 shadow-lg text-gray-600 dark:text-white/70">
               {hoverDescription}
-            </div>
+            </div> */}
             <h3 className="mt-2 lg:-mt-3 text-2xl font-semibold">{title}</h3>
             <p className="italic text-sm text-gray-700 dark:text-white/70 mt-1">
               {time}

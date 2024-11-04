@@ -97,7 +97,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          {items.contact}
+          <p className="text-sm lg:text-lg">{items.contact}</p>
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -106,12 +106,12 @@ export default function Intro() {
           href="/JD_Resume.pdf"
           download
         >
-          {items.download}
+          <p className="text-sm lg:text-lg">{items.download}</p>
           <HiDownload className="opacity-60 group-hover:translate-y-1" />
         </a>
 
-        {
-          introBtns.map((btn, index) => (
+        <div className="mt-1 lg:mt-0 flex gap-5">
+          {introBtns.map((btn, index) => (
             <a
               key={index}
               className="bg-white/80 border-none shadow-lg p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
@@ -120,8 +120,8 @@ export default function Intro() {
             >
               {btn.icon}
             </a>
-          ))
-        }
+          ))}
+        </div>
       </motion.div>
     </section>
   );
