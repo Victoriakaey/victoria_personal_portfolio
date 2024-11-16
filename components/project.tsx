@@ -38,7 +38,7 @@ export default function Project({
     if (isHovered && imageUrl.length > 1) {
       const interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrl.length);
-      }, 1800); // Change image every second
+      }, 1100); // Change image every second
       return () => clearInterval(interval);
     }
   }, [isHovered, imageUrl.length]);

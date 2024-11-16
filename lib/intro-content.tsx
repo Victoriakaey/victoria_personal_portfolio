@@ -1,5 +1,10 @@
 import { BsLinkedin } from "react-icons/bs";
-import { FaCalendar, FaCalendarCheck, FaGithub, FaGithubSquare } from "react-icons/fa";
+import {
+  FaCalendar,
+  FaCalendarCheck,
+  FaGithub,
+  FaGithubSquare,
+} from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { SiNeteasecloudmusic } from "react-icons/si";
 import { RiNeteaseCloudMusicFill } from "react-icons/ri";
@@ -47,32 +52,34 @@ export const en_introItems = {
 };
 
 export const introLinks = {
-  linkedin: "https://www.linkedin.com/in/jiaqi-duan-834b29200",
+  calendly: "https://calendly.com/jduan10/meeting-with-victoria-duan",
+  linkedin: "https://www.linkedin.com/in/jiaqi-duan",
   github: "https://github.com/Victoriakaey",
   netease: "https://music.163.com/#/artist?id=46274436",
 };
 
 export const introIcons = {
-  linkedin: <BsLinkedin />,
-  github: <FaGithubSquare />,
-  netease: <RiNeteaseCloudMusicFill />,
+  calendly: <FaCalendarCheck className="text-xl" />,
+  linkedin: <BsLinkedin className="text-xl" />,
+  github: <FaSquareGithub className="text-xl" />,
+  netease: <SiNeteasecloudmusic className="text-xl" />,
 };
 
 export const introBtns = [
   {
-    href: "https://calendly.com/jduan10/meeting-with-victoria-duan",
-    icon: <FaCalendarCheck className="text-xl"/>,
-  },
- {
-    href: "https://www.linkedin.com/in/jiaqi-duan-834b29200",
-    icon: <BsLinkedin className="text-xl"/>,
+    href: introLinks.calendly,
+    icon: introIcons.calendly,
   },
   {
-    href: "https://github.com/Victoriakaey",
-    icon: <FaSquareGithub className="text-xl"/>,
+    href: introLinks.linkedin,
+    icon: introIcons.linkedin,
   },
   {
-    href: "https://music.163.com/#/artist?id=46274436",
-    icon: <SiNeteasecloudmusic className="text-xl"/>,
+    href: introLinks.github,
+    icon: introIcons.github,
+  },
+  {
+    href: introLinks.netease,
+    icon: introIcons.netease,
   },
 ];
