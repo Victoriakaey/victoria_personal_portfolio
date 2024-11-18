@@ -22,7 +22,6 @@ import Img14 from "@/public/img14.png";
 import Img15 from "@/public/img15.png";
 import Img16 from "@/public/img16.png";
 
-
 export const cn_links = [
   {
     name: "首页",
@@ -40,16 +39,15 @@ export const cn_links = [
     name: "技能",
     hash: "#skills",
   },
-  { 
+  {
     name: "经验",
     hash: "#experience",
   },
   {
     name: "联系我",
     hash: "#contact",
-  }
-]
-
+  },
+];
 
 export const en_links = [
   {
@@ -78,8 +76,8 @@ export const en_links = [
   },
 ] as const;
 
-export const cn_experiencesTitle = "我的经验"
-export const en_experiencesTitle = "My Experience"
+export const cn_experiencesTitle = "我的经验";
+export const en_experiencesTitle = "My Experience";
 
 export const cn_experiencesData = [
   {
@@ -91,9 +89,7 @@ export const cn_experiencesData = [
     ],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
-    tags: [
-      "形式化方法",
-    ],
+    tags: ["形式化方法"],
     date: "2024年9月 - 2025年12月 (预计毕业)",
   },
   {
@@ -101,21 +97,21 @@ export const cn_experiencesData = [
     location: "Tech4Good Lab - Santa Cruz, CA",
     locationUrl: "https://tech4good.soe.ucsc.edu/",
     description: [
-      "领导一个由10多名开发人员组成的团队，将AI集成到网络开发中。", 
-      "进行初步研究，收集用户反馈和见解，推动Pathways应用程序的改进。", 
+      "领导一个由10多名开发人员组成的团队，将AI集成到网络开发中。",
+      "进行初步研究，收集用户反馈和见解，推动Pathways应用程序的改进。",
     ],
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
     tags: [
       "提示词工程",
-      "LLMLingua/LongLLMLingua", 
-      "Pinecone", 
-      "OpenAI ChatCompletion API", 
+      "LLMLingua/LongLLMLingua",
+      "Pinecone",
+      "OpenAI ChatCompletion API",
       "OpenAI Assistant API",
-      "OpenAI Embeddings API", 
-      "用户研究", 
+      "OpenAI Embeddings API",
+      "用户研究",
       "领导力",
-      "辅导/指导能力"
+      "辅导/指导能力",
     ],
     date: "2023年6月 - 现在",
   },
@@ -123,7 +119,7 @@ export const cn_experiencesData = [
     title: "编程教师",
     location: "Code For Fun - Sunnyvale, CA",
     locationUrl: "https://codeforfun.com/",
-    description:[
+    description: [
       "指导了5000多名学生在小型和大型团体中学习编程。",
       "为不同学生需求量身定制个性化学习计划。",
     ],
@@ -131,12 +127,12 @@ export const cn_experiencesData = [
     icon: React.createElement(CgWorkAlt),
     tags: [
       "教学",
-      "公开演讲", 
-      "游戏开发", 
-      "Web开发", 
-      "移动应用开发", 
-      "积木编程", 
-      "Python"
+      "公开演讲",
+      "游戏开发",
+      "Web开发",
+      "移动应用开发",
+      "积木编程",
+      "Python",
     ],
     date: "2023年2月 - 2023年12月",
   },
@@ -144,22 +140,20 @@ export const cn_experiencesData = [
     title: "本科生",
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
-    description:[
-      "获得了计算机科学和心理学双学士学位。",
-    ],
+    description: ["获得了计算机科学和心理学双学士学位。"],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
     tags: [
-      "人工智能", 
-      "机器学习", 
-      "自然语言处理", 
-      "数据结构和算法", 
-      "计算机架构", 
-      "计算机系统设计", 
-      "计算机图形学", 
-      "统计学", 
-      "发展心理学", 
-      "学习与记忆"
+      "人工智能",
+      "机器学习",
+      "自然语言处理",
+      "数据结构和算法",
+      "计算机架构",
+      "计算机系统设计",
+      "计算机图形学",
+      "统计学",
+      "发展心理学",
+      "学习与记忆",
     ],
     date: "2020年7月 - 2022年12月",
   },
@@ -173,12 +167,7 @@ export const cn_experiencesData = [
     ],
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
-    tags: [
-      "教学", 
-      "Python", 
-      "沟通能力",
-      "解决问题的能力",
-    ],
+    tags: ["教学", "Python", "沟通能力", "解决问题的能力"],
     date: "2021年4月 - 2022年12月",
   },
   {
@@ -191,12 +180,7 @@ export const cn_experiencesData = [
     ],
     isBulletPoints: true,
     icon: React.createElement(LuHelpingHand),
-    tags: [
-      "同情心和同理心", 
-      "责任心", 
-      "可靠性", 
-      "时间管理能力"
-    ],
+    tags: ["同情心和同理心", "责任心", "可靠性", "时间管理能力"],
     date: "2018年6月 - 2019年6月",
   },
   {
@@ -209,34 +193,26 @@ export const cn_experiencesData = [
     ],
     isBulletPoints: true,
     icon: React.createElement(LuUser2),
-    tags: [
-      "领导力", 
-      "团队合作", 
-      "沟通能力", 
-      "解决问题能力", 
-      "规划和组织活动"
-    ],
+    tags: ["领导力", "团队合作", "沟通能力", "解决问题能力", "规划和组织活动"],
     date: "2017年5月 - 2020年6月",
   },
   {
     title: "社区大学学生",
     location: "De Anza College - Cupertino, CA",
     locationUrl: "https://www.deanza.edu/",
-    description: [
-      "在转学之前完成了计算机科学学位所需的课程。",
-    ],
+    description: ["在转学之前完成了计算机科学学位所需的课程。"],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
     tags: [
-      "C++", 
-      "Java", 
-      "Python", 
-      "汇编语言", 
-      "物理", 
-      "化学", 
-      "预微积分", 
-      "微积分", 
-      "离散数学"
+      "C++",
+      "Java",
+      "Python",
+      "汇编语言",
+      "物理",
+      "化学",
+      "预微积分",
+      "微积分",
+      "离散数学",
     ],
     date: "2016年4月 - 2020年6月",
   },
@@ -252,9 +228,7 @@ export const en_experiencesData = [
     ],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
-    tags: [
-      "Formal Methods",
-    ],
+    tags: ["Formal Methods"],
     date: "Sep 2024 - Dec 2025 (Expected Graduation)",
   },
   {
@@ -262,21 +236,21 @@ export const en_experiencesData = [
     location: "Tech4Good Lab - Santa Cruz, CA",
     locationUrl: "https://tech4good.soe.ucsc.edu/",
     description: [
-      "Led a team of 10+ developers in integrating AI into web development.", 
-      "Conducted preliminary studies to gather user feedback and insights, driving improvements in the Pathways applications.", 
+      "Led a team of 10+ developers in integrating AI into web development.",
+      "Conducted preliminary studies to gather user feedback and insights, driving improvements in the Pathways applications.",
     ],
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
     tags: [
       "Prompt Engineering",
-      "LLMLingua/LongLLMLingua", 
-      "Pinecone", 
-      "OpenAI ChatCompletion API", 
+      "LLMLingua/LongLLMLingua",
+      "Pinecone",
+      "OpenAI ChatCompletion API",
       "OpenAI Assistant API",
-      "OpenAI Embeddings API", 
-      "User Research", 
+      "OpenAI Embeddings API",
+      "User Research",
       "Leadership",
-      "Mentorship"
+      "Mentorship",
     ],
     date: "June 2023 - Present",
   },
@@ -284,7 +258,7 @@ export const en_experiencesData = [
     title: "Coding Instructor",
     location: "Code For Fun - Sunnyvale, CA",
     locationUrl: "https://codeforfun.com/",
-    description:[
+    description: [
       "Instructed over 5,000 students in programming across small and large group settings.",
       "Developed personalized learning plans to cater to diverse student needs.",
     ],
@@ -292,12 +266,12 @@ export const en_experiencesData = [
     icon: React.createElement(CgWorkAlt),
     tags: [
       "Teaching",
-      "Public Speaking", 
-      "Game Development", 
-      "Web Development", 
-      "Mobile App Development", 
-      "Block Programming", 
-      "Python"
+      "Public Speaking",
+      "Game Development",
+      "Web Development",
+      "Mobile App Development",
+      "Block Programming",
+      "Python",
     ],
     date: "Feb 2023 - Feb 2024",
   },
@@ -305,22 +279,22 @@ export const en_experiencesData = [
     title: "Undergraduate Student",
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
-    description:[
+    description: [
       "Earned Bachelor of Science in Computer Science and Engineering, and Bachelor of Art in Psychology.",
     ],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
     tags: [
-      "Artificial Intelligence", 
-      "Machine Learning", 
-      "Natural Language Processing", 
-      "Data Structure and Algorithm", 
-      "Computer Architecture", 
-      "Computer System Design", 
-      "Computer Graphics", 
-      "Statistics", 
-      "Developmental Psychology", 
-      "Learning and Memory"
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Natural Language Processing",
+      "Data Structure and Algorithm",
+      "Computer Architecture",
+      "Computer System Design",
+      "Computer Graphics",
+      "Statistics",
+      "Developmental Psychology",
+      "Learning and Memory",
     ],
     date: "July 2020 - Dec 2022",
   },
@@ -334,12 +308,7 @@ export const en_experiencesData = [
     ],
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
-    tags: [
-      "Tutoring", 
-      "Python", 
-      "Communication",
-      "Problem Solving",
-    ],
+    tags: ["Tutoring", "Python", "Communication", "Problem Solving"],
     date: "Apr 2021 - Dec 2022",
   },
   {
@@ -353,10 +322,10 @@ export const en_experiencesData = [
     isBulletPoints: true,
     icon: React.createElement(LuHelpingHand),
     tags: [
-      "Compassion and Empathy", 
-      "Responsibility", 
-      "Reliability", 
-      "Time Management"
+      "Compassion and Empathy",
+      "Responsibility",
+      "Reliability",
+      "Time Management",
     ],
     date: "June 2018 - June 2019",
   },
@@ -371,11 +340,11 @@ export const en_experiencesData = [
     isBulletPoints: true,
     icon: React.createElement(LuUser2),
     tags: [
-      "Leadership", 
-      "Teamwork", 
-      "Communication", 
-      "Problem Solving", 
-      "Planning and organizing events"
+      "Leadership",
+      "Teamwork",
+      "Communication",
+      "Problem Solving",
+      "Planning and organizing events",
     ],
     date: "May 2017 - June 2020",
   },
@@ -389,38 +358,40 @@ export const en_experiencesData = [
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
     tags: [
-      "C++", 
-      "Java", 
-      "Python", 
-      "Assembly Language", 
-      "Physics", 
-      "Chemistry", 
-      "Pre-Calculus", 
-      "Calculus", 
-      "Discrete Mathematics"
+      "C++",
+      "Java",
+      "Python",
+      "Assembly Language",
+      "Physics",
+      "Chemistry",
+      "Pre-Calculus",
+      "Calculus",
+      "Discrete Mathematics",
     ],
     date: "Apr 2016 - June 2020",
   },
 ] as const;
 
-export const cn_projectsTitle = "我的项目"
-export const en_projectsTitle = "My Projects"
+export const cn_projectsTitle = "我的项目";
+export const en_projectsTitle = "My Projects";
 
 export const cn_projectsData = [
   {
     title: "Pathways",
     time: "2024年4月 - 现在",
-    description: "一个AI驱动的网络应用程序，旨在帮助用户自学任何一个领域的知识。",
-    sideNotes: "这个实验室项目旨在为有动力的自学者创建个性化的学习路径，帮助他们练习和提高自学技能。",
+    description:
+      "一个AI驱动的网络应用程序，旨在帮助用户自学任何一个领域的知识。",
+    sideNotes:
+      "这个实验室项目旨在为有动力的自学者创建个性化的学习路径，帮助他们练习和提高自学技能。",
     tags: [
-      "SolidJS", 
-      "TypeScript", 
-      "Vite", 
-      "Express", 
-      "OpenAI APIs", 
-      "Langchain", 
-      "Pinecone", 
-      "Firestore"
+      "SolidJS",
+      "TypeScript",
+      "Vite",
+      "Express",
+      "OpenAI APIs",
+      "Langchain",
+      "Pinecone",
+      "Firestore",
     ],
     imageUrl: [Img2, Img10, Img11],
     projectUrl: null,
@@ -428,28 +399,26 @@ export const cn_projectsData = [
   {
     title: "Pathways GPT",
     time: "2024年7月",
-    description: "一个OpenAI GPT，旨在通过支持性的、逐步的方法引导用户完成个性化的学习旅程，确保清晰和与他们的目标保持一致。",
+    description:
+      "一个OpenAI GPT，旨在通过支持性的、逐步的方法引导用户完成个性化的学习旅程，确保清晰和与他们的目标保持一致。",
     sideNotes: "为AI Pathways团队创建，以加速研究过程，特别是在研究初期阶段。",
-    tags: [
-      "提示词工程"
-    ],
+    tags: ["提示词工程"],
     imageUrl: [Img4],
     projectUrl: "https://chatgpt.com/g/g-isRhwzkEL-pathways",
   },
   {
     title: "易",
     time: "2024年4月 - 现在",
-    description:
-      "一个SaaS网络应用程序，提供全面的财务和业务管理解决方案。",
+    description: "一个SaaS网络应用程序，提供全面的财务和业务管理解决方案。",
     sideNotes: "开发帮助我的妈妈减少工作量。",
     tags: [
-      "React", 
-      "TypeScript", 
-      "Next.js", 
-      "Django", 
-      "Django REST Framework", 
-      "PostgreSQL", 
-      "Redux"
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Django",
+      "Django REST Framework",
+      "PostgreSQL",
+      "Redux",
     ],
     imageUrl: [Img7, Img6, Img9, Img8],
     projectUrl: null,
@@ -459,10 +428,9 @@ export const cn_projectsData = [
     time: "2024年6月",
     description:
       "一个OpenAI GPT，旨在帮助用户使用先进的简历写作技巧和策略，根据职位描述撰写量身定制的技术简历。",
-    sideNotes: "创建帮助我写简历，因为我缺乏行业专业人士的反馈。这个GPT帮助我写更好的技术简历，并根据不同的工作申请进行定制。",
-    tags: [
-      "提示词工程"
-    ],
+    sideNotes:
+      "创建帮助我写简历，因为我缺乏行业专业人士的反馈。这个GPT帮助我写更好的技术简历，并根据不同的工作申请进行定制。",
+    tags: ["提示词工程"],
     imageUrl: [Img3],
     projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
   },
@@ -471,29 +439,20 @@ export const cn_projectsData = [
     time: "2024年7月",
     description:
       "一个信息网站，为Ripplet，一个面向全球华人的社区发起的身心健康平台。",
-    sideNotes: "创建为朋友的热情所做，旨在回馈社会和华人社区。我认同Ripplet的目标和文化。",
-    tags: [
-      "React", 
-      "TypeScript", 
-      "Next.js", 
-      "TailwindCSS", 
-      "React Icons"
-    ],
+    sideNotes:
+      "创建为朋友的热情所做，旨在回馈社会和华人社区。我认同Ripplet的目标和文化。",
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
     imageUrl: [Img12, Img13, Img14],
     projectUrl: "https://ripplet-info-website.vercel.app/",
   },
   {
     title: "猫咪记忆卡牌游戏",
     time: "2023年9月",
-    description: "一个以我的三只猫，Kitty, Bangbang和Normie的肖像为牌面的卡牌翻转游戏。",
-    sideNotes: "这是我开发的第一个网站。我创建了这个项目来学习React和网页部署。作为一个骄傲的猫妈妈，我无法抗拒展示我心爱的猫和它们可爱的脸！:))",
-    tags: [ 
-      "React", 
-      "TypeScript", 
-      "Material-UI", 
-      "emotion", 
-      "gsap"
-    ],
+    description:
+      "一个以我的三只猫，Kitty, Bangbang和Normie的肖像为牌面的卡牌翻转游戏。",
+    sideNotes:
+      "这是我开发的第一个网站。我创建了这个项目来学习React和网页部署。作为一个骄傲的猫妈妈，我无法抗拒展示我心爱的猫和它们可爱的脸！:))",
+    tags: ["React", "TypeScript", "Material-UI", "emotion", "gsap"],
     imageUrl: [Img1, Img15, Img16],
     projectUrl: "https://victoria-cat-memory-game.vercel.app/",
   },
@@ -503,17 +462,19 @@ export const en_projectsData = [
   {
     title: "Pathways",
     time: "Apr 2024 - Present",
-    description: "An AI-driven web application designed to facilitate self-directed learning.",
-    sideNotes: "This lab project aims to create personalized learning pathways for motivated learners, helping them practice and enhance their self-directed learning skills.",
+    description:
+      "An AI-driven web application designed to facilitate self-directed learning.",
+    sideNotes:
+      "This lab project aims to create personalized learning pathways for motivated learners, helping them practice and enhance their self-directed learning skills.",
     tags: [
-      "SolidJS", 
-      "TypeScript", 
-      "Vite", 
-      "Express", 
-      "OpenAI APIs", 
-      "Langchain", 
-      "Pinecone", 
-      "Firestore"
+      "SolidJS",
+      "TypeScript",
+      "Vite",
+      "Express",
+      "OpenAI APIs",
+      "Langchain",
+      "Pinecone",
+      "Firestore",
     ],
     imageUrl: [Img2, Img10, Img11],
     projectUrl: null,
@@ -521,11 +482,11 @@ export const en_projectsData = [
   {
     title: "Pathways GPT",
     time: "July 2024",
-    description: "A GPT designed to guide users through personalized learning journeys with a supportive, step-by-step approach, ensuring clarity and alignment with their goals.",
-    sideNotes: "Created for the AI Pathways Team to expedite the research process, particularly during the early stages of conducting studies.",
-    tags: [
-      "Prompt Engineering"
-    ],
+    description:
+      "A GPT designed to guide users through personalized learning journeys with a supportive, step-by-step approach, ensuring clarity and alignment with their goals.",
+    sideNotes:
+      "Created for the AI Pathways Team to expedite the research process, particularly during the early stages of conducting studies.",
+    tags: ["Prompt Engineering"],
     imageUrl: [Img4],
     projectUrl: "https://chatgpt.com/g/g-isRhwzkEL-pathways",
   },
@@ -536,13 +497,13 @@ export const en_projectsData = [
       "A SaaS web application providing comprehensive financial and business management solutions.",
     sideNotes: "Developed to help my mom reduce her workload.",
     tags: [
-      "React", 
-      "TypeScript", 
-      "Next.js", 
-      "Django", 
-      "Django REST Framework", 
-      "PostgreSQL", 
-      "Redux"
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Django",
+      "Django REST Framework",
+      "PostgreSQL",
+      "Redux",
     ],
     imageUrl: [Img7, Img6, Img9, Img8],
     projectUrl: null,
@@ -552,10 +513,9 @@ export const en_projectsData = [
     time: "June 2024",
     description:
       "A GPT designed to help users craft tailored technical resumes aligned with job descriptions, using advanced resume writing techniques and strategies.",
-    sideNotes: "Created to assist with writing my resume, as I lack feedback from industry professionals. This GPT helps me write better tech resumes and customize them for different job applications.",
-    tags: [
-      "Prompt Engineering"
-    ],
+    sideNotes:
+      "Created to assist with writing my resume, as I lack feedback from industry professionals. This GPT helps me write better tech resumes and customize them for different job applications.",
+    tags: ["Prompt Engineering"],
     imageUrl: [Img3],
     projectUrl: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
   },
@@ -564,29 +524,20 @@ export const en_projectsData = [
     time: "July 2024",
     description:
       "An informational website for Ripplet, a community-initiated wellness platform for Chinese speakers across the globe.",
-    sideNotes: "Created as a favor to a friend passionate about psychology, aiming to give back to society and the Chinese community. I resonate with Ripplet's goals and culture.",
-    tags: [
-      "React", 
-      "TypeScript", 
-      "Next.js", 
-      "TailwindCSS", 
-      "React Icons"
-    ],
+    sideNotes:
+      "Created as a favor to a friend passionate about psychology, aiming to give back to society and the Chinese community. I resonate with Ripplet's goals and culture.",
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
     imageUrl: [Img12, Img13, Img14],
     projectUrl: "https://ripplet-info-website.vercel.app/",
   },
   {
     title: "Cat Memory Game",
     time: "Sep 2023",
-    description: "A card-flipping game featuring portraits of my three cats, Kitty, Bangbang and Normie.",
-    sideNotes: "This is the first website I developed. I created this project to learn React and web deployment. As a proud cat mom, I couldn't resist showcasing my beloved cats and their adorable faces! :))",
-    tags: [ 
-      "React", 
-      "TypeScript", 
-      "Material-UI", 
-      "emotion", 
-      "gsap"
-    ],
+    description:
+      "A card-flipping game featuring portraits of my three cats, Kitty, Bangbang and Normie.",
+    sideNotes:
+      "This is the first website I developed. I created this project to learn React and web deployment. As a proud cat mom, I couldn't resist showcasing my beloved cats and their adorable faces! :))",
+    tags: ["React", "TypeScript", "Material-UI", "emotion", "gsap"],
     imageUrl: [Img1, Img15, Img16],
     projectUrl: "https://victoria-cat-memory-game.vercel.app/",
   },
@@ -602,79 +553,113 @@ export const en_projectsData = [
   // },
 ] as const;
 
-export const cn_skillsTitle = "我的专业技能"
-export const en_skillsTitle = "My Skills"
+export const cn_skillsTitle = "我的专业技能";
+export const en_skillsTitle = "My Skills";
 
-export const en_programmingLanguages = "Programming & Markup Languages";
-export const cn_programmingLanguages = "编程语言 & 标记语言";
+export const en_programmingLanguages = "Programming Languages";
+export const cn_programmingLanguages = "编程语言";
 
 export const programmingLanguages = [
-  // Programming Languages
+  // Scripting Languages
+  "TypeScript",
+  "JavaScript",
+  // Object-Oriented Programming (OOP)
   "Python",
   "Java",
-  "C",
   "C++",
-  "JavaScript",
-  "TypeScript",
-  "HTML",
-  "CSS",
-  "SQL",
+  // Procedural Programming (POP)
+  "C",
 ];
 
-export const en_frameworksAndLibraries = "Frameworks & Libraries"
-export const cn_frameworksAndLibraries = "框架和库"
+export const en_frontendDevelopment = "Frontend Development";
+export const cn_frontendDevelopment = "前端开发";
 
-export const frameworksAndLibraries = [
+export const frontendDevelopment = [
+  // Frameworks and Libraries
   "React",
   "Next.js",
   "SolidJS",
-  "Express.js",
+  // Build Tools & Environments
   "Node.js",
-  "Django",
-  "Django REST Framework",
+  "Vite",
+  // State Management
   "Redux Toolkit",
   "RTK Query",
   "RxJS",
-  "Axios", 
-  "JWT",  
-  "OpenAI APIs",
-  "Langchain",
-];
-
-export const en_styling = "Styling";
-export const cn_styling = "样式"; 
-
-export const styling = [
-  "Material UI",
+  // Styling & UI Libraries
+  "CSS",
   "Tailwind CSS",
   "Sass",
   "PostCSS",
+  "Material UI",
   "Ant Design",
+  "Emotion",
   "Shadcn/UI",
   "Radix UI",
-  "React Icons",
+  // Animations
   "Framer Motion",
-  "Emotion",
   "gsap",
+  // Icons & Graphics
+  "React Icons",
+];
+
+export const en_backendDevelopment = "Backend Development";
+export const cn_backendDevelopment = "后端开发";
+
+export const backendDevelopment = [
+  // Frameworks and Platforms
+  "Express.js",
+  "Django",
+  "Django REST Framework",
+  // Authentication & Security
+  "JWT",
+  // API Development
+  "RESTful APIs",
+  // Backend Services
+  "Firebase",
+  // HTTP Clients
+  "Axios",
 ];
 
 export const en_database = "Databases";
 export const cn_database = "数据库";
 
 export const database = [
-  // Database
-  "MongoDB",
+  // "Relational Databases",
   "PostgreSQL",
-  "Pinecone",
+  "SQL",
+  // NoSQL Databases
+  "MongoDB",
   "Firestore",
+  "Firebase",
+  // Vector Databases
+  "Pinecone",
 ];
 
-export const en_ToolsAndPlatforms = "Tools & Platforms";
-export const cn_ToolsAndPlatforms = "工具和平台"; 
+export const en_AI = "AI & Data Analytics";
+export const cn_AI = "人工智能 & 数据分析";
 
-export const toolsAndPlatforms = [
-  "Git",
-  "Vite",
-  "ESLint",
-  "Firebase",
+export const AI = [
+  // Machine Learning Concepts
+  "Deep Learning",
+  "Reinforcement Learning",
+  "Reinforcement Learning",
+  "Prompt Engineering",
+  "Retrieval-Augmented Generation (RAG)",
+  // Frameworks and Libraries
+  "TensorFlow",
+  "PyTorch",
+  "Keras",
+  "Hugging Face Transformers",
+  "Langchain",
+  // Data Analysis & Visualization
+  "Pandas",
+  "NumPy",
+  "Matplotlib",
+  "Seaborn",
+  "Plotly",
+  // AI Platforms & APIs
+  "OpenAI APIs",
+  "Gemini APIs",
+  "Google AI Studio",
 ];

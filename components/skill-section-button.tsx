@@ -1,21 +1,21 @@
 "use client";
 import { LanguageContext } from "@/context/language-context";
 import {
+  AI,
+  backendDevelopment,
+  cn_AI,
+  cn_backendDevelopment,
   cn_database,
-  cn_frameworksAndLibraries,
+  cn_frontendDevelopment,
   cn_programmingLanguages,
-  cn_styling,
-  cn_ToolsAndPlatforms,
   database,
+  en_AI,
+  en_backendDevelopment,
   en_database,
-  en_frameworksAndLibraries,
+  en_frontendDevelopment,
   en_programmingLanguages,
-  en_styling,
-  en_ToolsAndPlatforms,
-  frameworksAndLibraries,
+  frontendDevelopment,
   programmingLanguages,
-  styling,
-  toolsAndPlatforms,
 } from "@/lib/data";
 import React, { useState } from "react";
 import SkillButton from "./skill-button";
@@ -34,14 +34,14 @@ export default function SkillSectionButton(props: skillSectionButtonProps) {
     props.setSkillsData(programmingLanguages);
   };
 
-  const handleFrameworksClick = () => {
-    setFocusedField("frameworksAndLibraries");
-    props.setSkillsData(frameworksAndLibraries);
+  const handleFrontendDevelopmentClick = () => {
+    setFocusedField("frontendDevelopment");
+    props.setSkillsData(frontendDevelopment);
   };
 
-  const handleStylingClick = () => {
-    setFocusedField("styling");
-    props.setSkillsData(styling);
+  const handleBackendDevelopmentClick = () => {
+    setFocusedField("backendDevelopment");
+    props.setSkillsData(backendDevelopment);
   };
 
   const handleDatabaseClick = () => {
@@ -49,9 +49,9 @@ export default function SkillSectionButton(props: skillSectionButtonProps) {
     props.setSkillsData(database);
   };
 
-  const handleToolsClick = () => {
-    setFocusedField("toolsAndPlatforms");
-    props.setSkillsData(toolsAndPlatforms);
+  const handleAIClick = () => {
+    setFocusedField("AI");
+    props.setSkillsData(AI);
   };
 
   return (
@@ -64,19 +64,19 @@ export default function SkillSectionButton(props: skillSectionButtonProps) {
         cn_title={cn_programmingLanguages}
       />
       <SkillButton
-        field="frameworksAndLibraries"
+        field="frontendDevelopment"
         focusedField={focusedField}
-        handleClick={handleFrameworksClick}
-        en_title={en_frameworksAndLibraries}
-        cn_title={cn_frameworksAndLibraries}
+        handleClick={handleFrontendDevelopmentClick}
+        en_title={en_frontendDevelopment}
+        cn_title={cn_frontendDevelopment}
       />
 
       <SkillButton
-        field="styling"
+        field="backendDevelopment"
         focusedField={focusedField}
-        handleClick={handleStylingClick}
-        en_title={en_styling}
-        cn_title={cn_styling}
+        handleClick={handleBackendDevelopmentClick}
+        en_title={en_backendDevelopment}
+        cn_title={cn_backendDevelopment}
       />
 
       <SkillButton
@@ -88,11 +88,11 @@ export default function SkillSectionButton(props: skillSectionButtonProps) {
       />
 
       <SkillButton
-        field="toolsAndPlatforms"
+        field="AI"
         focusedField={focusedField}
-        handleClick={handleToolsClick}
-        en_title={en_ToolsAndPlatforms}
-        cn_title={cn_ToolsAndPlatforms}
+        handleClick={handleAIClick}
+        en_title={en_AI}
+        cn_title={cn_AI}
       />
     </div>
   );
