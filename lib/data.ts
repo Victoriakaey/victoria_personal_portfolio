@@ -90,7 +90,7 @@ export const cn_experiencesData = [
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
     tags: ["形式化方法", "计算机科学与工程的研究与教学"],
-    date: "2024年9月 - 2025年12月 (预计毕业)",
+    date: "2024年9月 - 2026年4月 (预计毕业)",
   },
   {
     title: "研究与开发负责人 - AI Pathways小组",
@@ -253,7 +253,7 @@ export const en_experiencesData = [
       // "Advanced Computer Security",
       "Research and Teaching in Computer Science and Engineering",
     ],
-    date: "Sep 2024 - Dec 2025 (Expected Graduation)",
+    date: "Sep 2024 - Apr 2026 (Expected Graduation)",
   },
   {
     title: "Research & Dev Lead - AI Pathways Team",
