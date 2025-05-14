@@ -81,16 +81,36 @@ export const en_experiencesTitle = "My Experience";
 
 export const cn_experiencesData = [
   {
-    title: "研究生",
-    location: "UC Santa Cruz - Santa Cruz, CA",
+    title: "应用机器学习：深度学习课程导师和阅卷员",
+    location: "加州大学圣克鲁兹分校 - 圣克鲁兹, 加州",
     locationUrl: "https://www.ucsc.edu/",
     description: [
-      "正在攻读计算机科学和工程的硕士学位。", // ，我的研究方向是人工智能。
+      "主持每周辅导课程，为本科生讲解神经网络、卷积网络、Transformer和强化学习等深度学习复杂概念。",
+      "协助学生实践深度学习算法的实现，包括调试代码、优化模型，并使用 PyTorch 和 TensorFlow 等框架。",
+      "帮助学生掌握高级主题，包括序列建模、自编码器和扩散模型。",
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(LuGraduationCap),
+    tags: ["机器学习", "深度学习", "强化学习"],
+    date: "2024年9月 - 2024年12月",
+  },
+  {
+    title: "研究生",
+    location: "加州大学圣克鲁兹分校 - 圣克鲁兹, 加州",
+    locationUrl: "https://www.ucsc.edu/",
+    description: [
+      "攻读计算机科学与工程硕士学位。", // 可加上“专注于人工智能领域”
     ],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
-    tags: ["形式化方法", "计算机科学与工程的研究与教学"],
-    date: "2024年9月 - 2026年4月 (预计毕业)",
+    tags: [
+      "形式化方法",
+      "算法分析",
+      "VLSI数字系统设计",
+      "计算机安全与网络",
+      "计算机科学与工程领域的研究与教学",
+    ],
+    date: "2024年9月 - 预计2026年4月",
   },
   {
     title: "研究与开发负责人 - AI Pathways小组",
@@ -238,6 +258,20 @@ export const cn_experiencesData = [
 
 export const en_experiencesData = [
   {
+    title: "Tutor and Grader for Applied Machine Learning: Deep Learning class",
+    location: "UC Santa Cruz - Santa Cruz, CA",
+    locationUrl: "https://www.ucsc.edu/",
+    description: [
+      "Conducted weekly tutoring sessions to clarify complex deep learning concepts such as neural networks, convolutional networks, transformers, and reinforcement learning for undergraduate students.",
+      "Assisted students with practical implementations of deep learning algorithms, debugging code, and optimizing models using frameworks like PyTorch and TensorFlow.",
+      "Supported student success in mastering advanced topics, including sequence modeling, autoencoders, and diffusion models.",
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(CgWorkAlt),
+    tags: ["Machine Learning", "Deep Learning", "Reinforcement Learning"],
+    date: "Sep 2024 - Dec 2024",
+  },
+  {
     title: "Graduate Student",
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
@@ -248,9 +282,9 @@ export const en_experiencesData = [
     icon: React.createElement(LuGraduationCap),
     tags: [
       "Formal Methods",
-      // "Analysis of Algorithms",
-      // "VLSI Digital System Design",
-      // "Advanced Computer Security",
+      "Analysis of Algorithms",
+      "VLSI Digital System Design",
+      "Computer Security and Network",
       "Research and Teaching in Computer Science and Engineering",
     ],
     date: "Sep 2024 - Apr 2026 (Expected Graduation)",
@@ -684,7 +718,6 @@ export const cn_AI = "人工智能 & 数据分析";
 export const AI = [
   // Machine Learning Concepts
   "Deep Learning",
-  "Reinforcement Learning",
   "Reinforcement Learning",
   "Prompt Engineering",
   "Retrieval-Augmented Generation (RAG)",

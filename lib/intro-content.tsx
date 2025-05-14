@@ -8,6 +8,8 @@ import {
 import { FaSquareGithub } from "react-icons/fa6";
 import { SiNeteasecloudmusic } from "react-icons/si";
 import { RiNeteaseCloudMusicFill } from "react-icons/ri";
+import { FaGoogleScholar } from "react-icons/fa6";
+
 
 export const cn_introContent = (
   <>
@@ -53,6 +55,7 @@ export const en_introItems = {
 
 export const introLinks = {
   calendly: "https://calendly.com/jduan10/meeting-with-victoria-duan",
+  scholar: "https://scholar.google.com/citations?user=pzf2YpwAAAAJ&hl=en",
   linkedin: "https://www.linkedin.com/in/jiaqi-duan",
   github: "https://github.com/Victoriakaey",
   netease: "https://music.163.com/#/artist?id=46274436",
@@ -60,15 +63,20 @@ export const introLinks = {
 
 export const introIcons = {
   calendly: <FaCalendarCheck className="text-xl" />,
+  scholar: <FaGoogleScholar className="text-xl" />,
   linkedin: <BsLinkedin className="text-xl" />,
   github: <FaSquareGithub className="text-xl" />,
   netease: <SiNeteasecloudmusic className="text-xl" />,
 };
 
 export const introBtns = [
+  // {
+  //   href: introLinks.calendly,
+  //   icon: introIcons.calendly,
+  // },
   {
-    href: introLinks.calendly,
-    icon: introIcons.calendly,
+    href: introLinks.scholar,
+    icon: introIcons.scholar,
   },
   {
     href: introLinks.linkedin,
