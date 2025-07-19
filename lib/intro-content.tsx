@@ -9,6 +9,8 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { SiNeteasecloudmusic } from "react-icons/si";
 import { RiNeteaseCloudMusicFill } from "react-icons/ri";
 import { FaGoogleScholar } from "react-icons/fa6";
+import { FaSpotify } from "react-icons/fa";
+
 
 
 export const cn_introContent = (
@@ -59,6 +61,7 @@ export const introLinks = {
   linkedin: "https://www.linkedin.com/in/jiaqi-duan",
   github: "https://github.com/Victoriakaey",
   netease: "https://music.163.com/#/artist?id=46274436",
+  spotify: "https://open.spotify.com/artist/2zKFtSlWX5ulWikdcOIf76?si=Le6H6tzVQcWk5NKUk8TcMg",
 };
 
 export const introIcons = {
@@ -67,6 +70,7 @@ export const introIcons = {
   linkedin: <BsLinkedin className="text-xl" />,
   github: <FaSquareGithub className="text-xl" />,
   netease: <SiNeteasecloudmusic className="text-xl" />,
+  spotify: <FaSpotify className="text-xl" />
 };
 
 export const introBtns = [
@@ -86,8 +90,12 @@ export const introBtns = [
     href: introLinks.github,
     icon: introIcons.github,
   },
+  // {
+  //   href: introLinks.netease,
+  //   icon: introIcons.netease,
+  // },
   {
-    href: introLinks.netease,
-    icon: introIcons.netease,
+    href: introLinks.spotify,
+    icon: introIcons.spotify,
   },
 ];
