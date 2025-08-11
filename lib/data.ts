@@ -110,7 +110,7 @@ export const cn_experiencesData = [
       "计算机安全与网络",
       "计算机科学与工程领域的研究与教学",
     ],
-    date: "2024年9月 - 预计2026年4月",
+    date: "2024年9月 - 预计2025年12月",
   },
   {
     title: "研究与开发负责人 - AI Pathways小组",
@@ -287,7 +287,7 @@ export const en_experiencesData = [
       "Computer Security and Network",
       "Research and Teaching in Computer Science and Engineering",
     ],
-    date: "Sep 2024 - Apr 2026 (Expected Graduation)",
+    date: "Sep 2024 - Dec 2025 (Expected Graduation)",
   },
   {
     title: "Research & Dev Lead - AI Pathways Team",
