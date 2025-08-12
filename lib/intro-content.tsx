@@ -46,13 +46,13 @@ export const en_introContent = (
 export const cn_introItems = {
   contact: "点击此处联系我",
   download: "下载我的简历",
-  resume: "/JD_Resume.pdf",
+  resume: "/Jiaqi_Duan_Resume.pdf",
 };
 
 export const en_introItems = {
   contact: "Contact me here",
   download: "Download Resume",
-  resume: "/JD_Resume.pdf",
+  resume: "/Jiaqi_Duan_Resume.pdf",
 };
 
 export const introLinks = {
