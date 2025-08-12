@@ -290,7 +290,7 @@ export const en_experiencesData = [
     date: "Sep 2024 - Dec 2025 (Expected Graduation)",
   },
   {
-    title: "Research & Dev Lead - AI Pathways Team",
+    title: "Full Stack Engineer & Dev Lead - AI Pathways Team",
     location: "Tech4Good Lab - Santa Cruz, CA",
     locationUrl: "https://tech4good.soe.ucsc.edu/",
     description: [
@@ -454,7 +454,7 @@ export const en_projectsTitle = "My Projects";
 export const cn_projectsData = [
   {
     title: "Pathways",
-    time: "2024年4月 - 现在",
+    time: "2024年4月 - 2025年1月",
     description:
       "一个AI驱动的网络应用程序，旨在帮助用户自学任何一个领域的知识。",
     sideNotes:
@@ -528,7 +528,7 @@ export const cn_projectsData = [
       "一个以我的三只猫，Kitty, Bangbang和Normie的肖像为牌面的卡牌翻转游戏。",
     sideNotes:
       "这是我开发的第一个网站。我创建了这个项目来学习React和网页部署。作为一个骄傲的猫妈妈，我无法抗拒展示我心爱的猫和它们可爱的脸！:))",
-    tags: ["React", "TypeScript", "Material-UI", "emotion", "gsap"],
+    tags: ["React", "TypeScript", "Material-UI", "emotion", "GSAP"],
     imageUrl: [Img1, Img15, Img16],
     projectUrl: "https://victoria-cat-memory-game.vercel.app/",
   },
@@ -537,7 +537,7 @@ export const cn_projectsData = [
 export const en_projectsData = [
   {
     title: "Pathways",
-    time: "Apr 2024 - Present",
+    time: "Apr 2024 - Jan 2025",
     description:
       "An AI-driven web application designed to facilitate self-directed learning.",
     sideNotes:
@@ -613,7 +613,7 @@ export const en_projectsData = [
       "A card-flipping game featuring portraits of my three cats, Kitty, Bangbang and Normie.",
     sideNotes:
       "This is the first website I developed. I created this project to learn React and web deployment. As a proud cat mom, I couldn't resist showcasing my beloved cats and their adorable faces! :))",
-    tags: ["React", "TypeScript", "Material-UI", "emotion", "gsap"],
+    tags: ["React", "TypeScript", "Material-UI", "emotion", "GSAP"],
     imageUrl: [Img1, Img15, Img16],
     projectUrl: "https://victoria-cat-memory-game.vercel.app/",
   },
@@ -638,7 +638,7 @@ export const cn_programmingLanguages = "编程语言";
 export const programmingLanguages = [
   // Scripting Languages
   "TypeScript",
-  "JavaScript",
+  "JavaScript (ES6+)",
   // Object-Oriented Programming (OOP)
   "Python",
   "Java",
@@ -653,6 +653,7 @@ export const cn_frontendDevelopment = "前端开发";
 export const frontendDevelopment = [
   // Frameworks and Libraries
   "React",
+  "React Native (Expo)",
   "Next.js",
   "SolidJS",
   // Build Tools & Environments
@@ -662,9 +663,12 @@ export const frontendDevelopment = [
   "Redux Toolkit",
   "RTK Query",
   "RxJS",
+  "Axios",
   // Styling & UI Libraries
-  "CSS",
+  "HTML5",
+  "CSS3",
   "Tailwind CSS",
+  "NativeWind",
   "Sass",
   "PostCSS",
   "Material UI",
@@ -674,7 +678,7 @@ export const frontendDevelopment = [
   "Radix UI",
   // Animations
   "Framer Motion",
-  "gsap",
+  "GSAP",
   // Icons & Graphics
   "React Icons",
 ];
@@ -684,17 +688,43 @@ export const cn_backendDevelopment = "后端开发";
 
 export const backendDevelopment = [
   // Frameworks and Platforms
-  "Express.js",
+  "FastAPI",
   "Django",
   "Django REST Framework",
-  // Authentication & Security
-  "JWT",
+  "Express.js",
   // API Development
   "RESTful APIs",
-  // Backend Services
+  "gRPC",
+  // Authentication & Security
+  "JWT",
+  // Databases & Caching
+  "PostgreSQL",
   "Firebase",
-  // HTTP Clients
-  "Axios",
+  "Supabase",
+  "Redis",
+  // Messaging & Microservices
+  "Kafka",
+  "RabbitMQ",
+  "Microservices Architecture",
+  // Cloud & Infrastructure
+  "Google Cloud Platform (GCP)",
+  "AWS",
+  "Docker",
+  "Kubernetes",
+  "Terraform",
+  "Vercel",
+  "Postman",
+  // DevOps & Testing
+  "Git", 
+  "GitHub Actions", 
+  "CI/CD Pipelines",
+  "Pytest", 
+  "Jest", 
+  "Jenkins",
+  "Unit Testing",
+  "Integration Testing",
+  "End-to-End (E2E) Testing",
+  "Test Automation",
 ];
 
 export const en_database = "Databases";
@@ -710,6 +740,7 @@ export const database = [
   "Firebase",
   // Vector Databases
   "Pinecone",
+  "Chroma",
 ];
 
 export const en_AI = "AI & Data Analytics";
@@ -726,15 +757,26 @@ export const AI = [
   "PyTorch",
   "Keras",
   "Hugging Face Transformers",
-  "Langchain",
+  "LangChain",
+  "LlamaIndex",
+  "AutoGen",
+  "Ollama",
   // Data Analysis & Visualization
   "Pandas",
   "NumPy",
   "Matplotlib",
   "Seaborn",
   "Plotly",
+  "Chart.js",
+  "Prometheus",
+  "Grafana",
+  "Logging & Monitoring",
   // AI Platforms & APIs
-  "OpenAI APIs",
-  "Gemini APIs",
+  "OpenAI API",
+  "Gemini AP",
+  "Claude",
   "Google AI Studio",
+  "LastMile AI",
+  "Weights & Biases (W&B)",
+  "Cursor",
 ];
