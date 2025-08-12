@@ -664,6 +664,7 @@ export const frontendDevelopment = [
   "RTK Query",
   "RxJS",
   "Axios",
+  "GraphQL",
   // Styling & UI Libraries
   "HTML5",
   "CSS3",
