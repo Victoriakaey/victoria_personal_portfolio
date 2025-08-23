@@ -33,7 +33,7 @@ export const cn_aboutContent = (
 export const en_aboutContent = (
   <>
     <p className="mb-3">
-      Master&apos;s student in <span className="font-bold"> Computer Science & Engineering </span> with a dual background in psychology. 
+      Master&apos;s student in <span className="font-bold"> Computer Science &amp; Engineering </span> with a dual background in psychology. 
       Open to <span className="font-bold"> Full Stack Engineer</span>{" "}
       or
       <span className="font-bold"> Software Engineer</span> full-time roles
@@ -42,16 +42,16 @@ export const en_aboutContent = (
     </p>
 
     <p className="mb-3">
-      My work lives at the intersection of architecture and alignment — I build multi-agent systems where large language models don’t just generate, <span className="italic"> they reason, critique, and explain</span>. 
+      My work lives at the intersection of architecture and alignment — I build multi-agent systems where large language models don&apos;t just generate, <span className="italic"> they reason, critique, and explain</span>. 
     </p>
 
     <p>
-      When I'm not coding, I enjoy creating in all forms, whether it's cooking, baking, turfing, pottery, drawing, poetry or {" "}
+      When I&apos;m not coding, I enjoy creating in all forms, whether it&apos;s cooking, baking, turfing, pottery, drawing, poetry or {" "}
 
         <a href="https://open.spotify.com/artist/2zKFtSlWX5ulWikdcOIf76?si=Le6H6tzVQcWk5NKUk8TcMg" target="_blank" rel="noopener noreferrer">
           <span className="underline transition">songwriting</span>
         </a>.
-      I'm always open to learning new things and expanding my skills, both personally and professionally.
+      I&apos;m always open to learning new things and expanding my skills, both personally and professionally.
     </p>
   </>
 );
