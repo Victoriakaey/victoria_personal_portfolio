@@ -46,7 +46,7 @@ export const en_aboutContent = (
     </p>
 
     <p>
-      When I'm not coding, I enjoy creating in all forms, whether it's cooking, baking, turfing, drawing, poetry or {" "}
+      When I'm not coding, I enjoy creating in all forms, whether it's cooking, baking, turfing, pottery, drawing, poetry or {" "}
 
         <a href="https://open.spotify.com/artist/2zKFtSlWX5ulWikdcOIf76?si=Le6H6tzVQcWk5NKUk8TcMg" target="_blank" rel="noopener noreferrer">
           <span className="underline transition">songwriting</span>
