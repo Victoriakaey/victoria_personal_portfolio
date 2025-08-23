@@ -21,6 +21,7 @@ import Img13 from "@/public/img13.png";
 import Img14 from "@/public/img14.png";
 import Img15 from "@/public/img15.png";
 import Img16 from "@/public/img16.png";
+import { title } from "process";
 
 export const cn_links = [
   {
@@ -81,17 +82,72 @@ export const en_experiencesTitle = "My Experience";
 
 export const cn_experiencesData = [
   {
-    title: "应用机器学习：深度学习课程导师和阅卷员",
+    title: "创始工程师",
+    location: "Ripplet - 远程",
+    locationUrl: "https://ripplet-info-website.vercel.app/",
+    description: [
+      "Ripplet 是一个讲述与疗愈平台，通过播客、表达性艺术和社区主导的叙事，提升移民、黑人、土著及有色人种（BIPOC）社群以及跨文化群体的声音",
+      // "作为唯一的创始工程师，跨越研究、产品与工程环节，将使命转化为数字化体验与治疗师支持工具。",
+      "开展用户访谈、竞品分析和产品研究，以识别关键痛点并优化解决方案",
+      "设计并开发公司官网，实现响应式且用户友好的界面",
+      "构建了一个治疗师支持平台原型，集成 AI 驱动的聊天机器人与交互式仪表盘，实现安全的会话记录、循证指导和进度追踪"
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(CgWorkAlt),
+    tags: [
+      "美国健康保险可携性与责任法案 (HIPAA)", 
+      "多智能体系统", 
+      "Ollama", 
+      "OpenAI API", 
+      "Next.js", 
+      "Google Gemini", 
+      "Anthropic Claude", 
+      "LlamaIndex", 
+      "Hugging Face 产品",
+      "LangChain",
+      "Redux", 
+      "Node.js", 
+      "提示工程 (Prompt Engineering)", 
+      "软件开发", 
+      "React.js", 
+      "Python 编程语言", 
+      "TailwindCSS", 
+      "PostgreSQL", 
+      "Django REST 框架",
+      "检索增强生成 (RAG)"
+    ],
+    date: "2024年6月 - 2025年8月"
+  },
+  {
+    title: "导师",
+    location: "BobaTalks",
+    locationUrl: "https://www.bobatalks.com/",
+    description: [
+      "支持国际学生和科技新手规划职业路径，包括研究生院选择、职业方向探索及海外生活挑战应对。",
+    ],
+    isBulletPoints: false,
+    icon: React.createElement(LuHelpingHand),
+    tags: ["导师", "国际学生", "职业指导", "研究生院建议"],
+    date: "2025年2月 - 现在",
+  },
+  {
+    title: "一对一课程辅导与作业评分 - 深度学习课程",
     location: "加州大学圣克鲁兹分校 - 圣克鲁兹, 加州",
     locationUrl: "https://www.ucsc.edu/",
     description: [
-      "主持每周辅导课程，为本科生讲解神经网络、卷积网络、Transformer和强化学习等深度学习复杂概念。",
-      "协助学生实践深度学习算法的实现，包括调试代码、优化模型，并使用 PyTorch 和 TensorFlow 等框架。",
-      "帮助学生掌握高级主题，包括序列建模、自编码器和扩散模型。",
+      "每周两次线上与线下答疑，讲解深度学习核心概念，并指导学生应用机器学习原理，包括模型训练/测试、损失函数、梯度下降以及正则化技术",
+      "批改编程作业与小测验，并针对卷积神经网络 (CNN)、循环神经网络 (RNN)、注意力模型和 Transformer 等主题提供建设性反馈"
     ],
     isBulletPoints: true,
     icon: React.createElement(LuGraduationCap),
-    tags: ["机器学习", "深度学习", "强化学习"],
+    tags: [
+      "深度学习", 
+      "神经网络", 
+      "机器学习", 
+      "强化学习",
+      "Python 编程",
+      "沟通能力"
+    ],
     date: "2024年9月 - 2024年12月",
   },
   {
@@ -99,69 +155,83 @@ export const cn_experiencesData = [
     location: "加州大学圣克鲁兹分校 - 圣克鲁兹, 加州",
     locationUrl: "https://www.ucsc.edu/",
     description: [
-      "攻读计算机科学与工程硕士学位。", // 可加上“专注于人工智能领域”
+      "攻读计算机科学与工程硕士学位", // ，专注于人工智能领域的研究与应用。",
     ],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
     tags: [
-      "形式化方法",
-      "算法分析",
-      "VLSI数字系统设计",
+      "机器学习",
+      "深度学习基础",
+      "人工智能项目",
+      "高级计算机安全",
       "计算机安全与网络",
-      "计算机科学与工程领域的研究与教学",
+      "超大规模集成电路数字系统设计",
+      "算法分析",
+      "编程语言——Coq（证明辅助工具/形式化语言）",
+      "形式化方法",
+      "计算机科学与工程中的研究与教学",
     ],
     date: "2024年9月 - 预计2025年12月",
   },
   {
-    title: "研究与开发负责人 - AI Pathways小组",
-    location: "Tech4Good Lab - Santa Cruz, CA",
-    locationUrl: "https://tech4good.soe.ucsc.edu/",
-    description: [
-      "领导一个由10多名开发人员组成的团队，将AI集成到网络开发中。",
-      "进行初步研究，收集用户反馈和见解，推动Pathways应用程序的改进。",
-    ],
-    isBulletPoints: true,
-    icon: React.createElement(CgWorkAlt),
-    tags: [
-      "提示词工程",
-      "LLMLingua/LongLLMLingua",
-      "Pinecone",
-      "OpenAI ChatCompletion API",
-      "OpenAI Assistant API",
-      "OpenAI Embeddings API",
-      "用户研究",
-      "领导力",
-      "辅导/指导能力",
-    ],
-    date: "2023年6月 - 现在",
+    title: "全栈工程师 & 开发负责人 - AI Pathways 团队",
+      location: "Tech4Good 实验室 - 美国加州圣克鲁兹",
+      locationUrl: "https://tech4good.soe.ucsc.edu/",
+      description: [
+        "带领由 AI 研究员、网页开发者和 UI/UX 设计师组成的跨职能团队，开发 Pathways —— 一个由人工智能驱动的自我导向学习平台，帮助用户学习从编程到烹饪等各类主题。平台通过个性化推荐与交互式指导实现学习体验，并经过多次用户研究验证与优化，包括在大学生群体中的试点实验。"
+        // "开展初步研究以收集用户反馈和见解，推动 Pathways 应用的改进。"
+      ],
+      isBulletPoints: false,
+      icon: React.createElement(CgWorkAlt),
+      tags: [
+        "提示工程 (Prompt Engineering)",
+        "LLMLingua/LongLLMLingua",
+        "Pinecone",
+        "OpenAI ChatCompletion API",
+        "OpenAI Assistant API",
+        "OpenAI Embeddings API",
+        "用户研究",
+        "领导力",
+        "导师指导"
+      ],
+      date: "2023年6月 - 2025年1月"
   },
   {
-    title: "编程教师",
-    location: "Code For Fun - Sunnyvale, CA",
+    title: "编程讲师",
+    location: "Code For Fun - 美国加州森尼韦尔",
     locationUrl: "https://codeforfun.com/",
     description: [
-      "指导了5000多名学生在小型和大型团体中学习编程。",
-      "为不同学生需求量身定制个性化学习计划。",
+      "教授 K–12 学生编程基础概念，包括逻辑思维、问题求解，以及入门级数据结构与算法",
+      "主持最多可容纳 300 名学生的大型 Code Day 编程工作坊，并在小班（1–8 人）及中大班（8–25 人）教学环境中授课",
+      "设计基于项目的课程，并教授涵盖以下方向的实践课程：游戏开发、机器人开发、网页开发、移动应用开发、图形化编程与文本编程"
     ],
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
     tags: [
       "教学",
-      "公开演讲",
+      "公众演讲",
       "游戏开发",
-      "Web开发",
+      "网页开发",
       "移动应用开发",
-      "积木编程",
+      "图形化编程",
       "Python",
+      "Lua (Roblox)",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Scratch"
     ],
-    date: "2023年2月 - 2023年12月",
+    date: "2023年2月 - 2024年2月"
   },
   {
     title: "本科生",
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
-    description: ["获得了计算机科学和心理学双学士学位。"],
-    isBulletPoints: false,
+    description: [
+      "计算机科学与工程 理学学士 (B.S.)",
+      "心理学 文学学士 (B.A.)"
+    ],
+    isBulletPoints: true,
     icon: React.createElement(LuGraduationCap),
     tags: [
       "数据结构与算法",
@@ -196,17 +266,30 @@ export const cn_experiencesData = [
     date: "2020年7月 - 2022年12月",
   },
   {
-    title: "Python助教",
-    location: "UC Santa Cruz - Santa Cruz, CA",
+    title: "Python 课程评分员与辅导员",
+    location: "加州大学圣克鲁兹分校 - 美国加州圣克鲁兹",
     locationUrl: "https://www.ucsc.edu/",
     description: [
-      "在8个连续季度中为学生助教和评分。",
-      "因出色的表现和提高学生对Python的理解和解决问题的能力而连续被聘用。",
+      "使用自动化评分脚本批改 Python 编程作业，确保提交结果的准确性与一致性",
+      "在答疑时间和在线论坛中，协助学生理解课程概念并调试代码",
+      "因表现与可靠性突出，连续八个学期被同一位教授再次聘用"
     ],
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
-    tags: ["教学", "Python", "沟通能力", "解决问题的能力"],
-    date: "2021年4月 - 2022年12月",
+    tags: ["课程辅导", "Python", "沟通能力", "问题解决"],
+    date: "2021年4月 - 2022年12月"
+  },
+  {
+    title: "后端开发实习生",
+    location: "WayOps - 远程",
+    locationUrl: "https://wayops.eu/",
+    description: [
+      "参与智能停车管理系统开发，通过重组大规模数据集提升效率，改进查询速度和数据库可扩展性，以支持实时停车位可用性分析"
+    ],
+    isBulletPoints: false,
+    icon: React.createElement(CgWorkAlt),
+    tags: ["协作", "SQL", "PostgreSQL", "数据库优化", "数据建模", "关系型数据库", "可扩展性与性能调优", "Azure Data Studio"],
+      date: "2021年7月 - 2021年8月"
   },
   {
     title: "动物领养中心志愿者",
@@ -235,10 +318,46 @@ export const cn_experiencesData = [
     date: "2017年5月 - 2020年6月",
   },
   {
-    title: "社区大学学生",
-    location: "De Anza College - Cupertino, CA",
-    locationUrl: "https://www.deanza.edu/",
-    description: ["在转学之前完成了计算机科学学位所需的课程。"],
+  title: "教学助理 - C++ 编程课程（初级到高级）",
+  location: "De Anza 学院 - 美国加州库比蒂诺",
+  locationUrl: "https://www.deanza.edu/",
+  description: [
+    "协助教授从入门到高级的 C++ 编程课程",
+    "在答疑时间帮助学生解决编程问题和理解相关概念",
+    "批改作业并为学生提供反馈"
+  ],
+  isBulletPoints: true,
+  icon: React.createElement(LuHelpingHand),
+  tags: [
+    "教学",
+    "C++",
+    "学生支持"
+  ],
+  date: "2018年4月 - 2019年6月"
+},
+{
+  title: "CIS 实验室辅导员",
+  location: "De Anza 学院 - 美国加州库比蒂诺",
+  locationUrl: "https://www.deanza.edu/",
+  description: [
+    "担任计算机信息系统 (CIS) 课程的实验室辅导员，在实验课期间为学生提供实践性指导",
+    "帮助学生理解课程内容、调试代码并完成实验作业",
+    "与授课教师合作，识别学生常见难点并制定有效的教学策略"
+  ],
+  isBulletPoints: true,
+  icon: React.createElement(LuHelpingHand),
+  tags: [
+    "教学",
+    "C++",
+    "学生支持"
+  ],
+  date: "2018年4月 - 2019年6月"
+},
+{
+  title: "社区大学学生",
+  location: "De Anza College - Cupertino, CA",
+  locationUrl: "https://www.deanza.edu/",
+  description: ["在转学之前完成了计算机科学学位所需的课程。"],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
     tags: [
@@ -258,17 +377,72 @@ export const cn_experiencesData = [
 
 export const en_experiencesData = [
   {
-    title: "Tutor and Grader for Applied Machine Learning: Deep Learning class",
-    location: "UC Santa Cruz - Santa Cruz, CA",
-    locationUrl: "https://www.ucsc.edu/",
+    title: "Founding Engineer",
+    location: "Ripplet - Remote",
+    locationUrl: "https://ripplet-info-website.vercel.app/",
     description: [
-      "Conducted weekly tutoring sessions to clarify complex deep learning concepts such as neural networks, convolutional networks, transformers, and reinforcement learning for undergraduate students.",
-      "Assisted students with practical implementations of deep learning algorithms, debugging code, and optimizing models using frameworks like PyTorch and TensorFlow.",
-      "Supported student success in mastering advanced topics, including sequence modeling, autoencoders, and diffusion models.",
+      "Ripplet is a storytelling and healing platform uplifting the voices of immigrants, Black, Indigenous, and People of Color (BIPOC) communities, and those living between cultures through podcasts, expressive arts, and community-led narratives",
+      // "As the sole founding engineer, worked across research, product, and engineering to translate the mission into digital experiences and therapist support tools.",
+      "Conducted user interviews, competitive analysis, and product research to identify critical pain points and refine solution offerings",
+      "Designed and developed the company website, delivering a responsive and user-friendly interface",
+      "Built a therapist support platform prototype with an AI-powered chatbot and dashboards, enabling secure session notes, evidence-based guidance, and progress tracking",
     ],
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
-    tags: ["Machine Learning", "Deep Learning", "Reinforcement Learning"],
+    tags: [
+      "U.S. Health Insurance Portability and Accountability Act (HIPAA)", 
+      "Multi-agent Systems", 
+      "Ollama", 
+      "OpenAI API", 
+      "Next.js", 
+      "Google Gemini", 
+      "Anthropic Claude", 
+      "LlamaIndex", 
+      "Hugging Face Products",
+      "LangChain",
+      "Redux", 
+      "Node.js", 
+      "Prompt Engineering", 
+      "Software Development", 
+      "React.js", 
+      "Python (Programming Language)", 
+      "TailwindCSS", 
+      "PostgreSQL", 
+      "Django REST Framework",
+      "Retrieval-Augmented Generation (RAG)", 
+    ],
+    date: "Jun 2024 - Aug 2025",
+  },
+  {
+    title: "Mentor",
+    location: "BobaTalks",
+    locationUrl: "https://www.bobatalks.com/",
+    description: [
+      "Support international students and newcomers to tech in figuring out their path, from deciding on graduate school to exploring career directions and navigating challenges abroad",
+    ],
+    isBulletPoints: false,
+    icon: React.createElement(LuHelpingHand),
+    tags: ["Mentorship", "International Students", "Career Guidance", "Graduate School Advice"],
+    date: "Feb 2025 - Present",
+  },
+  {
+    title: "Individual Tutor and Grader - Deep Learning Course",
+    location: "UC Santa Cruz - Santa Cruz, CA",
+    locationUrl: "https://www.ucsc.edu/",
+    description: [
+      "Held in-person and remote office hours twice weekly to clarify deep learning concepts, and guided students in applying machine learning principles, including model training/testing, loss functions, gradient descent, and regularization techniques",
+      "Graded coding assignments and quizzes, providing constructive feedback on topics such as CNNs, RNNs, attention models, and transformers",
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(CgWorkAlt),
+    tags: [
+      "Deep Learning", 
+      "Neural Networks", 
+      "Machine Learning", 
+      "Reinforcement Learning",
+      "Python Programming",
+      "Communication",
+    ],
     date: "Sep 2024 - Dec 2024",
   },
   {
@@ -276,16 +450,23 @@ export const en_experiencesData = [
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
     description: [
-      "Pursuing a Master's degree in Computer Science and Engineering.", // , specializing in Artificial Intelligence
+      "Master of Science in Computer Science and Engineering", // , specializing in Artificial Intelligence
     ],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),
     tags: [
-      "Formal Methods",
-      "Analysis of Algorithms",
-      "VLSI Digital System Design",
+      "Machine Learning",
+      "Foundations of Deep Learning",
+      "Projects in Artificial Intelligence",
+      "Artificial Intelligence in Games",
+      "Advanced Computer Security",
       "Computer Security and Network",
+      "VLSI Digital System Design",
+      "Analysis of Algorithms",
+      "Programming Languages - Coq",
+      "Formal Methods",
       "Research and Teaching in Computer Science and Engineering",
+      // "Neural Computation",
     ],
     date: "Sep 2024 - Dec 2025 (Expected Graduation)",
   },
@@ -294,10 +475,10 @@ export const en_experiencesData = [
     location: "Tech4Good Lab - Santa Cruz, CA",
     locationUrl: "https://tech4good.soe.ucsc.edu/",
     description: [
-      "Led a team of 10+ developers in integrating AI into web development.",
-      "Conducted preliminary studies to gather user feedback and insights, driving improvements in the Pathways applications.",
+      "Led a cross-functional team of AI researchers, web developers, and UI/UX designers to build Pathways, an AI-powered self-directed learning platform that helps anyone learn—from coding to cooking—through personalized recommendations and interactive guidance, refined through multiple user studies, including pilots with university students.",
+      // "Conducted preliminary studies to gather user feedback and insights, driving improvements in the Pathways applications.",
     ],
-    isBulletPoints: true,
+    isBulletPoints: false,
     icon: React.createElement(CgWorkAlt),
     tags: [
       "Prompt Engineering",
@@ -310,15 +491,16 @@ export const en_experiencesData = [
       "Leadership",
       "Mentorship",
     ],
-    date: "June 2023 - Present",
+    date: "June 2023 - Jan 2025",
   },
   {
     title: "Coding Instructor",
     location: "Code For Fun - Sunnyvale, CA",
     locationUrl: "https://codeforfun.com/",
     description: [
-      "Instructed over 5,000 students in programming across small and large group settings.",
-      "Developed personalized learning plans to cater to diverse student needs.",
+      "Taught K–12 students fundamental programming concepts, including logic, problem-solving, and introductory data structures & algorithms",
+      "Led large-scale Code Day workshops for up to 300 students and taught in small (1–8) and medium-to-large (8–25) class settings",
+      "Developed project-based curricula and delivered engaging lessons in: Game Development, Robotics, Web Development, Mobile App Development, Block-based Programming and Text-based Programming",
     ],
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
@@ -330,6 +512,11 @@ export const en_experiencesData = [
       "Mobile App Development",
       "Block Programming",
       "Python",
+      "Lua (Roblox)",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Scratch"
     ],
     date: "Feb 2023 - Feb 2024",
   },
@@ -338,9 +525,10 @@ export const en_experiencesData = [
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
     description: [
-      "Earned Bachelor of Science in Computer Science and Engineering, and Bachelor of Art in Psychology.",
+      "Bachelor of Science (B.S.) in Computer Science and Engineering",
+      "Bachelor of Arts (B.A.) in Psychology",
     ],
-    isBulletPoints: false,
+    isBulletPoints: true,
     icon: React.createElement(LuGraduationCap),
     tags: [
       "Data Structure and Algorithm",
@@ -379,8 +567,9 @@ export const en_experiencesData = [
     location: "UC Santa Cruz - Santa Cruz, CA",
     locationUrl: "https://www.ucsc.edu/",
     description: [
-      "Tutored and graded assignments for students over 8 consecutive quarters.",
-      "Rehired consistently for outstanding performance and commitment to improving students' understanding of Python and their problem-solving skills.",
+      "Graded Python programming assignments using automated grading scripts to ensure accuracy and consistency across submissions",
+      "Assisted students in understanding course concepts and debugging code during office hours and online forums",
+      "Rehired by the same professor for eight consecutive quarters based on performance and reliability"
     ],
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
@@ -388,12 +577,24 @@ export const en_experiencesData = [
     date: "Apr 2021 - Dec 2022",
   },
   {
+    title: "Backend Developer Intern",
+    location: "WayOps - Remote",
+    locationUrl: "https://wayops.eu/",
+    description: [
+      "Contributed to a smart parking management system by reorganizing large-scale datasets for efficiency, improving query speed, and database scalability to support real-time parking availability insights.",
+    ],
+    isBulletPoints: false,
+    icon: React.createElement(CgWorkAlt),
+    tags: ["Collaboration", "SQL", "PostgreSQL", "Database Optimization", "Data Modeling", "Relational Databases", "Scalability & Performance Tuning", "Azure Data Studio"],
+    date: "Jul 2021 - Aug 2021",
+  },
+  {
     title: "Animal Care Volunteer",
     location: "Humane Society at Silicon Valley - Sunnyvale, CA",
     locationUrl: "https://www.hssv.org/",
     description: [
-      "Provided compassionate, hands-on care to dogs, cats, and rabbits, enriching their lives and preparing them for adoption into loving homes.",
-      "Focused on ensuring the well-being and comfort of the animals.",
+      "Provided compassionate, hands-on care to dogs, cats, and rabbits, enriching their lives and preparing them for adoption into loving homes",
+      "Focused on ensuring the well-being and comfort of the animals",
     ],
     isBulletPoints: true,
     icon: React.createElement(LuHelpingHand),
@@ -406,12 +607,12 @@ export const en_experiencesData = [
     date: "June 2018 - June 2019",
   },
   {
-    title: "Co-founder & president - Pop Music Club",
+    title: "Co-founder & President - Pop Music Club",
     location: "De Anza College - Cupertino, CA",
     locationUrl: "https://www.deanza.edu/",
     description: [
-      "Co-founded and led a music club with over 200 members, serving as president for two years.",
-      "Managed bands and organized events, including annual concerts and club days.",
+      "Co-founded and led a music club with over 200 members, serving as president for two years",
+      "Managed bands and organized events, including annual concerts and club days",
     ],
     isBulletPoints: true,
     icon: React.createElement(LuUser2),
@@ -425,11 +626,47 @@ export const en_experiencesData = [
     date: "May 2017 - June 2020",
   },
   {
+    title: "Teaching Assistant - C++ Programming Courses (Beginning to Advanced)",
+    location: "De Anza College - Cupertino, CA",
+    locationUrl: "https://www.deanza.edu/",
+    description: [
+      "Assisted in teaching C++ programming courses ranging from beginner to advanced levels",
+      "Held office hours to help students with coding problems and concepts",
+      "Graded assignments and provided feedback to students",
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(LuHelpingHand),
+    tags: [
+      "Teaching",
+      "C++",
+      "Student Support"
+    ],
+    date: "Apr 2018 - June 2019",
+  },
+  {
+    title: "CIS Lab Tutor",
+    location: "De Anza College - Cupertino, CA",
+    locationUrl: "https://www.deanza.edu/",
+    description: [
+      "Worked as a lab tutor for Computer Information Systems (CIS) courses, providing hands-on assistance to students during lab sessions.",
+      "Helped students understand course material, debug code, and complete lab assignments.",
+      "Collaborated with instructors to identify common student challenges and develop effective teaching strategies.",
+    ],
+    isBulletPoints: true,
+    icon: React.createElement(LuHelpingHand),
+    tags: [
+      "Teaching",
+      "C++",
+      "Student Support"
+    ],
+    date: "Apr 2018 - June 2019",
+  },
+  {
     title: "Community College Student",
     location: "De Anza College - Cupertino, CA",
     locationUrl: "https://www.deanza.edu/",
     description: [
-      "Completed required coursework for a Computer Science degree before transferring to UC Santa Cruz. ",
+      "Completed required coursework for a Computer Science degree before transferring to UC Santa Cruz",
     ],
     isBulletPoints: false,
     icon: React.createElement(LuGraduationCap),

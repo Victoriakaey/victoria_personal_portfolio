@@ -69,13 +69,13 @@ export default function Experience() {
               <Link
                 href={item.locationUrl}
                 target="__blank"
-                className="font-normal !mt-0 italic dark:hover:text-white hover:text-black/70"
+                className="font-normal !mt-1 italic dark:hover:text-white hover:text-black/70 underline"
               >
                 {item.location}
               </Link>
 
               <ul
-                className={`list-inside !mt-2 sm:mt-auto ${
+                className={`list-inside !mt-1 sm:mt-auto ${
                   item.isBulletPoints ? "list-disc" : ""
                 }`}
               >
