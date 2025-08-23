@@ -390,7 +390,6 @@ export const en_experiencesData = [
     isBulletPoints: true,
     icon: React.createElement(CgWorkAlt),
     tags: [
-      "U.S. Health Insurance Portability and Accountability Act (HIPAA)", 
       "Multi-agent Systems", 
       "Ollama", 
       "OpenAI API", 
@@ -408,8 +407,9 @@ export const en_experiencesData = [
       "Python (Programming Language)", 
       "TailwindCSS", 
       "PostgreSQL", 
-      "Django REST Framework",
       "Retrieval-Augmented Generation (RAG)", 
+      "U.S. Health Insurance Portability and Accountability Act (HIPAA)", 
+      "Django REST Framework",
     ],
     date: "Jun 2024 - Aug 2025",
   },

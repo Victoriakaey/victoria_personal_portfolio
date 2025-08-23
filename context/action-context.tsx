@@ -11,12 +11,12 @@ interface ActionProviderProps {
 }
 
 export const ActionContext = createContext<ActionContextType>({
-  action: false,
+  action: true,
   toggleAction: () => {},
 });
 
 export const ActionProvider: React.FC<ActionProviderProps> = ({ children }) => {
-  const [action, setAction] = useState<boolean>(false);
+  const [action, setAction] = useState<boolean>(true);
 
   const toggleAction = () => {
     setAction((prev) => !prev);

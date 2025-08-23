@@ -69,26 +69,26 @@ export default function Experience() {
               <Link
                 href={item.locationUrl}
                 target="__blank"
-                className="font-normal !mt-1 italic dark:hover:text-white hover:text-black/70 underline"
+                className="font-normal !mt-2 italic dark:hover:text-white hover:text-black/70 underline"
               >
                 {item.location}
               </Link>
 
               <ul
-                className={`list-inside !mt-1 sm:mt-auto ${
-                  item.isBulletPoints ? "list-disc" : ""
+                className={`list-outside !mt-2 sm:mt-auto ${
+                  item.isBulletPoints ? "list-disc ml-5" : ""
                 }`}
               >
                 {item.description.map((description, index) => (
                   <li
-                    className="!mt-2 !font-normal text-sm lg:text-base text-gray-700 dark:text-white/75"
+                    className="!mt-1 !font-normal text-sm lg:text-base text-gray-700 dark:text-white/75"
                     key={index}
                   >
                     {description}
                   </li>
                 ))}
               </ul>
-              <ul className="flex flex-wrap !mt-6 mb-4 lg:mb-4 gap-2 sm:mt-auto">
+              <ul className="flex flex-wrap !mt-4 mb-4 lg:mb-4 gap-2 sm:mt-auto">
                 {item.tags.map((tag, index) => (
                   <li
                     className="bg-black/10 text-gray-550 !px-3 !py-1 text-[0.7rem] tracking-wider dark:text-white rounded-md dark:text-white/70 dark:bg-black/40"
