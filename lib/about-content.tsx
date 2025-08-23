@@ -33,34 +33,25 @@ export const cn_aboutContent = (
 export const en_aboutContent = (
   <>
     <p className="mb-3">
-      I&apos;m a graduate student in Computer Science and Engineering at UC
-      Santa Cruz
-      {/* , specializing in
-      <span className="font-bold"> Artificial Intelligence</span> */}
-      . 
-      I am
-      currently seeking a<span className="font-bold"> Full Stack Engineer</span>{" "}
+      Master&apos;s student in <span className="font-bold"> Computer Science & Engineering </span> with a dual background in psychology. 
+      Open to <span className="font-bold"> Full Stack Engineer</span>{" "}
       or
-      <span className="font-bold"> Machine Learning Engineer</span> internship
-      for
-      <span className="italic"> Summer 2025</span>.
+      <span className="font-bold"> Software Engineer</span> full-time roles
+      starting
+      <span className="font-bold"> January 2026</span>.
     </p>
-    {/* <p className="mb-3">
-      Although my primary focus is on Artificial Intelligence, I have a strong
-      interest in Full Stack Development. I have
-      <span className="font-bold"> worked on various projects</span> to broaden
-      my skill sets, and I want to
-      <span className="italic">
-        {" "}
-        explore both fields further to identify where my strengths truly lie
-      </span>
-      .
-    </p> */}
+
+    <p className="mb-3">
+      My work lives at the intersection of architecture and alignment — I build multi-agent systems where large language models don’t just generate, <span className="italic"> they reason, critique, and explain</span>. 
+    </p>
+
     <p>
-      In my free time, I enjoy coding, writing, singing, reading, drawing,
-      baking, cooking, playing video games, and exploring new hobbies. I&apos;m
-      always open to learning new things and expanding my skills, both
-      personally and professionally.
+      When I'm not coding, I enjoy creating in all forms, whether it's cooking, baking, turfing, drawing, poetry or {" "}
+
+        <a href="https://open.spotify.com/artist/2zKFtSlWX5ulWikdcOIf76?si=Le6H6tzVQcWk5NKUk8TcMg" target="_blank" rel="noopener noreferrer">
+          <span className="underline transition">songwriting</span>
+        </a>.
+      I'm always open to learning new things and expanding my skills, both personally and professionally.
     </p>
   </>
 );

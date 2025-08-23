@@ -9,7 +9,11 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { SiNeteasecloudmusic } from "react-icons/si";
 import { RiNeteaseCloudMusicFill } from "react-icons/ri";
 import { FaGoogleScholar } from "react-icons/fa6";
+import { SiApplemusic } from "react-icons/si";
 import { FaSpotify } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io";
+import { PiGithubLogoFill } from "react-icons/pi";
+
 
 
 
@@ -62,6 +66,7 @@ export const introLinks = {
   github: "https://github.com/Victoriakaey",
   netease: "https://music.163.com/#/artist?id=46274436",
   spotify: "https://open.spotify.com/artist/2zKFtSlWX5ulWikdcOIf76?si=Le6H6tzVQcWk5NKUk8TcMg",
+  applemusic: "https://music.apple.com/us/artist/vyke/1827533554"
 };
 
 export const introIcons = {
@@ -70,7 +75,8 @@ export const introIcons = {
   linkedin: <BsLinkedin className="text-xl" />,
   github: <FaSquareGithub className="text-xl" />,
   netease: <SiNeteasecloudmusic className="text-xl" />,
-  spotify: <FaSpotify className="text-xl" />
+  spotify: <FaSpotify className="text-xl" />,
+  applemusic: <SiApplemusic className="text-xl" />,
 };
 
 export const introBtns = [
@@ -95,7 +101,7 @@ export const introBtns = [
   //   icon: introIcons.netease,
   // },
   {
-    href: introLinks.spotify,
-    icon: introIcons.spotify,
+    href: introLinks.applemusic,
+    icon: introIcons.applemusic,
   },
 ];
