@@ -6,16 +6,19 @@ export const cn_aboutContent = (
   <>
     <p className="mb-3">
       我是<span className="font-bold">计算机科学与工程</span>硕士在读生，同时具备心理学背景。  
+
+    </p>
+    <p className="mb-3">
       目前计划从 <span className="font-bold">2026年1月</span> 起寻求  
       <span className="font-bold">全栈工程师</span> 或  
       <span className="font-bold">软件工程师</span> 的全职机会。
     </p>
 
     <p className="mb-3">
-      我的研究与实践专注于架构与对齐的结合点——我致力于构建多智能体系统，让大语言模型不仅能生成内容，更能<span className="italic">进行推理、批判与解释</span>。
+      我的研究与实践专注于架构与对齐的结合点。我致力于构建多智能体系统，让大语言模型不仅能生成内容，更能<span className="italic">进行推理、批判与解释</span>。
     </p>
 
-    <p>
+    <p className="mb-3">
       在编码之外，我热爱各种形式的创作：烹饪、烘焙、舞蹈、陶艺、绘画、诗歌，以及  
       {" "}
       <a href="https://open.spotify.com/artist/2zKFtSlWX5ulWikdcOIf76?si=Le6H6tzVQcWk5NKUk8TcMg" target="_blank" rel="noopener noreferrer">
@@ -41,7 +44,7 @@ export const en_aboutContent = (
       My work lives at the intersection of architecture and alignment — I build multi-agent systems where large language models don&apos;t just generate, <span className="italic"> they reason, critique, and explain</span>. 
     </p>
 
-    <p>
+    <p className="mb-3">
       When I&apos;m not coding, I enjoy creating in all forms, whether it&apos;s cooking, baking, turfing, pottery, drawing, poetry or {" "}
 
         <a href="https://open.spotify.com/artist/2zKFtSlWX5ulWikdcOIf76?si=Le6H6tzVQcWk5NKUk8TcMg" target="_blank" rel="noopener noreferrer">
