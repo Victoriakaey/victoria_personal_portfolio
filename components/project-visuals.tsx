@@ -48,34 +48,6 @@ function ProjectLifeCycleVisual() {
   );
 }
 
-function BuildReliableAgentsVisual() {
-  return (
-    <div className={shell}>
-      <Eyebrow>Extracted from failures</Eyebrow>
-      <p className="text-[44px] font-bold leading-none tracking-tight">
-        <span className={dot}>15</span> skills
-      </p>
-      <div className="flex flex-col gap-1.5">
-        {[
-          { name: "critic-judge-design", on: true },
-          { name: "harness-design", on: true },
-          { name: "agent-architecture", on: false },
-        ].map(({ name, on }) => (
-          <p
-            key={name}
-            className={`rounded-md border bg-[#fffdf9] px-2.5 py-1.5 text-[10.5px] ${
-              on ? "border-[#d9736b]" : "border-[#ded5c4]"
-            }`}
-          >
-            {name}
-          </p>
-        ))}
-      </div>
-      <p className="text-[9.5px] text-[#6b6459]">+ 12 more</p>
-    </div>
-  );
-}
-
 function SlackQnaVisual() {
   const stages = [
     "Parser",
@@ -133,7 +105,6 @@ function ReflectVisual() {
 /** Keyed by project slug. A project with no entry falls back to its images. */
 export const projectVisuals: Record<string, () => React.JSX.Element> = {
   "project-life-cycle": ProjectLifeCycleVisual,
-  "build-reliable-agents": BuildReliableAgentsVisual,
   "slack-qna-bot": SlackQnaVisual,
   reflect: ReflectVisual,
 };

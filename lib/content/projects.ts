@@ -14,45 +14,40 @@ import Yi2 from "@/public/yi-2.png";
 import Yi3 from "@/public/yi-3.png";
 import Yi4 from "@/public/yi-4.png";
 
+import Siltpoke1 from "@/public/siltpoke-1.png";
+import Siltpoke2 from "@/public/siltpoke-2.png";
+import Siltpoke3 from "@/public/siltpoke-3.png";
 import Troubadour1 from "@/public/troubadour.jpeg";
 
 import type { Project } from "./types";
 
+// Order is curated, not chronological — and it is also what decides which side
+// each card's artwork sits on (odd cards right, even cards left; see project.tsx).
+// One constraint rides on it: Troubadour must stay on an ODD index, or the crop
+// flips and cuts Victoria out of her own team photo.
 export const projects: readonly Project[] = [
   {
-    slug: "troubadour",
-    images: [Troubadour1],
-    url: "https://www.loom.com/share/b3fdb5659964492ea9e6181a94b4cbb0",
+    slug: "siltpoke",
+    images: [Siltpoke1, Siltpoke2, Siltpoke3],
+    url: "https://siltpoke.com",
     copy: {
       en: {
-        title: "Troubadour 🏆",
-        time: "Mar 2026",
+        title: "Siltpoke",
+        time: "Apr 2026 - Present",
         description:
-          "A music agent that scores a scene in real time — it reads live game state, infers the emotion, and generates music that matches. First place at the Llama Lounge Agentic Hackathon.",
+          "A coding companion for CLI agents — a second mind that rides along while you build, catches what you missed, and remembers what you actually care about.",
         sideNotes:
-          "My first hackathon. I showed up alone, spent the morning failing to find a team, and almost left at lunch.",
-        tags: [
-          "CrewAI",
-          "Multi-agent Systems",
-          "Python",
-          "Music Generation",
-          "Real-time",
-        ],
+          "Not five tools but one nervous system: code review, a code-map, memory and chat, all keyed to a single project. And it's a Tamagotchi — the pet is what makes it feel like a companion instead of a dashboard.",
+        tags: ["Developer Tools", "Code Review", "Agent Memory", "TypeScript"],
       },
       cn: {
-        title: "Troubadour 🏆",
-        time: "2026年3月",
+        title: "Siltpoke",
+        time: "2026年4月 - 现在",
         description:
-          "一个实时配乐的音乐 agent —— 读取游戏的实时状态,判断当下的情绪,生成匹配的音乐。Llama Lounge Agentic Hackathon 第一名。",
+          "给 CLI agent 的编程搭子 —— 一个「第二个脑子」,在你写代码时一路跟着,接住你漏掉的东西,记住你真正在意什么。",
         sideNotes:
-          "我的第一个 hackathon。一个人去的,一上午都没找到队友,中午差点就走了。",
-        tags: [
-          "CrewAI",
-          "多智能体系统",
-          "Python",
-          "音乐生成",
-          "实时系统",
-        ],
+          "不是五个工具,是一套神经系统:代码审查、代码地图、记忆、对话,全部锚在同一个项目上。它同时还是个电子宠物 —— 有这只宠物,它才像个搭子,而不是一块仪表盘。",
+        tags: ["开发者工具", "代码审查", "Agent 记忆", "TypeScript"],
       },
     },
   },
@@ -63,9 +58,9 @@ export const projects: readonly Project[] = [
     copy: {
       en: {
         title: "Project Life Cycle",
-        time: "May 2026 - Present",
+        time: "Apr 2026 - Present",
         description:
-          "A lifecycle skill for CLI coding agents — it runs the same spec → plan → build → verify → ship → release discipline on every project, so work an agent did last month is still legible this month.",
+          "Turns ad-hoc AI coding sessions into a repeatable, traceable workflow — one skill, any CLI agent, flagging when the roadmap and the real work drift apart.",
         sideNotes:
           "Built because the expensive part of coding with an agent isn't writing the code, it's remembering why the code is the way it is.",
         // Ordered so a scan reads as: what field → what category → how it ships
@@ -80,12 +75,141 @@ export const projects: readonly Project[] = [
       },
       cn: {
         title: "Project Life Cycle",
-        time: "2026年5月 - 现在",
+        time: "2026年4月 - 现在",
         description:
-          "给 CLI 编程 agent 的生命周期框架 —— 在每个项目上跑同一套 spec → plan → build → verify → ship → release 的纪律,让 agent 上个月做的东西这个月还读得懂。",
+          "把零散的 AI 编程过程变成可复用、可追溯的工作流 —— 一个 skill,任何 CLI agent 都能跑,还会标出路线图和实际做的事之间的偏离。",
         sideNotes:
           "做它是因为:和 agent 一起写代码,贵的不是写代码本身,是记住代码为什么长这样。",
         tags: ["Agent 工程", "开发者工具", "Shell", "上下文工程"],
+      },
+    },
+  },
+  {
+    slug: "troubadour",
+    images: [Troubadour1],
+    url: "https://www.loom.com/share/b3fdb5659964492ea9e6181a94b4cbb0",
+    copy: {
+      en: {
+        title: "Troubadour",
+        time: "Mar 2026",
+        description:
+          "Won first place at the Llama Lounge Agentic Hackathon with a music agent that scores a game in real time, reading live state and generating music to match the emotion.",
+        sideNotes:
+          "My first hackathon. I showed up alone, spent the morning failing to find a team, and almost left at lunch.",
+        tags: [
+          "CrewAI",
+          "Multi-agent Systems",
+          "Python",
+          "Music Generation",
+          "Real-time",
+        ],
+      },
+      cn: {
+        title: "Troubadour",
+        time: "2026年3月",
+        description:
+          "凭一个实时给游戏配乐的音乐 agent 拿下 Llama Lounge Agentic Hackathon 第一名 —— 读取实时状态,生成匹配当下情绪的音乐。",
+        sideNotes:
+          "我的第一个 hackathon。一个人去的,一上午都没找到队友,中午差点就走了。",
+        tags: [
+          "CrewAI",
+          "多智能体系统",
+          "Python",
+          "音乐生成",
+          "实时系统",
+        ],
+      },
+    },
+  },
+  {
+    slug: "slack-qna-bot",
+    images: [],
+    url: "https://github.com/Victoriakaey/slack-qna-bot",
+    copy: {
+      en: {
+        title: "Slack Q&A Chatbot",
+        time: "Apr 2026",
+        description:
+          "A Slack bot that answers natural-language questions about a company's database — a Critic decides when the evidence is enough, with citations.",
+        sideNotes:
+          "The pipeline is a LangGraph StateGraph, and the Critic can loop back for more sub-questions until it has enough evidence to answer the original one.",
+        tags: [
+          "LangGraph",
+          "LangSmith",
+          "Python",
+          "Text-to-SQL",
+          "Retrieval Evaluation",
+        ],
+      },
+      cn: {
+        title: "Slack Q&A Chatbot",
+        time: "2026年4月",
+        description:
+          "一个 Slack 机器人,用自然语言回答关于公司数据库的问题 —— 由一个 Critic 判断证据够不够,答案都带引用。",
+        sideNotes:
+          "整条流水线是一个 LangGraph StateGraph,Critic 可以回头再生成子问题,直到证据足够回答最初那个问题为止。",
+        tags: [
+          "LangGraph",
+          "LangSmith",
+          "Python",
+          "自然语言转 SQL",
+          "检索评估",
+        ],
+      },
+    },
+  },
+  {
+    slug: "ripplet-info-website",
+    images: [Ripplet1, Ripplet2, Ripplet3],
+    url: "https://ripplet-info-website.vercel.app/",
+    copy: {
+      en: {
+        title: "Ripplet Info Website",
+        time: "July 2024",
+        description:
+          "An informational website for Ripplet, a community-initiated wellness platform for Chinese speakers across the globe.",
+        sideNotes:
+          "Created as a favor to a friend passionate about psychology, aiming to give back to society and the Chinese community. I resonate with Ripplet's goals and culture.",
+        tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
+      },
+      cn: {
+        title: "Ripplet信息网站",
+        time: "2024年7月",
+        description:
+          "一个信息网站，为Ripplet，一个面向全球华人的社区发起的身心健康平台。",
+        sideNotes:
+          "创建为朋友的热情所做，旨在回馈社会和华人社区。我认同Ripplet的目标和文化。",
+        tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
+      },
+    },
+  },
+  {
+    slug: "reflect",
+    images: [],
+    url: "https://github.com/Victoriakaey/reflect",
+    copy: {
+      en: {
+        title: "Reflect",
+        time: "Feb 2026",
+        description:
+          "A Claude Code skill for self-analysis — not a therapist but a structured mirror, tracking your behavioral patterns across sessions with clinical precision.",
+        sideNotes:
+          "It searches current research before making any clinical claim, and every note stays on your own machine.",
+        tags: [
+          "Personal Tools",
+          "Agent Memory",
+          "Prompt Engineering",
+          "Local-first",
+        ],
+      },
+      cn: {
+        title: "Reflect",
+        time: "2026年2月",
+        description:
+          "一个用来自我分析的 Claude Code skill —— 不是心理咨询师,是一面有结构的镜子,用临床级的精确度跨 session 追踪你的行为模式。",
+        sideNotes:
+          "任何临床判断出口之前,它都会先去查最新的研究;所有笔记只留在你自己的机器上。",
+        tags: ["个人工具", "Agent 记忆", "提示词工程", "本地优先"],
       },
     },
   },
@@ -215,31 +339,6 @@ export const projects: readonly Project[] = [
         sideNotes:
           "创建帮助我写简历，因为我缺乏行业专业人士的反馈。这个GPT帮助我写更好的技术简历，并根据不同的工作申请进行定制。",
         tags: ["提示词工程"],
-      },
-    },
-  },
-  {
-    slug: "ripplet-info-website",
-    images: [Ripplet1, Ripplet2, Ripplet3],
-    url: "https://ripplet-info-website.vercel.app/",
-    copy: {
-      en: {
-        title: "Ripplet Info Website",
-        time: "July 2024",
-        description:
-          "An informational website for Ripplet, a community-initiated wellness platform for Chinese speakers across the globe.",
-        sideNotes:
-          "Created as a favor to a friend passionate about psychology, aiming to give back to society and the Chinese community. I resonate with Ripplet's goals and culture.",
-        tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
-      },
-      cn: {
-        title: "Ripplet信息网站",
-        time: "2024年7月",
-        description:
-          "一个信息网站，为Ripplet，一个面向全球华人的社区发起的身心健康平台。",
-        sideNotes:
-          "创建为朋友的热情所做，旨在回馈社会和华人社区。我认同Ripplet的目标和文化。",
-        tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "React Icons"],
       },
     },
   },
