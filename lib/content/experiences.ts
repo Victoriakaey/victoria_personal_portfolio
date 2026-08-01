@@ -12,7 +12,7 @@ export const experiences: readonly Experience[] = [
     copy: {
       en: {
         title: "Founder & AI System Engineer",
-        location: "Siltpoke, Remote",
+        location: "Siltpoke - Remote",
         date: "Apr 2026 - Present",
         description: [
           // Named rather than counted: adding a sixth agent makes this list
@@ -35,7 +35,7 @@ export const experiences: readonly Experience[] = [
       },
       cn: {
         title: "创始人 & AI 系统工程师",
-        location: "Siltpoke, 远程",
+        location: "Siltpoke - 远程",
         date: "2026年4月 - 现在",
         description: [
           "在做 Siltpoke —— 一个给 CLI agent 用的编程搭子，会审查每一轮改动、绘制代码库结构、记住出过的问题。已公开发布，同一套代码跑通 Claude Code、Codex、Qoder、Antigravity 和 CodeBuddy。",
@@ -65,7 +65,7 @@ export const experiences: readonly Experience[] = [
         location: "Ripplet - Remote",
         date: "Jun 2024 - Aug 2025",
         description: [
-          "Ripplet is a mental health platform for immigrant and multicultural communities. As its sole engineer, I built the HIPAA-compliant AI platform therapists use to surface evidence-based guidance and track client progress, and the multilingual marketing site in front of it.",
+          "Ripplet is a mental health platform for immigrant and multicultural communities. As its sole engineer, I prototyped a HIPAA-compliant AI platform for surfacing evidence-based guidance and tracking client progress, and shipped the multilingual marketing site in front of it.",
         ],
         tags: [
           "Multi-agent Systems",
@@ -85,7 +85,7 @@ export const experiences: readonly Experience[] = [
         location: "Ripplet - 远程",
         date: "2024年6月 - 2025年8月",
         description: [
-          "Ripplet 涟结是一个面向移民与多元文化社群的心理健康平台。作为它唯一的工程师，我做出了治疗师用来获取循证指导、追踪来访者进展的 HIPAA 合规 AI 平台，以及它前面的多语言官网。",
+          "Ripplet 涟结是一个面向移民与多元文化社群的心理健康平台。作为它唯一的工程师，我做出了符合 HIPAA 的 AI 平台原型 —— 用于提供循证指导、追踪来访者进展 —— 并上线了它前面的多语言官网。",
         ],
         tags: [
           "多智能体系统",
@@ -108,8 +108,8 @@ export const experiences: readonly Experience[] = [
     icon: React.createElement(LuHelpingHand),
     copy: {
       en: {
-        title: "Mentor - Remote",
-        location: "BobaTalks",
+        title: "Mentor",
+        location: "BobaTalks - Remote",
         date: "Feb 2025 - Present",
         description: [
           "Support international students and newcomers to tech in figuring out their path, from deciding on graduate school to exploring career directions and navigating challenges abroad",
@@ -123,7 +123,7 @@ export const experiences: readonly Experience[] = [
       },
       cn: {
         title: "导师",
-        location: "BobaTalks",
+        location: "BobaTalks - 远程",
         date: "2025年2月 - 现在",
         description: [
           "支持国际学生和科技新手规划职业路径，包括研究生院选择、职业方向探索及海外生活挑战应对。",
@@ -158,7 +158,7 @@ export const experiences: readonly Experience[] = [
       },
       cn: {
         title: "一对一课程辅导与作业评分 - 深度学习课程",
-        location: "加州大学圣克鲁兹分校 - 圣克鲁兹, 加州",
+        location: "加州大学圣克鲁兹分校 - 美国加州圣克鲁兹",
         date: "2024年9月 - 2024年12月",
         description: [
           "每周两次深度学习答疑 —— 模型训练与测试、损失函数、梯度下降、正则化 —— 并批改涉及 CNN、RNN、注意力机制和 Transformer 的作业。",
@@ -196,7 +196,7 @@ export const experiences: readonly Experience[] = [
       },
       cn: {
         title: "研究生",
-        location: "加州大学圣克鲁兹分校 - 圣克鲁兹, 加州",
+        location: "加州大学圣克鲁兹分校 - 美国加州圣克鲁兹",
         date: "2024年9月 - 2025年12月",
         description: ["攻读计算机科学与工程硕士学位"],
         tags: [
@@ -316,7 +316,7 @@ export const experiences: readonly Experience[] = [
       },
       cn: {
         title: "本科生",
-        location: "UC Santa Cruz - Santa Cruz, CA",
+        location: "加州大学圣克鲁兹分校 - 美国加州圣克鲁兹",
         date: "2020年7月 - 2022年12月",
         description: [
           "计算机科学与工程理学学士 (B.S.)，以及心理学文学学士 (B.A.)",
@@ -417,7 +417,7 @@ export const experiences: readonly Experience[] = [
       },
       cn: {
         title: "动物领养中心志愿者",
-        location: "Humane Society at Silicon Valley - Sunnyvale, CA",
+        location: "Humane Society at Silicon Valley - 美国加州森尼韦尔",
         date: "2018年6月 - 2019年6月",
         description: [
           "照料收容所里的狗、猫和兔子 —— 日常照看它们的健康与舒适，并帮它们做好被领养进新家的准备。",
@@ -448,7 +448,7 @@ export const experiences: readonly Experience[] = [
       },
       cn: {
         title: "社团创始人兼主席 - Pop Music Club",
-        location: "De Anza College - Cupertino, CA",
+        location: "De Anza 学院 - 美国加州库比蒂诺",
         date: "2017年5月 - 2020年6月",
         description: [
           "与他人共同创立了一个成员超过 200 人的音乐社团，并担任主席两年，负责管理乐队和组织活动，包括年度音乐会和社团日。",
@@ -531,7 +531,7 @@ export const experiences: readonly Experience[] = [
       },
       cn: {
         title: "社区大学学生",
-        location: "De Anza College - Cupertino, CA",
+        location: "De Anza 学院 - 美国加州库比蒂诺",
         date: "2016年4月 - 2020年6月",
         description: ["在转学之前完成了计算机科学学位所需的课程。"],
         tags: ["C++", "Java", "Python", "汇编语言", "微积分", "离散数学"],
