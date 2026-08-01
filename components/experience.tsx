@@ -33,7 +33,10 @@ export default function Experience() {
             <React.Fragment key={experience.slug}>
               <VerticalTimelineElement
                 contentStyle={{
-                  background: "var(--timeline-card-bg)",
+                  // Fallbacks are the light-theme values: an undefined custom
+                  // property makes the whole declaration invalid, which would
+                  // leave the card transparent rather than merely mis-themed.
+                  background: "var(--timeline-card-bg, #f3f4f6)",
                   boxShadow: "none",
                   border: "1px solid rgba(0,0,0,0.0.5)",
                   textAlign: "left",
@@ -41,13 +44,13 @@ export default function Experience() {
                   // maxWidth: "100rem",
                 }}
                 contentArrowStyle={{
-                  borderRight: "0.4rem solid var(--timeline-arrow)",
+                  borderRight: "0.4rem solid var(--timeline-arrow, #9ca3af)",
                 }}
                 date={item.date}
                 dateClassName="sm:md:lg:ml-5 mr-5"
                 icon={experience.icon}
                 iconStyle={{
-                  background: "var(--timeline-icon-bg)",
+                  background: "var(--timeline-icon-bg, #ffffff)",
                   fontSize: "1.5rem",
                 }}
                 visible
