@@ -22,6 +22,11 @@
 # local embedding-model cache (~87MB, regenerated on demand)
 /local_cache/
 
+# working continuity notes, not the résumé — kept local so the public repo
+# does not ship a RESUME.md that isn't one
+/RESUME.md
+/RESUME-archive.md
+
 # debug
 npm-debug.log*
 yarn-debug.log*
