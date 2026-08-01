@@ -65,7 +65,10 @@ export type Experience = {
   slug: string;
   locationUrl: string;
   icon: ReactNode;
-  isBulletPoints: boolean;
+  /**
+   * Prose, not bullets — one paragraph per entry. Kept as an array so an entry
+   * can run to a second paragraph without changing the shape.
+   */
   copy: Bilingual<ExperienceCopy>;
 };
 
