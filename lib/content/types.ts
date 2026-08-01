@@ -34,12 +34,24 @@ export type ProjectCopy = {
 };
 
 export type Project = {
-  /** Stable id. Image files are named after it. */
+  /** Stable id. Image files are named after it, as is the optional visual. */
   slug: string;
   images: readonly StaticImageData[];
   url: string | null;
   copy: Bilingual<ProjectCopy>;
 };
+
+/**
+ * How a project's artwork sits in the card.
+ *
+ * "bleed" is the original treatment: the image is oversized and runs off the
+ * edge, so only its top ~67% × ~80% shows. That works for app screenshots —
+ * you see a UI's corner and fill in the rest — and every existing entry uses it.
+ *
+ * "contain" keeps the artwork whole. Projects whose artwork IS the message
+ * (a diagram, a command list) break under the bleed crop, so they opt out.
+ */
+export type ImageFit = "bleed" | "contain";
 
 export type ExperienceCopy = {
   title: string;

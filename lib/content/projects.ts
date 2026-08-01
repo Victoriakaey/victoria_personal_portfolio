@@ -14,9 +14,81 @@ import Yi2 from "@/public/yi-2.png";
 import Yi3 from "@/public/yi-3.png";
 import Yi4 from "@/public/yi-4.png";
 
+import Troubadour1 from "@/public/troubadour.jpeg";
+
 import type { Project } from "./types";
 
 export const projects: readonly Project[] = [
+  {
+    slug: "troubadour",
+    images: [Troubadour1],
+    url: "https://www.loom.com/share/b3fdb5659964492ea9e6181a94b4cbb0",
+    copy: {
+      en: {
+        title: "Troubadour 🏆",
+        time: "Mar 2026",
+        description:
+          "A music agent that scores a scene in real time — it reads live game state, infers the emotion, and generates music that matches. First place at the Llama Lounge Agentic Hackathon.",
+        sideNotes:
+          "My first hackathon. I showed up alone, spent the morning failing to find a team, and almost left at lunch.",
+        tags: [
+          "CrewAI",
+          "Multi-agent Systems",
+          "Python",
+          "Music Generation",
+          "Real-time",
+        ],
+      },
+      cn: {
+        title: "Troubadour 🏆",
+        time: "2026年3月",
+        description:
+          "一个实时配乐的音乐 agent —— 读取游戏的实时状态,判断当下的情绪,生成匹配的音乐。Llama Lounge Agentic Hackathon 第一名。",
+        sideNotes:
+          "我的第一个 hackathon。一个人去的,一上午都没找到队友,中午差点就走了。",
+        tags: [
+          "CrewAI",
+          "多智能体系统",
+          "Python",
+          "音乐生成",
+          "实时系统",
+        ],
+      },
+    },
+  },
+  {
+    slug: "project-life-cycle",
+    images: [],
+    url: "https://github.com/Victoriakaey/project-life-cycle",
+    copy: {
+      en: {
+        title: "Project Life Cycle",
+        time: "May 2026 - Present",
+        description:
+          "A lifecycle skill for CLI coding agents — it runs the same spec → plan → build → verify → ship → release discipline on every project, so work an agent did last month is still legible this month.",
+        sideNotes:
+          "Built because the expensive part of coding with an agent isn't writing the code, it's remembering why the code is the way it is.",
+        // Ordered so a scan reads as: what field → what category → how it ships
+        // → what it's written in → what it actually solves. Which CLI agents it
+        // runs in belongs in the README, not here.
+        tags: [
+          "Agent Harness",
+          "Developer Tools",
+          "Shell",
+          "Context Engineering",
+        ],
+      },
+      cn: {
+        title: "Project Life Cycle",
+        time: "2026年5月 - 现在",
+        description:
+          "给 CLI 编程 agent 的生命周期框架 —— 在每个项目上跑同一套 spec → plan → build → verify → ship → release 的纪律,让 agent 上个月做的东西这个月还读得懂。",
+        sideNotes:
+          "做它是因为:和 agent 一起写代码,贵的不是写代码本身,是记住代码为什么长这样。",
+        tags: ["Agent 工程", "开发者工具", "Shell", "上下文工程"],
+      },
+    },
+  },
   {
     slug: "pathways",
     images: [Pathways1, Pathways2, Pathways3],
