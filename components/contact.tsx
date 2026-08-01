@@ -20,7 +20,7 @@ export default function Contact() {
   const contactContent =
     language === "en" ? en_contactContent : cn_contactContent;
   const contactItems = language === "en" ? en_contentItems : cn_contentItems;
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("contact");
 
   return (
     <motion.section

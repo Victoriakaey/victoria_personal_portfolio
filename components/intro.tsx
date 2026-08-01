@@ -22,7 +22,7 @@ import {
 } from "@/lib/intro-content";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { language } = useContext(LanguageContext);
 
@@ -93,7 +93,7 @@ export default function Intro() {
           href="#contact"
           className="group bg-gray-900 border-none shadow-lg text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection("contact");
             setTimeOfLastClick(Date.now());
           }}
         >

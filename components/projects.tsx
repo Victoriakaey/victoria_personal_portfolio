@@ -6,27 +6,19 @@ import SectionHeading from "./section-heading";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
 import { LanguageContext } from "@/context/language-context";
-import {
-  cn_projectsData,
-  cn_projectsTitle,
-  en_projectsData,
-  en_projectsTitle,
-} from "@/lib/data";
+import { projects } from "@/lib/content/projects";
+import { projectsTitle } from "@/lib/content/site";
 
 export default function Projects() {
   const { language } = useContext(LanguageContext);
-  const { ref } = useSectionInView("Projects", 0.5);
-  const projectsData = language === "en" ? en_projectsData : cn_projectsData;
-  const projectsTitle = language === "en" ? en_projectsTitle : cn_projectsTitle;
+  const { ref } = useSectionInView("projects", 0.5);
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionHeading>{projectsTitle}</SectionHeading>
+      <SectionHeading>{projectsTitle[language]}</SectionHeading>
       <div>
-        {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
-            <Project {...project} />
-          </React.Fragment>
+        {projects.map((project) => (
+          <Project key={project.slug} project={project} />
         ))}
       </div>
     </section>

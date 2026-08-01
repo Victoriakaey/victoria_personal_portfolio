@@ -3,26 +3,22 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { en_projectsData, cn_projectsData } from "@/lib/data";
 import { LanguageContext } from "@/context/language-context";
+import type { Project as ProjectType } from "@/lib/content/types";
 
-type ProjectProps = (typeof cn_projectsData | typeof en_projectsData)[number];
+type ProjectProps = {
+  project: ProjectType;
+};
 
-export default function Project({
-  title,
-  time,
-  description,
-  tags,
-  imageUrl,
-  sideNotes,
-  projectUrl,
-}: ProjectProps) {
+// NOTE: the linked and unlinked branches below carry slightly different
+// classNames (image width, heading margin, tag-row offset). Kept as-is —
+// untangling them is a visual change, not part of the data-layer move.
+export default function Project({ project }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { language } = useContext(LanguageContext);
-  const hoverDescription =
-    language === "en"
-      ? "Hover here to view more images"
-      : "将鼠标悬停在这里查看更多图片";
+  const { title, time, description, tags } = project.copy[language];
+  const { images, url } = project;
+  const hasImages = images.length > 0;
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -35,13 +31,13 @@ export default function Project({
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    if (isHovered && imageUrl.length > 1) {
+    if (isHovered && images.length > 1) {
       const interval = setInterval(() => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrl.length);
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
       }, 1100); // Change image every second
       return () => clearInterval(interval);
     }
-  }, [isHovered, imageUrl.length]);
+  }, [isHovered, images.length]);
 
   return (
     <motion.div
@@ -54,16 +50,16 @@ export default function Project({
       onMouseEnter={() => setIsHovered(true)} // Start looping on hover
       onMouseLeave={() => setIsHovered(false)} // Stop looping on hover leave
     >
-      {projectUrl ? (
-        <a href={projectUrl} target="_blank">
+      {url ? (
+        <a href={url} target="_blank">
           <section
             className={`bg-gray-100 max-w-[42rem] border-black/5 rounded-lg overflow-hidden relative hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 sm:h-[20rem] ${
-              imageUrl ? "sm:pr-8 sm:group-even:pl-8" : "px-6 -py-1"
+              hasImages ? "sm:pr-8 sm:group-even:pl-8" : "px-6 -py-1"
             }`}
           >
             <div
               className={`pt-4 pb-7 px-5 sm:pt-10 ${
-                imageUrl
+                hasImages
                   ? "sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:group-even:ml-[18rem]"
                   : ""
               } flex flex-col h-full`}
@@ -79,7 +75,7 @@ export default function Project({
               </p>
               <ul
                 className={`-mr-5 flex flex-wrap mt-4 gap-2 sm:mt-auto justify-start ${
-                  imageUrl ? "lg:group-even:justify-end" : ""
+                  hasImages ? "lg:group-even:justify-end" : ""
                 }`}
               >
                 {tags.map((tag, index) => (
@@ -92,35 +88,30 @@ export default function Project({
                 ))}
               </ul>
             </div>
-            {imageUrl &&
-              imageUrl.map((url, index) => (
-                <Image
-                  key={index}
-                  src={imageUrl[currentImageIndex]}
-                  // alt="Project I worked on"
-                  alt={`Project image ${currentImageIndex + 1}`}
-                  quality={95}
-                  className="absolute hidden sm:block top-8 -right-40 w-[29.4rem] rounded-t-lg shadow-lg transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
-                />
-              ))}
+            {images.map((_, index) => (
+              <Image
+                key={index}
+                src={images[currentImageIndex]}
+                alt={`Project image ${currentImageIndex + 1}`}
+                quality={95}
+                className="absolute hidden sm:block top-8 -right-40 w-[29.4rem] rounded-t-lg shadow-lg transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+              />
+            ))}
           </section>
         </a>
       ) : (
         <section
           className={`bg-gray-100 max-w-[42rem] border-black/5 rounded-lg overflow-hidden relative hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 sm:h-[20rem] ${
-            imageUrl ? "sm:pr-8 sm:group-even:pl-8" : "px-6 -py-1"
+            hasImages ? "sm:pr-8 sm:group-even:pl-8" : "px-6 -py-1"
           }`}
         >
           <div
             className={`pt-4 pb-7 px-5 sm:pt-10 ${
-              imageUrl
+              hasImages
                 ? "sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:group-even:ml-[18rem]"
                 : ""
             } flex flex-col h-full`}
           >
-            {/* <div className="hidden sm:block sm:-mt-5 sm:-ml-1 sm:mb-2 lg:-mt-4 lg:mb-7 text-sm text-center bg-black/[0.01] border-2 border-gray-500 border-dashed dark:bg-black/[0.7] rounded-xl px-3 py-0.5 shadow-lg text-gray-600 dark:text-white/70">
-              {hoverDescription}
-            </div> */}
             <h3 className="mt-2 lg:-mt-3 text-2xl font-semibold">{title}</h3>
             <p className="italic text-sm text-gray-700 dark:text-white/70 mt-1">
               {time}
@@ -130,7 +121,7 @@ export default function Project({
             </p>
             <ul
               className={`flex flex-wrap mt-4 gap-2 sm:mt-auto justify-start ${
-                imageUrl ? "group-even:justify-end" : ""
+                hasImages ? "group-even:justify-end" : ""
               }`}
             >
               {tags.map((tag, index) => (
@@ -143,29 +134,20 @@ export default function Project({
               ))}
             </ul>
           </div>
-          {imageUrl &&
-            imageUrl.map((url, index) => (
-              <Image
-                key={index}
-                src={imageUrl[currentImageIndex]}
-                // alt="Project I worked on"
-                alt={`Project image ${currentImageIndex + 1}`}
-                quality={95}
-                height={2000}
-                className="absolute hidden sm:block top-8 -right-40 w-[29.9rem] rounded-t-lg shadow-lg transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
-              />
-            ))}
+          {images.map((_, index) => (
+            <Image
+              key={index}
+              src={images[currentImageIndex]}
+              alt={`Project image ${currentImageIndex + 1}`}
+              quality={95}
+              height={2000}
+              className="absolute hidden sm:block top-8 -right-40 w-[29.9rem] rounded-t-lg shadow-lg transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+            />
+          ))}
         </section>
       )}
-      {/* <div
-        className={`absolute flex items-center justify-center text-sm bg-gray-100 text-gray-950 dark:bg-gray-950/[0.97] dark:text-white/70 rounded-xl opacity-0 group-hover:opacity-95 transition-opacity duration-300 z-10 ${
-          imageUrl
-            ? "top-[6px] left-[5px] group-even:left-[20.6rem] w-1/2 px-4 py-2"
-            : "top-4 right-3 max-h-[4.5rem] max-w-[29.7rem] px-4 py-2"
-        }`}
-      >
-        {sideNotes}
-      </div> */}
+      {/* sideNotes (project.copy[language].sideNotes) used to render here as a
+          hover overlay. Still authored in the content files, still not shown. */}
     </motion.div>
   );
 }

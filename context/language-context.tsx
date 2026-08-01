@@ -1,10 +1,9 @@
 "use client";
-import React, { useState, createContext, ReactNode } from "react";
-
-type LanguageType = "en" | "cn";
+import React, { useState, useEffect, createContext, ReactNode } from "react";
+import type { Language } from "@/lib/content/types";
 
 type LanguageContextType = {
-  language: "en" | "cn";
+  language: Language;
   toggleLanguage: () => void;
 };
 
@@ -20,11 +19,24 @@ export const LanguageContext = createContext<LanguageContextType>({
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   children,
 }) => {
-  const [language, setLanguage] = useState<LanguageType>("en");
+  const [language, setLanguage] = useState<Language>("en");
 
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "cn" : "en"));
+    setLanguage((prev) => {
+      const next = prev === "en" ? "cn" : "en";
+      window.localStorage.setItem("language", next);
+      return next;
+    });
   };
+
+  // Read after mount so the server-rendered markup (always "en") matches the
+  // first client render; a stored preference is applied on the next paint.
+  useEffect(() => {
+    const stored = window.localStorage.getItem("language") as Language | null;
+    if (stored === "en" || stored === "cn") {
+      setLanguage(stored);
+    }
+  }, []);
 
   return (
     <LanguageContext.Provider value={{ language, toggleLanguage }}>

@@ -1,12 +1,9 @@
 "use client";
 
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import SectionHeading from "./section-heading";
-import {
-  cn_skillsTitle,
-  en_skillsTitle,
-  programmingLanguages,
-} from "@/lib/data";
+import { skillGroups } from "@/lib/content/skills";
+import { skillsTitle } from "@/lib/content/site";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import SkillSectionButton from "./skill-section-button";
@@ -26,18 +23,13 @@ const fadeInAnimationVariants = {
   }),
 };
 
-// todo: still need to make this change when the list of
 export default function Skills() {
   const { language } = useContext(LanguageContext);
-  const { ref } = useSectionInView("Skills");
-  const skillsTitle = language === "en" ? en_skillsTitle : cn_skillsTitle;
+  const { ref } = useSectionInView("skills");
 
-  const [skillsData, setSkillsData] = useState<string[]>(programmingLanguages);
-  const [refreshKey, setRefreshKey] = useState(0);
-
-  useEffect(() => {
-    setRefreshKey((prevKey) => prevKey + 1);
-  }, [skillsData]);
+  const [activeGroupId, setActiveGroupId] = useState(skillGroups[0].id);
+  const activeGroup =
+    skillGroups.find((group) => group.id === activeGroupId) ?? skillGroups[0];
 
   return (
     <section
@@ -45,13 +37,17 @@ export default function Skills() {
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>{skillsTitle}</SectionHeading>
-      <SkillSectionButton setSkillsData={setSkillsData} />
+      <SectionHeading>{skillsTitle[language]}</SectionHeading>
+      <SkillSectionButton
+        activeGroupId={activeGroupId}
+        setActiveGroupId={setActiveGroupId}
+      />
       <ul
-        key={refreshKey}
+        // Remount on group change so the stagger animation replays.
+        key={activeGroup.id}
         className="flex flex-wrap justify-center gap-2 text-lg text-gray-800"
       >
-        {skillsData.map((skill, index) => (
+        {activeGroup.skills.map((skill, index) => (
           <motion.li
             className="bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
