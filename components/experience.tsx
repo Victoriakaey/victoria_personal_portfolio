@@ -10,7 +10,6 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiences } from "@/lib/content/experiences";
 import { experienceTitle } from "@/lib/content/site";
 import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";
 import Link from "next/link";
 import { LanguageContext } from "@/context/language-context";
 
@@ -24,7 +23,6 @@ export default function Experience() {
   const { language } = useContext(LanguageContext);
 
   const { ref } = useSectionInView("experience");
-  const { theme } = useTheme();
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>{experienceTitle[language]}</SectionHeading>
@@ -35,8 +33,7 @@ export default function Experience() {
             <React.Fragment key={experience.slug}>
               <VerticalTimelineElement
                 contentStyle={{
-                  background:
-                    theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                  background: "var(--timeline-card-bg)",
                   boxShadow: "none",
                   border: "1px solid rgba(0,0,0,0.0.5)",
                   textAlign: "left",
@@ -44,17 +41,13 @@ export default function Experience() {
                   // maxWidth: "100rem",
                 }}
                 contentArrowStyle={{
-                  borderRight:
-                    theme === "light"
-                      ? "0.4rem solid #9ca3af"
-                      : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                  borderRight: "0.4rem solid var(--timeline-arrow)",
                 }}
                 date={item.date}
                 dateClassName="sm:md:lg:ml-5 mr-5"
                 icon={experience.icon}
                 iconStyle={{
-                  background:
-                    theme === "light" ? "white" : "rgba(255,255,255,0.15)",
+                  background: "var(--timeline-icon-bg)",
                   fontSize: "1.5rem",
                 }}
                 visible

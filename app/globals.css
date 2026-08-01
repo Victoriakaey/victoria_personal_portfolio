@@ -2,12 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  react-vertical-timeline only accepts inline styles, which used to mean reading
+  the theme out of React state — so the timeline stayed light until hydration
+  finished, and once the html.dark class started applying before first paint
+  that left pale cards under pale text. These are read straight from CSS, so
+  they are correct in the very first frame and never depend on JS.
+*/
 html {
-    --line-color: #e5e7eb
+    --line-color: #e5e7eb;
+    --timeline-card-bg: #f3f4f6;
+    --timeline-arrow: #9ca3af;
+    --timeline-icon-bg: #ffffff;
 }
 
 html.dark {
-    --line-color: rgba(255,255,255,0.2)
+    --line-color: rgba(255,255,255,0.2);
+    --timeline-card-bg: rgba(255,255,255,0.05);
+    --timeline-arrow: rgba(255,255,255,0.5);
+    --timeline-icon-bg: rgba(255,255,255,0.15);
 }
 
 .borderBlack {

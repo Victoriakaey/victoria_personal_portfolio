@@ -29,7 +29,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
+      <head>
+        {/*
+          Runs before first paint, so a dark-mode visitor never sees the light
+          background flash. Without it the server renders no `dark` class, the
+          browser paints `bg-gray-50`, and the theme only switches once React
+          has hydrated and ThemeContextProvider's effect fires.
+
+          Must stay in sync with context/theme-context.tsx, and must stay inline
+          and synchronous — an external or deferred script paints first.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem("theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark")}}catch(e){}`,
+          }}
+        />
+      </head>
       {/* Can change the color bg-gray-50 to something else */}
       {/* just refer to this link: https://tailwindcss.com/docs/customizing-colors */}
       <body
