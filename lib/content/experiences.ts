@@ -15,7 +15,9 @@ export const experiences: readonly Experience[] = [
         location: "Siltpoke, Remote",
         date: "Apr 2026 - Present",
         description: [
-          "Building Siltpoke, a coding companion for CLI agents that reviews each turn, maps the codebase, and remembers what broke — shipped publicly, running on five different CLI agents from one codebase.",
+          // Named rather than counted: adding a sixth agent makes this list
+          // incomplete, not wrong, which is the cheaper way to go stale.
+          "Building Siltpoke, a coding companion for CLI agents that reviews each turn, maps the codebase, and remembers what broke — shipped publicly, running in Claude Code, Codex, Qoder, Antigravity and CodeBuddy from one codebase.",
         ],
         // The paragraph is deliberately short, so the stack lives here instead.
         tags: [
@@ -36,7 +38,7 @@ export const experiences: readonly Experience[] = [
         location: "Siltpoke, 远程",
         date: "2026年4月 - 现在",
         description: [
-          "在做 Siltpoke —— 一个给 CLI agent 用的编程搭子，会审查每一轮改动、绘制代码库结构、记住出过的问题。已公开发布，同一套代码跑通五个 CLI agent。",
+          "在做 Siltpoke —— 一个给 CLI agent 用的编程搭子，会审查每一轮改动、绘制代码库结构、记住出过的问题。已公开发布，同一套代码跑通 Claude Code、Codex、Qoder、Antigravity 和 CodeBuddy。",
         ],
         tags: [
           "TypeScript",
