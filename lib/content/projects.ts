@@ -323,7 +323,7 @@ export const projects: readonly Project[] = [
     url: "https://chatgpt.com/g/g-A9KhEHv0v-tech-resume-tailor",
     copy: {
       en: {
-        title: "Tech Resume Tailor",
+        title: "Resume Tailor",
         time: "June 2024",
         description:
           "A GPT designed to help users craft tailored technical resumes aligned with job descriptions, using advanced resume writing techniques and strategies.",

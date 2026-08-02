@@ -30,6 +30,10 @@ const side = {
 /**
  * Marks a card whose title is a link. Cards without a `url` render nothing here,
  * which is the only thing separating them — every card shares the same hover.
+ *
+ * Sits in the text flow rather than as a flex item: titles wrap on the narrower
+ * even-card column, and a flex sibling would strand the glyph at the far edge
+ * instead of trailing the last word.
  */
 function ExternalLinkIcon() {
   return (
@@ -42,7 +46,7 @@ function ExternalLinkIcon() {
       strokeWidth="2.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="h-4 w-4 shrink-0 self-center text-gray-500 transition group-hover:text-gray-900 dark:text-white/50 dark:group-hover:text-white"
+      className="inline-block h-4 w-4 align-[0.05em] text-gray-500 transition group-hover:text-gray-900 dark:text-white/50 dark:group-hover:text-white"
     >
       <path d="M15 3h6v6" />
       <path d="M10 14 21 3" />
@@ -131,15 +135,20 @@ export default function Project({ project }: ProjectProps) {
           hasArtwork ? side.column : ""
         } flex flex-col h-full relative z-10`}
       >
-        <h3
-          className={`mt-2 lg:mt-0 text-2xl font-semibold inline-flex items-baseline gap-1.5 ${side.shift}`}
-        >
+        <h3 className={`mt-2 lg:mt-0 text-2xl font-semibold ${side.shift}`}>
           {title}
           {url && (
-            <>
+            // The glyph must never start a line on its own, so it travels
+            // with the last word: a non-breaking space rules out the break
+            // before it, and nowrap rules out the one Chrome still takes
+            // between that space and an inline-block. Splitting the title on
+            // spaces would not do — the Chinese titles have none, and pinning
+            // one would forbid wrapping altogether.
+            <span className="whitespace-nowrap">
+              {"\u00A0"}
               <ExternalLinkIcon />
               <span className="sr-only">(opens in a new tab)</span>
-            </>
+            </span>
           )}
         </h3>
         <p
