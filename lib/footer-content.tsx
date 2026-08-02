@@ -7,7 +7,7 @@ export const cn_footerContent = (
     <p className="text-xs">
       <span className="font-semibold">本网站使用以下技术搭建：</span>React &
       Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer
-      Motion, React Email & Resend, Vercel hosting.
+      Motion, Web3Forms, Vercel hosting.
     </p>
   </>
 );
@@ -20,7 +20,7 @@ export const en_footerContent = (
     <p className="text-xs">
       <span className="font-semibold">About this website:</span> built with
       React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-      Framer Motion, React Email & Resend, Vercel hosting.
+      Framer Motion, Web3Forms, Vercel hosting.
     </p>
   </>
 );
