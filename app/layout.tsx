@@ -17,10 +17,42 @@ import { LanguageProvider } from "@/context/language-context";
 import ActionButton from "@/components/action-btn";
 import { ActionProvider } from "@/context/action-context";
 
+const SITE_URL = "https://victoria-duan.vercel.app";
+const SITE_TITLE = "Jiaqi (Victoria) Duan | AI System Engineer";
+// Absolute, not "/og-image.png": Next resolves relative metadata URLs against
+// the dev origin, so a relative path silently ships localhost in some builds.
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+const SITE_DESCRIPTION =
+  "Personal portfolio of Jiaqi (Victoria) Duan — an AI System Engineer building coding agents, RAG pipelines, and multi-agent systems.";
+
 export const metadata: Metadata = {
-  title: "Victoria | Personal Portfolio",
-  description:
-    "Victoria is a graduate student studying Artificial Intelligence",
+  metadataBase: new URL(SITE_URL),
+  // The full name is in the title so searching it actually lands here.
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  // Without these, sharing the link anywhere renders a bare URL — no card, no
+  // image — which is most of what a portfolio link is for.
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    siteName: SITE_TITLE,
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: SITE_TITLE,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: [OG_IMAGE],
+  },
 };
 
 export default function RootLayout({
