@@ -27,6 +27,30 @@ const side = {
     "group-even:right-[initial] group-even:left-0 group-even:group-hover:rotate-1",
 } as const;
 
+/**
+ * Marks a card whose title is a link. Cards without a `url` render nothing here,
+ * which is the only thing separating them — every card shares the same hover.
+ */
+function ExternalLinkIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-4 w-4 shrink-0 self-center text-gray-500 transition group-hover:text-gray-900 dark:text-white/50 dark:group-hover:text-white"
+    >
+      <path d="M15 3h6v6" />
+      <path d="M10 14 21 3" />
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+    </svg>
+  );
+}
+
 export default function Project({ project }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { language } = useContext(LanguageContext);
@@ -78,6 +102,21 @@ export default function Project({ project }: ProjectProps) {
             className={`absolute hidden sm:block top-8 -right-40 w-[29.4rem] rounded-t-lg shadow-lg transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 ${side.image}`}
           />
         ))}
+      {/* Only a multi-image card gets dots: they say how many shots are behind
+          this one, and — once hovering starts the cycle — which one is showing.
+          Kept clear of the cropped edge, which alternates with the artwork. */}
+      {hasImages && images.length > 1 && (
+        <div className="absolute hidden sm:flex bottom-6 right-9 z-20 items-center gap-1.5 rounded-full bg-black/45 px-2.5 py-1.5 backdrop-blur-sm group-even:right-[initial] group-even:left-9">
+          {images.map((_, index) => (
+            <span
+              key={index}
+              className={`h-1.5 w-1.5 rounded-full transition ${
+                index === currentImageIndex ? "bg-white" : "bg-white/40"
+              }`}
+            />
+          ))}
+        </div>
+      )}
     </>
   );
 
@@ -92,8 +131,16 @@ export default function Project({ project }: ProjectProps) {
           hasArtwork ? side.column : ""
         } flex flex-col h-full relative z-10`}
       >
-        <h3 className={`mt-2 lg:mt-0 text-2xl font-semibold ${side.shift}`}>
+        <h3
+          className={`mt-2 lg:mt-0 text-2xl font-semibold inline-flex items-baseline gap-1.5 ${side.shift}`}
+        >
           {title}
+          {url && (
+            <>
+              <ExternalLinkIcon />
+              <span className="sr-only">(opens in a new tab)</span>
+            </>
+          )}
         </h3>
         <p
           className={`italic text-sm text-gray-700 dark:text-white/70 mt-1 ${side.shift}`}
@@ -136,7 +183,7 @@ export default function Project({ project }: ProjectProps) {
       onMouseLeave={() => setIsHovered(false)} // Stop looping on hover leave
     >
       {url ? (
-        <a href={url} target="_blank">
+        <a href={url} target="_blank" rel="noopener noreferrer">
           {body}
         </a>
       ) : (
