@@ -18,6 +18,10 @@ import Siltpoke1 from "@/public/siltpoke-1.png";
 import Siltpoke2 from "@/public/siltpoke-2.png";
 import Siltpoke3 from "@/public/siltpoke-3.png";
 import Troubadour1 from "@/public/troubadour.jpeg";
+import Troubadour2 from "@/public/troubadour-2.jpg";
+import Troubadour3 from "@/public/troubadour-3.jpg";
+import Troubadour4 from "@/public/troubadour-4.jpg";
+import Troubadour5 from "@/public/troubadour-5.jpg";
 
 import type { Project } from "./types";
 
@@ -86,7 +90,10 @@ export const projects: readonly Project[] = [
   },
   {
     slug: "troubadour",
-    images: [Troubadour1],
+    // Troubadour1 leads because it is cropped tightest on the win; the rest are
+    // the same evening and only ever show while hovering. Each one is framed so
+    // its subject clears the card's crop, which takes a third off one edge.
+    images: [Troubadour1, Troubadour2, Troubadour3, Troubadour4, Troubadour5],
     url: "https://www.loom.com/share/b3fdb5659964492ea9e6181a94b4cbb0",
     copy: {
       en: {
