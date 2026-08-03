@@ -11,7 +11,7 @@ export const experiences: readonly Experience[] = [
     icon: React.createElement(CgWorkAlt),
     copy: {
       en: {
-        title: "Founder & AI System Engineer",
+        title: "Founder & AI Systems Engineer",
         location: "Siltpoke - Remote",
         date: "Apr 2026 - Present",
         description: [
