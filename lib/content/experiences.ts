@@ -464,22 +464,22 @@ export const experiences: readonly Experience[] = [
     copy: {
       en: {
         title:
-          "Teaching Assistant - C++ Programming Courses (Beginning to Advanced)",
+          "Teaching Assistant - C++ and Python Programming Courses (Beginning to Advanced)",
         location: "De Anza College - Cupertino, CA",
         date: "Apr 2018 - June 2019",
         description: [
-          "Assisted in teaching C++ programming courses from beginner to advanced level, holding office hours for coding problems and concepts, and grading assignments with written feedback.",
+          "Assisted in teaching C++ and Python programming courses from beginner to advanced level, holding office hours for coding problems and concepts, and grading assignments with written feedback.",
         ],
-        tags: ["Teaching", "C++", "Student Support"],
+        tags: ["Teaching", "C++", "Python", "Student Support"],
       },
       cn: {
-        title: "教学助理 - C++ 编程课程（初级到高级）",
+        title: "教学助理 - C++ 与 Python 编程课程（初级到高级）",
         location: "De Anza 学院 - 美国加州库比蒂诺",
         date: "2018年4月 - 2019年6月",
         description: [
-          "协助教授从入门到高级的 C++ 编程课程，在答疑时间帮助学生解决编程问题、理解相关概念，并批改作业、给出书面反馈。",
+          "协助教授从入门到高级的 C++ 与 Python 编程课程，在答疑时间帮助学生解决编程问题、理解相关概念，并批改作业、给出书面反馈。",
         ],
-        tags: ["教学", "C++", "学生支持"],
+        tags: ["教学", "C++", "Python", "学生支持"],
       },
     },
   },
@@ -493,18 +493,18 @@ export const experiences: readonly Experience[] = [
         location: "De Anza College - Cupertino, CA",
         date: "Apr 2018 - June 2019",
         description: [
-          "Tutored Computer Information Systems labs, and worked with instructors to find where students kept getting stuck and change how those topics were taught.",
+          "Tutored Computer Information Systems labs in C++ and Python, and worked with instructors to find where students kept getting stuck and change how those topics were taught.",
         ],
-        tags: ["Teaching", "Debugging", "Curriculum Feedback"],
+        tags: ["Teaching", "C++", "Python", "Debugging", "Curriculum Feedback"],
       },
       cn: {
         title: "CIS 实验室辅导员",
         location: "De Anza 学院 - 美国加州库比蒂诺",
         date: "2018年4月 - 2019年6月",
         description: [
-          "担任计算机信息系统 (CIS) 课程的实验室辅导员，并与授课教师一起找出学生反复卡住的地方，调整这些内容的讲法。",
+          "担任计算机信息系统 (CIS) 课程的实验室辅导员，指导 C++ 与 Python 实验，并与授课教师一起找出学生反复卡住的地方，调整这些内容的讲法。",
         ],
-        tags: ["教学", "代码调试", "课程反馈"],
+        tags: ["教学", "C++", "Python", "代码调试", "课程反馈"],
       },
     },
   },
