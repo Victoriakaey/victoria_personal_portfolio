@@ -135,7 +135,7 @@ export const projects: readonly Project[] = [
     copy: {
       en: {
         title: "Slack Q&A Chatbot",
-        time: "Apr 2026",
+        time: "Mar 2026",
         description:
           "A Slack bot that answers natural-language questions about a company's database — a Critic decides when the evidence is enough, with citations.",
         sideNotes:
@@ -150,7 +150,7 @@ export const projects: readonly Project[] = [
       },
       cn: {
         title: "Slack Q&A Chatbot",
-        time: "2026年4月",
+        time: "2026年3月",
         description:
           "一个 Slack 机器人,用自然语言回答关于公司数据库的问题 —— 由一个 Critic 判断证据够不够,答案都带引用。",
         sideNotes:
