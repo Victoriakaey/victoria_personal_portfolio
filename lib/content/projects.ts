@@ -293,7 +293,7 @@ export const projects: readonly Project[] = [
     copy: {
       en: {
         title: "Yi",
-        time: "Apr 2024 - Present",
+        time: "Apr 2024 - Sep 2024",
         description:
           "A SaaS web application providing comprehensive financial and business management solutions.",
         sideNotes: "Developed to help my mom reduce her workload.",
@@ -309,7 +309,7 @@ export const projects: readonly Project[] = [
       },
       cn: {
         title: "易",
-        time: "2024年4月 - 现在",
+        time: "2024年4月 - 2024年9月",
         description: "一个SaaS网络应用程序，提供全面的财务和业务管理解决方案。",
         sideNotes: "开发帮助我的妈妈减少工作量。",
         tags: [
